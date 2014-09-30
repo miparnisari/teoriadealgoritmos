@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "tp1\Model.csproj", "{CC0BBF6C-91EE-4C2E-8C67-F443BA4204E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP1", "tp1\TP1.csproj", "{CC0BBF6C-91EE-4C2E-8C67-F443BA4204E3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication", "ConsoleApplication\ConsoleApplication.csproj", "{506750AF-60BD-4B96-A8F3-DCC6D5034290}"
 EndProject

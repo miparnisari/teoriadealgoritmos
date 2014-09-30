@@ -39,9 +39,12 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\tp1\Model.csproj">
+    <ProjectReference Include="..\tp1\TP1.csproj">
       <Project>{CC0BBF6C-91EE-4C2E-8C67-F443BA4204E3}</Project>
-      <Name>Model</Name>
+      <Name>TP1</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data.gdf" />
   </ItemGroup>
 </Project>

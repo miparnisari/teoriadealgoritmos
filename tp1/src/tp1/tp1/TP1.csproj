@@ -35,9 +35,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="Node.cs" />
-    <Compile Include="Graph.cs" />
-    <Compile Include="Edge.cs" />
+    <Compile Include="Graph\Node.cs" />
+    <Compile Include="Graph\IIdentifiable.cs" />
+    <Compile Include="Graph\Graph.cs" />
+    <Compile Include="Sort\GraphSortExtension.cs" />
+    <Compile Include="FacebookGraph.cs" />
+    <Compile Include="FacebookUser.cs" />
+    <Compile Include="GraphReader\GraphReader.cs" />
+    <Compile Include="GraphReader\GraphBuilder.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
@@ -47,4 +52,9 @@
       </Properties>
     </MonoDevelop>
   </ProjectExtensions>
+  <ItemGroup>
+    <Folder Include="Graph\" />
+    <Folder Include="Sort\" />
+    <Folder Include="GraphReader\" />
+  </ItemGroup>
 </Project>
