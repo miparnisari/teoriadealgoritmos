@@ -2,8 +2,8 @@ namespace TP1.GraphReader
 {
 	public class GraphBuilder
 	{
-		private readonly GraphReader reader;
-		public GraphBuilder(GraphReader reader)
+		private readonly BaseGraphReader reader;
+		public GraphBuilder(BaseGraphReader reader)
 		{
 			this.reader = reader;
 		}

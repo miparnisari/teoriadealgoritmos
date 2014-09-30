@@ -43,6 +43,7 @@
     <Compile Include="FacebookUser.cs" />
     <Compile Include="GraphReader\GraphReader.cs" />
     <Compile Include="GraphReader\GraphBuilder.cs" />
+    <Compile Include="GraphReader\BaseGraphReader.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
