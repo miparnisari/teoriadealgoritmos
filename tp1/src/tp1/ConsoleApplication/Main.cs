@@ -10,13 +10,14 @@ namespace ConsoleApplication
 	{
 		public static void Main ()
 		{
-			var builder = new GraphBuilder(new GraphReader(@"../../data.gdf"));
-			var g = builder.Build();
+			var builder = new GraphBuilder(new GraphReader(@"../../Input/cbuffevant.gdf"));
+			var graph = builder.Build();
 
-			foreach (var e in g.Sort((a, b) => a.Degree >= b.Degree))
+			foreach (var node in graph.Sort((nodeA, nodeB) => nodeA.Degree >= nodeB.Degree))
 			{
-				System.Console.WriteLine(e.Data.Label + " [" + e.Degree + "]");
+				System.Console.WriteLine(node.Data.Name + " [" + node.Degree + "]");
 			}
+			
 			System.Console.ReadKey();
 		}
 	}

@@ -4,9 +4,10 @@ namespace TP1
 {
 	public class FacebookUser : IIdentifiable<long>
 	{
-		public FacebookUser(long Id)
+		public FacebookUser(long Id, string name)
 		{
 			this.Id = Id;
+			this.Name = name;
 		}
 
 		public long Id
@@ -15,10 +16,10 @@ namespace TP1
 			private set;
 		}
 
-		public string Label
+		public string Name
 		{
 			get;
-			set;
+			private set;
 		}
 	}
 }

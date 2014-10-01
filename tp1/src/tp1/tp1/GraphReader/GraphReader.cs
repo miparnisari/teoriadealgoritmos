@@ -32,6 +32,7 @@ namespace TP1.GraphReader
 			{
 				// skip the first line
 				reader.ReadLine();
+				
 				// process node definitions
 				while (!reader.EndOfStream)
 				{

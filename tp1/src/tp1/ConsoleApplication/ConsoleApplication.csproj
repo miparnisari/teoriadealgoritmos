@@ -45,6 +45,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="data.gdf" />
+    <None Include="Input\miparnisari.gdf" />
+    <None Include="Input\cbuffevant.gdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Input\" />
   </ItemGroup>
 </Project>

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace TP1.Graph
 {
 	/// <summary>
-	/// This class represents a Graph's node.
+	/// Representation of a Graph's node.
 	/// </summary>
 	public class Node<TData, TId> 
 		where TData : IIdentifiable<TId> 
@@ -68,7 +68,7 @@ namespace TP1.Graph
 		}
 
 		/// <summary>
-		/// Gets the node degree.
+		/// Gets the node degree (i.e. number of edges incident to the vertex)
 		/// </summary>
 		/// <value>The degree.</value>
 		public int Degree
