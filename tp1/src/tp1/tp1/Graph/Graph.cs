@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace TP1.Graph
 {
 	/// <summary>
-	/// This class represents an undirected graph. 
+	/// Representation of an undirected graph. 
 	/// </summary>
 	public class Graph<TData, TId> 
 		where TData : IIdentifiable<TId>

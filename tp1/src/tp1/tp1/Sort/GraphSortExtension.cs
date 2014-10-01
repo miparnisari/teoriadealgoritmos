@@ -38,6 +38,12 @@ namespace TP1.Sort
 			}
 		}
 
+		/// <summary>
+		/// Sort the specified graph.
+		/// </summary>
+		/// <param name='graph'>Graph to be sorted .</param>
+		/// <param name='comparer'>Comparer.</param>
+		/// <returns>A sorted list of nodes.</returns>
 		public static IEnumerable<Node<TData, TId>> Sort<TData, TId>(this Graph<TData, TId> graph, Func<Node<TData, TId>, Node<TData, TId>, bool> comparer)
 			where TData : IIdentifiable<TId>
 			where TId : IComparable
@@ -45,7 +51,7 @@ namespace TP1.Sort
 			var nodes = graph.Nodes.ToArray();
 			var count = nodes.Count();
 
-			// heapfy
+			// heapify
 			var start = (int)Math.Floor((count - 2.0) / 2.0);
 			while (start >= 0) {
 				SiftDown(nodes, start, count-1, comparer);

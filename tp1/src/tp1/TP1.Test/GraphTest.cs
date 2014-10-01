@@ -1,5 +1,4 @@
 using System;
-using System.Linq;
 using NUnit.Framework;
 using TP1.GraphReader;
 
@@ -25,14 +24,14 @@ namespace TP1.Test
 
 			// assert
 			Assert.AreEqual (2, g.Count);
-			Assert.AreEqual ("Juan", g [1].Data.Label);
-			Assert.AreEqual ("Maria", g [2].Data.Label);
-			Assert.AreEqual (1, g [1].Adjacents.Count ());
+			Assert.AreEqual ("Juan", g [1].Data.Name);
+			Assert.AreEqual ("Maria", g [2].Data.Name);
+			Assert.AreEqual (1, g [1].Adjacents.Count);
 			Assert.AreEqual (1, g [1].Degree);
-			Assert.AreEqual (1, g [2].Adjacents.Count ());
+			Assert.AreEqual (1, g [2].Adjacents.Count);
 			Assert.AreEqual (1, g [2].Degree);
-			Assert.AreEqual(g[2], g[1].Adjacents.First());
-			Assert.AreEqual(g[1], g[2].Adjacents.First());
+			Assert.IsTrue(g[1].Adjacents.ContainsKey(2));
+			Assert.IsTrue(g[2].Adjacents.ContainsKey(1));
 		}
 	}
 }

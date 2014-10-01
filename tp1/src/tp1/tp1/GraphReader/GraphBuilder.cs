@@ -10,29 +10,30 @@ namespace TP1.GraphReader
 
 		public FacebookGraph Build()
 		{
-			var g = new FacebookGraph();
-			// star reading
+			var graph = new FacebookGraph();
+			
+			// start reading
 			reader.Read(
 				// process a new node
 				values =>
 				{
-				g.AddNode(new FacebookUser(long.Parse(values[0]))
-				          {
-					Label = values[1]
-				});
-			},
-			// process a new edge
-			values => {
-				var nodeSource = g[long.Parse(values[0])];
-				var nodeDest = g[long.Parse(values[1])];
-				if (nodeSource != null && nodeDest != null)
+					var id = long.Parse(values[0]);
+					var name = values[1];
+					graph.AddNode(new FacebookUser(id, name));
+				},
+				// process a new edge
+				values => 
 				{
-					nodeSource.AddAdjacentNode(nodeDest);
-					nodeDest.AddAdjacentNode(nodeSource);
-				}
-			});
+					var nodeSource = graph[long.Parse(values[0])];
+					var nodeDest = graph[long.Parse(values[1])];
+					if (nodeSource != null && nodeDest != null)
+					{
+						nodeSource.AddAdjacentNode(nodeDest);
+						nodeDest.AddAdjacentNode(nodeSource);
+					}
+				});
 
-			return g;
+			return graph;
 		}
 	}
 }
