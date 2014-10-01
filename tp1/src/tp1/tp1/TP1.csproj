@@ -44,6 +44,7 @@
     <Compile Include="GraphReader\GraphReader.cs" />
     <Compile Include="GraphReader\GraphBuilder.cs" />
     <Compile Include="GraphReader\BaseGraphReader.cs" />
+    <Compile Include="Recommendations\RecommendationsExtension.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
@@ -57,5 +58,6 @@
     <Folder Include="Graph\" />
     <Folder Include="Sort\" />
     <Folder Include="GraphReader\" />
+    <Folder Include="Recommendations\" />
   </ItemGroup>
 </Project>

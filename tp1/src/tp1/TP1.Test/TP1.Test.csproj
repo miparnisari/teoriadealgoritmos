@@ -37,6 +37,7 @@
   <ItemGroup>
     <Compile Include="GraphTest.cs" />
     <Compile Include="StringGraphReader.cs" />
+    <Compile Include="RecommendationsTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
