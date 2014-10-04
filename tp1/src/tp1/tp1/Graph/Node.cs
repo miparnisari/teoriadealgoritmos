@@ -78,5 +78,22 @@ namespace TP1.Graph
 				return adjacentNodes.Values.Count;
 			}
 		}
+
+	    public bool Visited { get; set; }
+
+	    public override bool Equals(object obj)
+	    {
+	        var otherNode = obj as Node<TData, TId>;
+	        if (otherNode != null)
+	        {
+	            return this.Id.Equals(otherNode.Id);
+	        }
+	        return false;
+	    }
+
+	    public override int GetHashCode()
+	    {
+	        return this.Id.GetHashCode();
+	    }
 	}
 }

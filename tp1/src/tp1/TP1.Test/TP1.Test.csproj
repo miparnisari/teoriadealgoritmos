@@ -52,6 +52,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GraphTest.cs" />
+    <Compile Include="ShortestPathsTest.cs" />
+    <Compile Include="InfluencesTest.cs" />
     <Compile Include="StringGraphReader.cs" />
     <Compile Include="RecommendationsTest.cs" />
   </ItemGroup>
@@ -67,5 +69,10 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Input\test.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 </Project>
