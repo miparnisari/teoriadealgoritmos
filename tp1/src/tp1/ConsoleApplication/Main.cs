@@ -1,6 +1,4 @@
 using System;
-using TP1;
-using TP1.Graph;
 using TP1.Sort;
 using TP1.Recommendations;
 using TP1.GraphReader;
@@ -11,7 +9,7 @@ namespace ConsoleApplication
 	{
 		public static void Main ()
 		{
-			var builder = new GraphBuilder(new GraphReader(@"../../Input/cbuffevant.gdf"));
+			var builder = new GraphBuilder(new GraphReader(@"../../Input/miparnisari.gdf"));
 			var graph = builder.Build();
 
 			// Punto 1
@@ -25,7 +23,7 @@ namespace ConsoleApplication
 			// Punto 3
 			foreach (var r in graph.Recommendations()) 
 			{
-				Console.WriteLine (r.Item1.Data.Name + " => " + r.Item2.Data.Name + " [" + r.Item3 + "]");
+				Console.WriteLine (r.Person.Data.Name + " => " + r.PersonToRecommend.Data.Name + " [" + r.FriendCount + "]");
 			}
 
 			System.Console.ReadKey();

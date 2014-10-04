@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -38,6 +38,7 @@
     <Compile Include="Graph\Node.cs" />
     <Compile Include="Graph\IIdentifiable.cs" />
     <Compile Include="Graph\Graph.cs" />
+    <Compile Include="Recommendations\Recommendation.cs" />
     <Compile Include="Sort\GraphSortExtension.cs" />
     <Compile Include="FacebookGraph.cs" />
     <Compile Include="FacebookUser.cs" />
@@ -54,10 +55,5 @@
       </Properties>
     </MonoDevelop>
   </ProjectExtensions>
-  <ItemGroup>
-    <Folder Include="Graph\" />
-    <Folder Include="Sort\" />
-    <Folder Include="GraphReader\" />
-    <Folder Include="Recommendations\" />
-  </ItemGroup>
+  <ItemGroup />
 </Project>

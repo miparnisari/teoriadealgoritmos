@@ -29,15 +29,13 @@ namespace TP1.Graph
 		/// </summary>
 		/// <returns>The added node.</returns>
 		/// <param name="data">Data to be added.</param>
-		public Node<TData, TId> AddNode(TData data)
+		public void AddNode(TData data)
 		{
 			if (!nodes.ContainsKey(data.Id))
 			{
 				var node = new Node<TData, TId>(data);
 				nodes.Add(node.Id, node);
-				return node;
 			}
-			return this[data.Id];
 		}
 
 		/// <summary>
