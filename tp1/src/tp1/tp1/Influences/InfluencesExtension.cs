@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using TP1.Graph;
 
@@ -15,7 +16,7 @@ namespace tp1.Influences
             foreach (var node in graph.Nodes)
             {
                 var influence = GetInfluenceForNode(graph, node);
-                // for each node, store its data and its influence over other nodes
+                
                 influences.Add(new Tuple<Node<TData, TId>, double>(node, influence));
             }
 
@@ -26,20 +27,57 @@ namespace tp1.Influences
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
-            double influence = 0;
+            var top = GetShortestPathsThatPassThroughNode(graph, nodeV);
+            var bottom = GetTotalShortestPaths(graph);
+
+            double topCount = top.Count;
+            double bottomCount = bottom.Count;
+
+            double result = topCount / bottomCount;
+
+            return result;
+        }
+
+        private static List<ShortestPath<TData, TId>> GetTotalShortestPaths<TData, TId>(Graph<TData, TId> graph)
+            where TData : IIdentifiable<TId>
+            where TId : IComparable
+        {
+            var paths = new List<ShortestPath<TData, TId>>();
+
             foreach (var nodeS in graph.Nodes)
             {
-                foreach (var nodeT in graph.Nodes)
+                Node<TData, TId> s = nodeS;
+                foreach (var nodeT in graph.Nodes.Except(new[] { nodeS }).Where(n => !s.Adjacents.ContainsKey(n.Id)))
                 {
                     var shortestPaths = graph.GetShortestPathsWithDijkstra(nodeS, nodeT);
 
-                    float bst = shortestPaths.Count;
-                    float bsvt = shortestPaths.Count(path => path.Contains(nodeV));
-
-                    influence += (bsvt / bst);
+                    paths.AddRange(shortestPaths);
                 }
             }
-            return influence;
+
+            return paths;
+        }
+
+        private static List<ShortestPath<TData, TId>> GetShortestPathsThatPassThroughNode<TData, TId>(Graph<TData, TId> graph, Node<TData, TId> node)
+            where TData : IIdentifiable<TId>
+            where TId : IComparable
+        {
+            var paths = new List<ShortestPath<TData, TId>>();
+
+            foreach (var nodeS in graph.Nodes)
+            {
+                Node<TData, TId> s = nodeS;
+                foreach (var nodeT in graph.Nodes.Except(new[] { nodeS }).Where(n => !s.Adjacents.ContainsKey(n.Id)))
+                {
+                    var shortestPaths = graph.GetShortestPathsWithDijkstra(nodeS, nodeT);
+
+                    var shortestsPathsWithNode = shortestPaths.Where(p => p.PassesThrough(node));
+
+                    paths.AddRange(shortestsPathsWithNode);
+                }
+            }
+
+            return paths;
         }
     }
 }

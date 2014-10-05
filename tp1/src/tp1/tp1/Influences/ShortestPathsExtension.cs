@@ -7,7 +7,7 @@ namespace tp1.Influences
 {
     public static class ShortestPathsExtension
     {
-        public static List<List<Node<TData, TId>>> GetShortestPathsWithDijkstra<TData, TId>
+        public static List<ShortestPath<TData, TId>> GetShortestPathsWithDijkstra<TData, TId>
             (this Graph<TData, TId> graph,
                 Node<TData, TId> source,
                 Node<TData, TId> target)
@@ -62,14 +62,14 @@ namespace tp1.Influences
             return FindParents(previous, target);
         }
 
-       private static List<List<Node<TData, TId>>> FindParents<TData, TId>
+       private static List<ShortestPath<TData, TId>> FindParents<TData, TId>
             (Dictionary<TId, List<Node<TData, TId>>> parent,
             Node<TData, TId> index)
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
-            List<Node<TData, TId>> prefix = new List<Node<TData, TId>>();
-            List<List<Node<TData, TId>>> results = new List<List<Node<TData, TId>>>();
+            var prefix = new ShortestPath<TData, TId>();
+            var results = new List<ShortestPath<TData, TId>>();
             FindParentsRecursive(parent, index, prefix, results);
             return results;
         }
@@ -77,15 +77,17 @@ namespace tp1.Influences
         private static void FindParentsRecursive<TData, TId>
             (Dictionary<TId, List<Node<TData, TId>>> parent,
             Node<TData, TId> index,
-            List<Node<TData, TId>> prefix,
-            List<List<Node<TData, TId>>> results)
+            ShortestPath<TData, TId> prefix,
+            List<ShortestPath<TData, TId>> results)
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
-            var newPrefix = new List<Node<TData, TId>>(prefix) { index };
+            var newPrefix = new ShortestPath<TData, TId>();
+            newPrefix.Path.AddRange(prefix.Path);
+            newPrefix.Path.Add(index);
             if (!parent.ContainsKey(index.Id))
             {
-                newPrefix.Reverse();
+                newPrefix.Path.Reverse();
                 results.Add(newPrefix);
                 return;
             }

@@ -95,5 +95,10 @@ namespace TP1.Graph
 	    {
 	        return this.Id.GetHashCode();
 	    }
+
+	    public override string ToString()
+	    {
+	        return this.Id.ToString();
+	    }
 	}
 }
