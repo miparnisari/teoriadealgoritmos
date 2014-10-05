@@ -15,6 +15,7 @@ namespace tp1.Influences
             foreach (var node in graph.Nodes)
             {
                 var influence = GetInfluenceForNode(graph, node);
+                // for each node, store its data and its influence over other nodes
                 influences.Add(new Tuple<Node<TData, TId>, double>(node, influence));
             }
 

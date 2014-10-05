@@ -13,6 +13,7 @@ namespace TP1.Test
 
         public void ShouldListInfluencesInCorrectOrder()
         {
+            // arrange
             var builder = new GraphBuilder(new GraphReader.GraphReader(@"Input\test.txt"));
             var graph = builder.Build();
 
