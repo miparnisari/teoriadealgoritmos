@@ -1,4 +1,3 @@
-using System;
 using tp1.Influences;
 using TP1.Sort;
 using TP1.Recommendations;
@@ -24,7 +23,7 @@ namespace ConsoleApplication
             // Punto 2
             foreach (var influence in graph.Influences())
             {
-                System.Console.WriteLine(influence.Item1.Id);
+                System.Console.WriteLine(influence.Item1.Data.Name + " [" + influence.Item2 + "]");
             }
 
             System.Console.ReadKey();

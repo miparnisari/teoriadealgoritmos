@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
 using TP1.Graph;
 
 namespace tp1.Influences
@@ -13,18 +11,6 @@ namespace tp1.Influences
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
-            /*
-             * para cada nodo "s":
-             *      para cada nodo "t":
-             *          calcular TODOS los caminos minimos de "s" a "t", guardando el camino
-             *          b(s,t) es la cantidad de caminos
-             *          
-             *          para cada nodo "v":
-             *              para cada camino minimo:
-             *                  si el camino minimo incluye a "v"
-             *                      b(s,v,t) += 1
-             */
-
             var influences = new List<Tuple<Node<TData, TId>, double>>();
             foreach (var node in graph.Nodes)
             {

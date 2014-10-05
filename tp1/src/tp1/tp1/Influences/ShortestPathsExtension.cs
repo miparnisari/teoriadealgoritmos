@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
 using System.Linq;
 using TP1.Graph;
 
@@ -15,7 +13,7 @@ namespace tp1.Influences
                 Node<TData, TId> target)
             where TData : IIdentifiable<TId>
             where TId : IComparable
-        {
+        { 
             var distanceTo = new Dictionary<Node<TData, TId>, long>();
             var subsetGraph = new Graph<TData, TId>();
             var unvisitedNodes = new HashSet<Node<TData, TId>>(); //TODO improve with min-priority queue

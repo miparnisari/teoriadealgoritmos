@@ -39,7 +39,6 @@
     <Compile Include="Graph\IIdentifiable.cs" />
     <Compile Include="Graph\Graph.cs" />
     <Compile Include="Influences\InfluencesExtension.cs" />
-    <Compile Include="Influences\ShortestPath.cs" />
     <Compile Include="Influences\ShortestPathsExtension.cs" />
     <Compile Include="Recommendations\Recommendation.cs" />
     <Compile Include="Sort\GraphSortExtension.cs" />
