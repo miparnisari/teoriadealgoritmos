@@ -21,14 +21,14 @@ namespace TP1.Test
             var influences = graph.Influences().OrderByDescending(i => i.Item2).ToList();
 
             // assert
-            string[] expectedInfluences =
+            string[] expectedInfluencesInOrder =
             {
                 "Juana", "Roberto", "Carlos", "Esteban", "Milena",
-                "Monica", "Pablo", "Nora", "Lorena", "Brenda", "Tomas"
+                "Monica", "Pablo", "Lorena", "Tomas", "Brenda", "Nora"
             };
 
-            Assert.AreEqual(expectedInfluences.Count(), influences.Count());
-            Assert.AreEqual(expectedInfluences, influences.Select(i => i.Item1.Data.Name).ToArray());
+            Assert.AreEqual(expectedInfluencesInOrder.Count(), influences.Count());
+            Assert.AreEqual(expectedInfluencesInOrder, influences.Select(i => i.Item1.Data.Name).ToArray());
         }
     }
 }
