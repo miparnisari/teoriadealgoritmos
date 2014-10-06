@@ -61,7 +61,6 @@ namespace TP1.Test
             var destination = graph[3];
 
             var shortestPathsToDestination = graph.GetShortestPathsWithDijkstra(source, destination);
-            //TODO this should return one path (the shortest) not all
 
             // assert
             Assert.AreEqual(1, shortestPathsToDestination.Count());
