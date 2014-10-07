@@ -10,13 +10,15 @@ namespace TP1.Influences
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
-            int bottom = GetTotalShortestPaths(graph)
-                .Count;
+            var shortestPaths = GetTotalShortestPaths(graph);
+
+            double bottom = shortestPaths.Count;
 
             var influences = new InfluencesCollection<TData, TId>();
+            
             foreach (var node in graph.Nodes)
             {
-                double top = GetShortestPathsThatPassThroughNode(graph, node).Count;
+                double top = shortestPaths.Paths.Count(p => p.PassesThrough(node));
 
                 double influence = top/bottom; 
 
@@ -26,7 +28,7 @@ namespace TP1.Influences
             return influences;
         }
 
-        public static ShortestPathsCollection<TData, TId> GetTotalShortestPaths<TData, TId>(Graph<TData, TId> graph)
+        private static ShortestPathsCollection<TData, TId> GetTotalShortestPaths<TData, TId>(Graph<TData, TId> graph)
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
@@ -34,36 +36,12 @@ namespace TP1.Influences
 
             foreach (var nodeS in graph.Nodes)
             {
-                foreach (var nodeT in graph.Nodes.Except(new[] { nodeS }))
-                {
-                    var shortestPaths = graph.GetShortestPathsWithDijkstra(nodeS, nodeT);
+                var shortestPaths = graph.GetShortestPathsWithDijkstra(nodeS);
 
-                    allShortestPaths.AddPaths(shortestPaths);
-                }
+                allShortestPaths.AddPaths(shortestPaths);
             }
 
             return allShortestPaths;
-        }
-
-        private static ShortestPathsCollection<TData, TId> GetShortestPathsThatPassThroughNode<TData, TId>(Graph<TData, TId> graph, Node<TData, TId> node)
-            where TData : IIdentifiable<TId>
-            where TId : IComparable
-        {
-            var paths = new ShortestPathsCollection<TData, TId>();
-
-            foreach (var nodeS in graph.Nodes)
-            {
-                foreach (var nodeT in graph.Nodes.Except(new[] { nodeS }))
-                {
-                    var shortestPaths = graph.GetShortestPathsWithDijkstra(nodeS, nodeT);
-
-                    var shortestsPathsWithNode = shortestPaths.Paths.Where(p => p.PassesThrough(node));
-
-                    paths.AddPaths(shortestsPathsWithNode);
-                }
-            }
-
-            return paths;
         }
     }
 }

@@ -14,17 +14,10 @@ namespace TP1.Influences
         /// </summary>
         public static ShortestPathsCollection<TData, TId> GetShortestPathsWithDijkstra<TData, TId>
             (this Graph<TData, TId> graph,
-                Node<TData, TId> source,
-                Node<TData, TId> target)
+                Node<TData, TId> source)
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
-            // there is no path from a node to itself
-            if (source.Id.Equals(target.Id))
-            {
-                return new ShortestPathsCollection<TData, TId>();
-            }
-
             // stores the shortest distance to each node, from "source"
             var distanceTo = new Dictionary<Node<TData, TId>, long>();
 
@@ -69,8 +62,13 @@ namespace TP1.Influences
                 }
             }
 
-            // reconstruct the paths to the source from the target
-            return FindParents(previous, target);
+            // reconstruct the paths to each target
+            var result = new ShortestPathsCollection<TData, TId>();
+            foreach (var target in graph.Nodes.Except(new[] {source}))
+            {
+              result.AddPaths(FindParents(previous, target));  
+            }
+            return result;
         }
 
         private static ShortestPathsCollection<TData, TId> FindParents<TData, TId>

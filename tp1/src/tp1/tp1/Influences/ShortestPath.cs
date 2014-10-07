@@ -23,6 +23,10 @@ namespace TP1.Influences
             }
         }
 
+        public Node<TData, TId> StartNode { get { return this.Path.First(); } }
+
+        public Node<TData, TId> EndNode { get { return this.Path.Last(); } }
+
         public int Length
         {
             get { return this.Path.Count; }

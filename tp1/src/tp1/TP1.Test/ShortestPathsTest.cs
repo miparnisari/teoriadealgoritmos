@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Security.Cryptography;
 using TP1.GraphReader;
 using NUnit.Framework;
 using TP1.Influences;
@@ -20,7 +21,9 @@ namespace TP1.Test
             var source = graph[3]; //Juana
             var destination = graph[1]; //Milena
 
-            var shortestPaths = graph.GetShortestPathsWithDijkstra(source, destination);
+            var shortestPaths = graph.GetShortestPathsWithDijkstra(source).Paths
+                .Where(p => p.EndNode.Equals(destination))
+                .ToList();
 
             // assert
             Assert.AreEqual(1, shortestPaths.Count);
@@ -41,29 +44,12 @@ namespace TP1.Test
             var source = graph[3]; //Juana
             var destination = graph[3]; //Juana
 
-            var shortestPaths = graph.GetShortestPathsWithDijkstra(source, destination);
+            var shortestPaths = graph.GetShortestPathsWithDijkstra(source).Paths
+                .Where(p => p.EndNode.Equals(destination))
+                .ToList();
 
             // assert
             Assert.AreEqual(0, shortestPaths.Count);
-        }
-
-        [Test()]
-        public void ShouldGetOneShortestPathReversed()
-        {
-            // arrange
-            var builder = new GraphBuilder(new GraphReader.GraphReader(@"Input\test.txt"));
-            var graph = builder.Build();
-
-            // act
-            var source = graph[2]; //Monica
-            var destination = graph[3]; //Juana
-
-            var shortestPaths = graph.GetShortestPathsWithDijkstra(source, destination);
-            var shortestPathsReversed = graph.GetShortestPathsWithDijkstra(destination, source);
-            shortestPathsReversed.Paths.First().Path.Reverse();
-            
-            // assert
-            Assert.AreEqual(shortestPaths.Paths.First().Path, shortestPathsReversed.Paths.First().Path);
         }
 
         [Test()]
@@ -77,7 +63,9 @@ namespace TP1.Test
             var source = graph[1]; // Milena
             var destination = graph[2]; //Monica
 
-            var shortestPaths = graph.GetShortestPathsWithDijkstra(source, destination);
+            var shortestPaths = graph.GetShortestPathsWithDijkstra(source).Paths
+                .Where(p => p.EndNode.Equals(destination))
+                .ToList();
 
             // assert
             Assert.AreEqual(2, shortestPaths.Count);
@@ -109,7 +97,9 @@ namespace TP1.Test
             var source = graph[1]; // Juana
             var destination = graph[2]; //Maria
 
-            var shortestPaths = graph.GetShortestPathsWithDijkstra(source, destination);
+            var shortestPaths = graph.GetShortestPathsWithDijkstra(source).Paths
+                .Where(p => p.EndNode.Equals(destination))
+                .ToList();
 
             // assert
             Assert.AreEqual(0, shortestPaths.Count);
