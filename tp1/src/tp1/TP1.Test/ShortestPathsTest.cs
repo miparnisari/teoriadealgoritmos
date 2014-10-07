@@ -2,7 +2,7 @@
 using System.Linq;
 using TP1.GraphReader;
 using NUnit.Framework;
-using tp1.Influences;
+using TP1.Influences;
 
 namespace TP1.Test
 {

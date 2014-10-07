@@ -1,23 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using TP1.Graph;
 
-namespace tp1.Influences
+namespace TP1.Influences
 {
     public static class InfluencesExtension
     {
-        public static List<Tuple<Node<TData, TId>, double>> Influences<TData, TId>(this Graph<TData, TId> graph)
+        public static InfluencesCollection<TData, TId> Influences<TData, TId>(this Graph<TData, TId> graph)
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
-            var influences = new List<Tuple<Node<TData, TId>, double>>();
+            var influences = new InfluencesCollection<TData, TId>();
             foreach (var node in graph.Nodes)
             {
                 var influence = GetInfluenceForNode(graph, node);
                 
-                influences.Add(new Tuple<Node<TData, TId>, double>(node, influence));
+                influences.Add(new Influence<TData, TId>(node, influence));
             }
 
             return influences;
@@ -46,8 +44,7 @@ namespace tp1.Influences
 
             foreach (var nodeS in graph.Nodes)
             {
-                Node<TData, TId> s = nodeS;
-                foreach (var nodeT in graph.Nodes.Except(new[] { nodeS }).Where(n => !s.Adjacents.ContainsKey(n.Id)))
+                foreach (var nodeT in graph.Nodes.Except(new[] { nodeS }))
                 {
                     var shortestPaths = graph.GetShortestPathsWithDijkstra(nodeS, nodeT);
 
@@ -66,8 +63,7 @@ namespace tp1.Influences
 
             foreach (var nodeS in graph.Nodes)
             {
-                Node<TData, TId> s = nodeS;
-                foreach (var nodeT in graph.Nodes.Except(new[] { nodeS }).Where(n => !s.Adjacents.ContainsKey(n.Id)))
+                foreach (var nodeT in graph.Nodes.Except(new[] { nodeS }))
                 {
                     var shortestPaths = graph.GetShortestPathsWithDijkstra(nodeS, nodeT);
 

@@ -1,5 +1,5 @@
 using System.Linq;
-using tp1.Influences;
+using TP1.Influences;
 using TP1.Sort;
 using TP1.Recommendations;
 using TP1.GraphReader;
@@ -22,9 +22,9 @@ namespace ConsoleApplication
             //System.Console.ReadKey();
 
             // Punto 2
-            foreach (var influence in graph.Influences().OrderByDescending(i => i.Item2))
+            foreach (var influence in graph.Influences().OrderByDescending())
             {
-                System.Console.WriteLine(influence.Item1.Data.Name + " -" + influence.Item2);
+                System.Console.WriteLine(influence.Node.Data.Name + " -" + influence.Value);
             }
 
             System.Console.ReadKey();

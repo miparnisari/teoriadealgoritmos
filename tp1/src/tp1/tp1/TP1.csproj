@@ -38,6 +38,8 @@
     <Compile Include="Graph\Node.cs" />
     <Compile Include="Graph\IIdentifiable.cs" />
     <Compile Include="Graph\Graph.cs" />
+    <Compile Include="Influences\Influence.cs" />
+    <Compile Include="Influences\InfluencesCollection.cs" />
     <Compile Include="Influences\InfluencesExtension.cs" />
     <Compile Include="Influences\ShortestPath.cs" />
     <Compile Include="Influences\ShortestPathsCollection.cs" />

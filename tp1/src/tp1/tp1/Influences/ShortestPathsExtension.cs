@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TP1.Graph;
 
-namespace tp1.Influences
+namespace TP1.Influences
 {
     public static class ShortestPathsExtension
     {
