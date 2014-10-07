@@ -10,33 +10,23 @@ namespace TP1.Influences
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
+            int bottom = GetTotalShortestPaths(graph)
+                .Count;
+
             var influences = new InfluencesCollection<TData, TId>();
             foreach (var node in graph.Nodes)
             {
-                var influence = GetInfluenceForNode(graph, node);
-                
+                double top = GetShortestPathsThatPassThroughNode(graph, node).Count;
+
+                double influence = top/bottom; 
+
                 influences.Add(new Influence<TData, TId>(node, influence));
             }
 
             return influences;
         }
 
-        private static double GetInfluenceForNode<TData, TId>(Graph<TData, TId> graph, Node<TData, TId> nodeV)
-            where TData : IIdentifiable<TId>
-            where TId : IComparable
-        {
-            var top = GetShortestPathsThatPassThroughNode(graph, nodeV);
-            var bottom = GetTotalShortestPaths(graph);
-
-            double topCount = top.Count;
-            double bottomCount = bottom.Count;
-
-            double result = topCount / bottomCount;
-
-            return result;
-        }
-
-        private static ShortestPathsCollection<TData, TId> GetTotalShortestPaths<TData, TId>(Graph<TData, TId> graph)
+        public static ShortestPathsCollection<TData, TId> GetTotalShortestPaths<TData, TId>(Graph<TData, TId> graph)
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {

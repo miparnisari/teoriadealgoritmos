@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using TP1.Graph;
 
@@ -18,6 +19,7 @@ namespace TP1.Influences
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
+            // there is no path from a node to itself
             if (source.Id.Equals(target.Id))
             {
                 return new ShortestPathsCollection<TData, TId>();
@@ -27,7 +29,7 @@ namespace TP1.Influences
             var distanceTo = new Dictionary<Node<TData, TId>, long>();
 
             var unvisitedNodes = new HashSet<Node<TData, TId>>(); //TODO improve with min-priority queue
-            
+
             // stores the node(s) used to reach a given node 
             // since we are finding *all* the shortest paths, we store them all, not just one
             var previous = new Dictionary<TId, List<Node<TData, TId>>>();
@@ -38,7 +40,7 @@ namespace TP1.Influences
             {
                 if (!node.Equals(source))
                 {
-                    distanceTo[node] = Int64.MaxValue;
+                    distanceTo[node] = Int64.MaxValue - 1;
                     previous[node.Id] = new List<Node<TData, TId>>();
                 }
                 unvisitedNodes.Add(node);
@@ -62,18 +64,18 @@ namespace TP1.Influences
                     {
                         // A shorter or equally short path has been found!
                         distanceTo[adjacent.Value] = currentDistance;
-                        previous[adjacent.Value.Id].Add(visitedNode); 
+                        previous[adjacent.Value.Id].Add(visitedNode);
                     }
                 }
             }
 
-            // reconstruct the path to the source from the target
+            // reconstruct the paths to the source from the target
             return FindParents(previous, target);
         }
 
-       private static ShortestPathsCollection<TData, TId> FindParents<TData, TId>
-            (Dictionary<TId, List<Node<TData, TId>>> parent,
-            Node<TData, TId> index)
+        private static ShortestPathsCollection<TData, TId> FindParents<TData, TId>
+             (Dictionary<TId, List<Node<TData, TId>>> parent,
+             Node<TData, TId> index)
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {

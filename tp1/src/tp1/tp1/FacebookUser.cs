@@ -21,5 +21,10 @@ namespace TP1
 			get;
 			private set;
 		}
+
+	    public override string ToString()
+	    {
+	        return this.Name;
+	    }
 	}
 }
