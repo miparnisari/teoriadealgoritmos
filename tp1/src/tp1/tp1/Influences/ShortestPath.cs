@@ -23,6 +23,11 @@ namespace tp1.Influences
             }
         }
 
+        public int Length
+        {
+            get { return this.Path.Count; }
+        }
+
         public List<Node<TData, TId>> Path { get; set; }
 
         public bool PassesThrough(Node<TData, TId> node)
