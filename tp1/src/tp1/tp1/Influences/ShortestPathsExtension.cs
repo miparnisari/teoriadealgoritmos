@@ -7,13 +7,22 @@ namespace tp1.Influences
 {
     public static class ShortestPathsExtension
     {
-        public static List<ShortestPath<TData, TId>> GetShortestPathsWithDijkstra<TData, TId>
+        /// <summary>
+        /// Returns all the shortest paths between two given nodes in a graph.
+        /// If the nodes's IDs are equal, it returns an empty collection.
+        /// </summary>
+        public static ShortestPathsCollection<TData, TId> GetShortestPathsWithDijkstra<TData, TId>
             (this Graph<TData, TId> graph,
                 Node<TData, TId> source,
                 Node<TData, TId> target)
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
+            if (source.Id.Equals(target.Id))
+            {
+                return new ShortestPathsCollection<TData, TId>();
+            }
+
             // stores the shortest distance to each node, from "source"
             var distanceTo = new Dictionary<Node<TData, TId>, long>();
 
@@ -62,14 +71,14 @@ namespace tp1.Influences
             return FindParents(previous, target);
         }
 
-       private static List<ShortestPath<TData, TId>> FindParents<TData, TId>
+       private static ShortestPathsCollection<TData, TId> FindParents<TData, TId>
             (Dictionary<TId, List<Node<TData, TId>>> parent,
             Node<TData, TId> index)
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
             var prefix = new ShortestPath<TData, TId>();
-            var results = new List<ShortestPath<TData, TId>>();
+            var results = new ShortestPathsCollection<TData, TId>();
             FindParentsRecursive(parent, index, prefix, results);
             return results;
         }
@@ -78,20 +87,20 @@ namespace tp1.Influences
             (Dictionary<TId, List<Node<TData, TId>>> parent,
             Node<TData, TId> index,
             ShortestPath<TData, TId> prefix,
-            List<ShortestPath<TData, TId>> results)
+            ShortestPathsCollection<TData, TId> results)
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
-            var newPrefix = new ShortestPath<TData, TId>();
-            newPrefix.Path.AddRange(prefix.Path);
-            newPrefix.Path.Add(index);
+            var newShortestPath = new ShortestPath<TData, TId>();
+            newShortestPath.Path.AddRange(prefix.Path);
+            newShortestPath.Path.Add(index);
             if (!parent.ContainsKey(index.Id))
             {
-                newPrefix.Path.Reverse();
-                results.Add(newPrefix);
+                newShortestPath.Path.Reverse();
+                results.Paths.Add(newShortestPath);
                 return;
             }
-            parent[index.Id].ForEach(i => FindParentsRecursive(parent, i, newPrefix, results));
+            parent[index.Id].ForEach(i => FindParentsRecursive(parent, i, newShortestPath, results));
         }
     }
 }

@@ -38,11 +38,11 @@ namespace tp1.Influences
             return result;
         }
 
-        private static List<ShortestPath<TData, TId>> GetTotalShortestPaths<TData, TId>(Graph<TData, TId> graph)
+        private static ShortestPathsCollection<TData, TId> GetTotalShortestPaths<TData, TId>(Graph<TData, TId> graph)
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
-            var paths = new List<ShortestPath<TData, TId>>();
+            var allShortestPaths = new ShortestPathsCollection<TData, TId>();
 
             foreach (var nodeS in graph.Nodes)
             {
@@ -51,18 +51,18 @@ namespace tp1.Influences
                 {
                     var shortestPaths = graph.GetShortestPathsWithDijkstra(nodeS, nodeT);
 
-                    paths.AddRange(shortestPaths);
+                    allShortestPaths.AddPaths(shortestPaths);
                 }
             }
 
-            return paths;
+            return allShortestPaths;
         }
 
-        private static List<ShortestPath<TData, TId>> GetShortestPathsThatPassThroughNode<TData, TId>(Graph<TData, TId> graph, Node<TData, TId> node)
+        private static ShortestPathsCollection<TData, TId> GetShortestPathsThatPassThroughNode<TData, TId>(Graph<TData, TId> graph, Node<TData, TId> node)
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
-            var paths = new List<ShortestPath<TData, TId>>();
+            var paths = new ShortestPathsCollection<TData, TId>();
 
             foreach (var nodeS in graph.Nodes)
             {
@@ -71,9 +71,9 @@ namespace tp1.Influences
                 {
                     var shortestPaths = graph.GetShortestPathsWithDijkstra(nodeS, nodeT);
 
-                    var shortestsPathsWithNode = shortestPaths.Where(p => p.PassesThrough(node));
+                    var shortestsPathsWithNode = shortestPaths.Paths.Where(p => p.PassesThrough(node));
 
-                    paths.AddRange(shortestsPathsWithNode);
+                    paths.AddPaths(shortestsPathsWithNode);
                 }
             }
 

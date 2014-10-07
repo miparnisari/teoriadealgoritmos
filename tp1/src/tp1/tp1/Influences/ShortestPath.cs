@@ -19,14 +19,7 @@ namespace tp1.Influences
         {
             get
             {
-                try
-                {
-                    return this.Path.ElementAt(index);
-                }
-                catch (Exception)
-                {
-                    return null;
-                }
+                return this.Path.ElementAt(index);
             }
         }
 
@@ -34,7 +27,9 @@ namespace tp1.Influences
 
         public bool PassesThrough(Node<TData, TId> node)
         {
-            return this.Path.Contains(node) && !this.Path.First().Equals(node) && !this.Path.Last().Equals(node);
+            return this.Path.Contains(node)
+                && !this.Path.First().Equals(node)
+                && !this.Path.Last().Equals(node);
         }
 
         public override string ToString()
