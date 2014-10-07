@@ -10,6 +10,24 @@ namespace TP1.Test
     public class InfluencesTest
     {
         [Test()]
+        public void ShouldListInfluences_WhenRealDataIsUsed()
+        {
+            try
+            {
+                // arrange
+                var builder = new GraphBuilder(new GraphReader.GraphReader(@"Input\realdata.txt"));
+                var graph = builder.Build();
+
+                // act
+                var influences = graph.Influences().OrderByDescending().ToList();
+            }
+            catch (Exception e)
+            {
+                Assert.Fail("Exception thrown: " + e.Message);
+            }
+        }
+
+        [Test()]
 
         public void ShouldListInfluencesInCorrectOrder()
         {
