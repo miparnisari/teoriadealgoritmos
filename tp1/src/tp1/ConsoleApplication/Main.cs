@@ -22,7 +22,7 @@ namespace ConsoleApplication
             System.Console.ReadKey();
 
             // Punto 2
-            foreach (var influence in graph.Influences().OrderByDescending())
+            foreach (var influence in graph.GetInfluences().OrderByDescending())
             {
                 System.Console.WriteLine(influence.Node.Data.Name + " -" + influence.Value);
             }
@@ -30,7 +30,7 @@ namespace ConsoleApplication
             System.Console.ReadKey();
 
             // Punto 3
-            foreach (var r in graph.Recommendations())
+            foreach (var r in graph.GetRecommendations().Recommendations)
             {
                 System.Console.WriteLine(r.Person.Data.Name + " => " + r.PersonToRecommend.Data.Name + " [" + r.FriendCount + "]");
             }

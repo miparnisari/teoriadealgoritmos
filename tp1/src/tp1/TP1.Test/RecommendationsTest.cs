@@ -23,10 +23,10 @@ namespace TP1.Test
             // act
             var builder = new GraphBuilder(new StringGraphReader(fileContent));
             var graph = builder.Build();
-            var recommendations = graph.Recommendations();
+            var recommendations = graph.GetRecommendations();
 
             // assert
-            Assert.AreEqual(0, recommendations.Count());
+            Assert.AreEqual(0, recommendations.Recommendations.Count);
         }
 
         [Test()]
@@ -69,8 +69,8 @@ namespace TP1.Test
             var g = builder.Build();
 
             // act
-            var recommendations = g.Recommendations();
-            var recommendationsForCarlos = recommendations.FirstOrDefault(r => r.Person.Data.Name == "Carlos");
+            var recommendations = g.GetRecommendations();
+            var recommendationsForCarlos = recommendations.Recommendations.FirstOrDefault(r => r.Person.Data.Name == "Carlos");
 
             // assert
             Assert.AreEqual("Milena", recommendationsForCarlos.PersonToRecommend.Data.Name);

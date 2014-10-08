@@ -10,7 +10,7 @@ namespace TP1.Test
     public class InfluencesTest
     {
         [Test()]
-        public void ShouldListInfluences_WhenRealDataIsUsed()
+        public void ShouldListInfluences_With250nodesInGraph()
         {
             try
             {
@@ -19,7 +19,7 @@ namespace TP1.Test
                 var graph = builder.Build();
 
                 // act
-                var influences = graph.Influences().OrderByDescending().ToList();
+                var influences = graph.GetInfluences().OrderByDescending().ToList();
             }
             catch (Exception e)
             {
@@ -28,15 +28,14 @@ namespace TP1.Test
         }
 
         [Test()]
-
-        public void ShouldListInfluencesInCorrectOrder()
+        public void ShouldListInfluences_With11Nodes()
         {
             // arrange
             var builder = new GraphBuilder(new GraphReader.GraphReader(@"Input\test.txt"));
             var graph = builder.Build();
 
             // act
-            var influences = graph.Influences().OrderByDescending().ToList();
+            var influences = graph.GetInfluences().OrderByDescending().ToList();
 
             // assert
             string[] expectedInfluencesNames =

@@ -8,11 +8,12 @@ namespace TP1.Recommendations
 {
     public static class RecommendationsExtension
     {
-        public static IEnumerable<Recommendation<TData, TId>> Recommendations<TData, TId>(this Graph<TData, TId> graph)
+        public static RecommendationsCollection<TData, TId> GetRecommendations<TData, TId>(this Graph<TData, TId> graph)
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
-            var recommendations = new List<Recommendation<TData, TId>>();
+            var recommendations = new RecommendationsCollection<TData, TId>();
+
             foreach (var node in graph.Nodes)
             {
                 Recommendation<TData, TId> recommendation = new Recommendation<TData, TId> { Person = node };
@@ -34,13 +35,9 @@ namespace TP1.Recommendations
                     }
                 }
 
-                if (recommendation.PersonToRecommend != null)
-                {
-                    recommendations.Add(recommendation);
-                }
+                recommendations.Add(recommendation);
             }
             return recommendations;
         }
     }
 }
-

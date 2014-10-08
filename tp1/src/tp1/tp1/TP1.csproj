@@ -45,6 +45,7 @@
     <Compile Include="Influences\ShortestPathsCollection.cs" />
     <Compile Include="Influences\ShortestPathsExtension.cs" />
     <Compile Include="Recommendations\Recommendation.cs" />
+    <Compile Include="Recommendations\RecommendationsCollection.cs" />
     <Compile Include="Sort\GraphSortExtension.cs" />
     <Compile Include="FacebookGraph.cs" />
     <Compile Include="FacebookUser.cs" />

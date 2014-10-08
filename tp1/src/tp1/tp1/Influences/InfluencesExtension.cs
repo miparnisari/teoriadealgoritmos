@@ -6,7 +6,7 @@ namespace TP1.Influences
 {
     public static class InfluencesExtension
     {
-        public static InfluencesCollection<TData, TId> Influences<TData, TId>(this Graph<TData, TId> graph)
+        public static InfluencesCollection<TData, TId> GetInfluences<TData, TId>(this Graph<TData, TId> graph)
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
