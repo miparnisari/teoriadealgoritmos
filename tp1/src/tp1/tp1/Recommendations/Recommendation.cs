@@ -1,7 +1,7 @@
 ﻿using System;
 using TP1.Graph;
 
-namespace tp1.Recommendations
+namespace TP1.Recommendations
 {
     public class Recommendation<TData, TId>
         where TData : IIdentifiable<TId>

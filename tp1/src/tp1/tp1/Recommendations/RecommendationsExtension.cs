@@ -1,8 +1,6 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using TP1.Graph;
-using tp1.Recommendations;
 
 namespace TP1.Recommendations
 {

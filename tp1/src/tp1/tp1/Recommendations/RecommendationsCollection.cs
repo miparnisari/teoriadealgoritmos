@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using TP1.Graph;
 
-namespace tp1.Recommendations
+namespace TP1.Recommendations
 {
     public class RecommendationsCollection<TData, TId> : IEnumerable
         where TData : IIdentifiable<TId>
