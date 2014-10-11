@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using tp1;
 using TP1.Graph;
 
 namespace TP1.Influences
@@ -19,60 +20,58 @@ namespace TP1.Influences
             where TId : IComparable
         {
             // stores the shortest distance to each node, from "source"
-            var distanceTo = new Dictionary<Node<TData, TId>, long>();
+            var distanceTo = new Dictionary<TId, long>();
 
-            var unvisitedNodes = new HashSet<Node<TData, TId>>(); //TODO improve with min-priority queue
+            // stores each unvisited node, with its distance to the source
+            var unvisitedNodes = new MinPriorityQueue<TId, long>(graph.Count);
 
             // stores the node(s) used to reach a given node 
             // since we are finding *all* the shortest paths, we store them all, not just one
-            var previous = new Dictionary<TId, List<Node<TData, TId>>>();
+            var previous = new Dictionary<TId, HashSet<Node<TData, TId>>>();
 
-            distanceTo[source] = 0;
+            distanceTo[source.Id] = 0;
 
             foreach (var node in graph.Nodes)
             {
+                const long infinity = Int64.MaxValue - 1;
                 if (!node.Equals(source))
                 {
-                    distanceTo[node] = Int64.MaxValue - 1;
-                    previous[node.Id] = new List<Node<TData, TId>>();
+                    distanceTo[node.Id] = infinity;
+                    previous[node.Id] = new HashSet<Node<TData, TId>>();
                 }
-                unvisitedNodes.Add(node);
+                unvisitedNodes.InsertWithPriority(node.Id, distanceTo[node.Id]);
             }
 
-            while (unvisitedNodes.Any())
+            while (unvisitedNodes.ContainsElements())
             {
                 // Select node with minimum distance from source
-                var visitedNode = distanceTo
-                    .OrderBy(i => i.Value)
-                    .First(n => unvisitedNodes.Contains(n.Key))
-                    .Key;
+                var visitedNodeId = unvisitedNodes.Remove().data;
 
-                unvisitedNodes.Remove(visitedNode);
-
-                foreach (var adjacent in visitedNode.Adjacents)
+                foreach (var adjacent in graph[visitedNodeId].Adjacents)
                 {
-                    var currentDistance = distanceTo[visitedNode] + 1;
+                    var currentDistance = distanceTo[visitedNodeId] + 1;
 
-                    if (currentDistance <= distanceTo[adjacent.Value])
+                    if (currentDistance <= distanceTo[adjacent.Key])
                     {
                         // A shorter or equally short path has been found!
-                        distanceTo[adjacent.Value] = currentDistance;
-                        previous[adjacent.Value.Id].Add(visitedNode);
+                        distanceTo[adjacent.Key] = currentDistance;
+                        previous[adjacent.Value.Id].Add(graph[visitedNodeId]);
+                        unvisitedNodes.DecreasePriority(adjacent.Key, currentDistance);
                     }
                 }
             }
 
             // reconstruct the paths to each target
             var result = new ShortestPathsCollection<TData, TId>();
-            foreach (var target in graph.Nodes.Except(new[] {source}))
+            foreach (var target in graph.Nodes.Except(new[] { source }))
             {
-              result.AddPaths(FindParents(previous, target));  
+                result.AddPaths(FindParents(previous, target));
             }
             return result;
         }
 
         private static ShortestPathsCollection<TData, TId> FindParents<TData, TId>
-             (Dictionary<TId, List<Node<TData, TId>>> parent,
+             (Dictionary<TId, HashSet<Node<TData, TId>>> parent,
              Node<TData, TId> index)
             where TData : IIdentifiable<TId>
             where TId : IComparable
@@ -84,7 +83,7 @@ namespace TP1.Influences
         }
 
         private static void FindParentsRecursive<TData, TId>
-            (Dictionary<TId, List<Node<TData, TId>>> parent,
+            (Dictionary<TId, HashSet<Node<TData, TId>>> parent,
             Node<TData, TId> index,
             ShortestPath<TData, TId> prefix,
             ShortestPathsCollection<TData, TId> results)
@@ -100,7 +99,10 @@ namespace TP1.Influences
                 results.Paths.Add(newShortestPath);
                 return;
             }
-            parent[index.Id].ForEach(i => FindParentsRecursive(parent, i, newShortestPath, results));
+            foreach (var previous in parent[index.Id])
+            {
+                FindParentsRecursive(parent, previous, newShortestPath, results);
+            }
         }
     }
 }

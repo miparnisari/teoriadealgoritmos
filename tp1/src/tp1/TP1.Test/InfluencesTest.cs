@@ -10,6 +10,7 @@ namespace TP1.Test
     public class InfluencesTest
     {
         [Test()]
+        [Ignore]
         public void ShouldListInfluences_With250nodesInGraph()
         {
             try
@@ -20,6 +21,7 @@ namespace TP1.Test
 
                 // act
                 var influences = graph.GetInfluences().OrderByDescending().ToList();
+
             }
             catch (Exception e)
             {

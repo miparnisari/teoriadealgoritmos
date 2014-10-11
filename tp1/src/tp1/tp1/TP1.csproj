@@ -38,12 +38,14 @@
     <Compile Include="Graph\Node.cs" />
     <Compile Include="Graph\IIdentifiable.cs" />
     <Compile Include="Graph\Graph.cs" />
+    <Compile Include="MinHeap.cs" />
     <Compile Include="Influences\Influence.cs" />
     <Compile Include="Influences\InfluencesCollection.cs" />
     <Compile Include="Influences\InfluencesExtension.cs" />
     <Compile Include="Influences\ShortestPath.cs" />
     <Compile Include="Influences\ShortestPathsCollection.cs" />
     <Compile Include="Influences\ShortestPathsExtension.cs" />
+    <Compile Include="MinPriorityQueue.cs" />
     <Compile Include="Recommendations\Recommendation.cs" />
     <Compile Include="Recommendations\RecommendationsCollection.cs" />
     <Compile Include="Sort\GraphSortExtension.cs" />

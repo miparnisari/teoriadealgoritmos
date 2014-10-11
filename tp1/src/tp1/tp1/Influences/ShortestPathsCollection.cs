@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TP1.Graph;
 
 namespace TP1.Influences
 {
-    public class ShortestPathsCollection<TData, TId>
+    public class ShortestPathsCollection<TData, TId> : IEnumerable
         where TData : IIdentifiable<TId>
         where TId : IComparable
     {
@@ -33,6 +34,11 @@ namespace TP1.Influences
         public void AddPaths(ShortestPathsCollection<TData, TId> paths)
         {
             this.Paths.AddRange(paths.Paths);
+        }
+
+        public IEnumerator GetEnumerator()
+        {
+            return this.Paths.GetEnumerator();
         }
     }
 }
