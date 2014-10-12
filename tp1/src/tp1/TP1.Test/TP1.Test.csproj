@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GraphTest.cs" />
+    <Compile Include="HeapTest.cs" />
     <Compile Include="ShortestPathsTest.cs" />
     <Compile Include="InfluencesTest.cs" />
     <Compile Include="StringGraphReader.cs" />

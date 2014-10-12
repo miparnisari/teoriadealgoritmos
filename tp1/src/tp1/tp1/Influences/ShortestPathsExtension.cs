@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
-using tp1;
 using TP1.Graph;
 
 namespace TP1.Influences
@@ -33,7 +31,7 @@ namespace TP1.Influences
 
             foreach (var node in graph.Nodes)
             {
-                const long infinity = Int64.MaxValue - 1;
+                const long infinity = int.MaxValue - 1;
                 if (!node.Equals(source))
                 {
                     distanceTo[node.Id] = infinity;

@@ -36,9 +36,9 @@ namespace TP1.Influences
 
         public bool PassesThrough(Node<TData, TId> node)
         {
-            return this.Path.Contains(node)
-                && !this.Path.First().Equals(node)
-                && !this.Path.Last().Equals(node);
+            return !this.StartNode.Equals(node)
+                && !this.EndNode.Equals(node)
+                && this.Path.Contains(node);
         }
 
         public override string ToString()

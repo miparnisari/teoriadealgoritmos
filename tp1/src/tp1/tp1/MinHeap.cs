@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Security.Policy;
 
-namespace tp1
+namespace TP1
 {
     /// <summary>
     /// Heap in which the root priority is smaller than all of its children.
@@ -12,13 +11,13 @@ namespace tp1
         where TData : IComparable
     {
         [DebuggerDisplay("Data: {data}, Priority: {priority}")]
-        public struct Node
+        public class Node
         {
             public TData data;
             public TPriority priority;
         }
 
-        private Node[] Array;
+        private readonly Node[] Array;
 
         public int Size { get; private set; }
 
@@ -39,52 +38,55 @@ namespace tp1
             this.Size++;
         }
 
-        public void DecreasePriority(TData data, TPriority newPriority)
+        public void IncreasePriority(TData data, TPriority newPriority)
         {
-            int pos = 0;
-
             // look for the element
             for (int i = 0; i < this.Size; i++)
             {
                 if (this.Array[i].data.Equals(data))
                 {
-                    pos = i;        
+                    // set its new priority
+                    this.Array[i].priority = newPriority;
+
+                    // move it up the heap
+                    this.UpHeap(i);
+
                     return;
                 }
             }
-
-            // set its new priority
-            this.Array[pos].priority = newPriority;
-
-            // move it up the heap
-            this.UpHeap(pos);
         }
 
         public Node Remove()
         {
-            if (this.Size == 0)
-            {
-                throw new Exception("No more elements");
-            }
-
             // return the top of the array
-            var result = this.Array[0];
+            var removedNode = this.Peek();
 
             // swap it with the last element
-            this.Swap(0, this.Size - 1);
+            this.Swap(0, this.Size  - 1);
+
+            // remove the last element
+            this.Array[this.Size - 1] = null;
+            this.Size--;
 
             // move the new root downwards to maintain the heap invariant
             this.DownHeap(0);
 
-            this.Size--;
+            return removedNode;
+        }
 
-            return result;
+        public Node Peek()
+        {
+            if (this.Size == 0)
+            {
+                throw new Exception("No elements");
+            }
+            return this.Array[0];
         }
 
         private void DownHeap(int pos)
         {
-            int left = 2 * pos;
-            int right = 2 * pos + 1;
+            int left = 2 * pos + 1;
+            int right = 2 * pos + 2;
             int smallest = pos;
 
             if (left < this.Size && (this.Array[left].priority.CompareTo(this.Array[smallest].priority) == -1))

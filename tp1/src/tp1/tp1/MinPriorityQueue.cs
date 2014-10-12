@@ -1,13 +1,12 @@
 ﻿using System;
-using System.Diagnostics;
 
-namespace tp1
+namespace TP1
 {
     public class MinPriorityQueue<TData, TPriority>
         where TData : IComparable
         where TPriority : IComparable
     {
-        private MinHeap<TData, TPriority> heap;
+        private readonly MinHeap<TData, TPriority> heap;
 
         public MinPriorityQueue(int size)
         {
@@ -32,13 +31,12 @@ namespace tp1
 
         public void DecreasePriority(TData data, TPriority newPriority)
         {
-            this.heap.DecreasePriority(data, newPriority);
+            this.heap.IncreasePriority(data, newPriority);
         }
 
         public bool ContainsElements()
         {
             return this.heap.Size > 0;
         }
-
     }
 }

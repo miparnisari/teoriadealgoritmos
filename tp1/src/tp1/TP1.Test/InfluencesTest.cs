@@ -10,27 +10,21 @@ namespace TP1.Test
     public class InfluencesTest
     {
         [Test()]
-        [Ignore]
-        public void ShouldListInfluences_With250nodesInGraph()
+        public void ShouldList231Influences_With231nodesInGraph()
         {
-            try
-            {
-                // arrange
-                var builder = new GraphBuilder(new GraphReader.GraphReader(@"Input\realdata.txt"));
-                var graph = builder.Build();
+            // arrange
+            var builder = new GraphBuilder(new GraphReader.GraphReader(@"Input\realdata.txt"));
+            var graph = builder.Build();
 
-                // act
-                var influences = graph.GetInfluences().OrderByDescending().ToList();
+            // act
+            var influences = graph.GetInfluences().OrderByDescending();
 
-            }
-            catch (Exception e)
-            {
-                Assert.Fail("Exception thrown: " + e.Message);
-            }
+            // assert
+            Assert.AreEqual(231, influences.Count());
         }
 
         [Test()]
-        public void ShouldListInfluences_With11Nodes()
+        public void ShouldList11Influences_With11NodesInGraph()
         {
             // arrange
             var builder = new GraphBuilder(new GraphReader.GraphReader(@"Input\test.txt"));

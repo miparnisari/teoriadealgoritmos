@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using System.Security.Cryptography;
 using TP1.GraphReader;
 using NUnit.Framework;
 using TP1.Influences;
@@ -22,6 +21,20 @@ namespace TP1.Test
 
             // assert
             Assert.AreEqual(14, paths.Count);
+        }
+
+        [Test()]
+        public void ShouldGet12ShortestPaths_WhenSourceIdIsSix()
+        {
+            // arrange
+            var builder = new GraphBuilder(new GraphReader.GraphReader(@"Input\test.txt"));
+            var graph = builder.Build();
+
+            // act
+            var paths = graph.GetShortestPathsWithDijkstra(graph[6]);
+
+            // assert
+            Assert.AreEqual(12, paths.Count);
         }
 
         [Test()]
