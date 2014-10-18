@@ -79,8 +79,6 @@ namespace TP1.Graph
 			}
 		}
 
-	    public bool Visited { get; set; }
-
 	    public override bool Equals(object obj)
 	    {
 	        var otherNode = obj as Node<TData, TId>;

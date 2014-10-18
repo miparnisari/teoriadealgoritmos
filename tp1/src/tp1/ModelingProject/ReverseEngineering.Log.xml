@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2014-10-18T19:51:49" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: '231c3214-46be-4a15-ac09-21c0b5a760ce' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: '32ea3bb8-bed8-405d-ad09-67bfe325f6c4' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: '4fe63758-ea0a-427d-938e-594e25abef51' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'a3176afe-69e6-455b-a5f9-3a130a9c9eb8' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'cfb95df2-fc8c-4481-b00e-3530fcde18f6' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ef8ddca6-3d13-4077-a7c2-eda14c706ed0' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::TP1' -  (Package)" />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::TP1::Graph' -  (Package)" />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::TP1::Graph::Graph' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::TP1::Graph::Graph&lt;TData‎, TId‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::TP1::Influences' -  (Package)" />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::TP1::Influences::InfluencesCollection' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::TP1::Influences::InfluencesCollection&lt;TData‎, TId‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject::TP1::Influences::InfluencesExtension' -  (Class)" />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::TP1::Influences::InfluencesExtension::GetInfluences‎&lt;TData‎, TId‎&gt;' -  (Operation)" />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::TP1::Influences::InfluencesExtension::GetInfluences‎&lt;TData‎, TId‎&gt;::graph' -  (Parameter)" />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::TP1::Influences::InfluencesExtension::GetTotalShortestPaths‎&lt;TData‎, TId‎&gt;' -  (Operation)" />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::TP1::Influences::InfluencesExtension::GetTotalShortestPaths‎&lt;TData‎, TId‎&gt;::graph' -  (Parameter)" />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::TP1::Influences::ShortestPathsCollection' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::TP1::Influences::ShortestPathsCollection&lt;TData‎, TId‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'TData' -  (UndefinedType)" />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'TId' -  (UndefinedType)" />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject::TP1::FacebookGraph to ModelingProject::TP1::Graph::Graph&lt;TData‎, TId‎&gt; (Generalization)" />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject::TP1::FacebookGraph to ModelingProject::TP1::Graph::Graph (Generalization)" />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject::TP1::FacebookGraph to ModelingProject::TP1::Graph::Graph&lt;TData‎, TId‎&gt; (Generalization)" />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="High" Text="(6) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2014-10-18T19:51:51" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>
