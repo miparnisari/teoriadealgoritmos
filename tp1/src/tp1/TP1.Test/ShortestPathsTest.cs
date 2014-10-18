@@ -45,16 +45,7 @@ namespace TP1.Test
             var graph = builder.Build();
 
             // act
-            int sum = 0;
-            foreach (var node in graph.Nodes)
-            {
-                var paths = graph.GetShortestPathsWithDijkstra(node);
-                foreach (var path in paths)
-                {
-                    Console.WriteLine(path);
-                }
-                sum += paths.Count;
-            }
+            int sum = graph.Nodes.Select(graph.GetShortestPathsWithDijkstra).Select(paths => paths.Count).Sum();
 
             // assert
             Assert.AreEqual(132, sum);

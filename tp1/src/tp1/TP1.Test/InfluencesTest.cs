@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using TP1.GraphReader;
 using NUnit.Framework;
 using TP1.Influences;

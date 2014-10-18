@@ -31,7 +31,7 @@ namespace TP1.Influences
 
             foreach (var node in graph.Nodes)
             {
-                const long infinity = int.MaxValue - 1;
+                const long infinity = long.MaxValue - 1;
                 if (!node.Equals(source))
                 {
                     distanceTo[node.Id] = infinity;

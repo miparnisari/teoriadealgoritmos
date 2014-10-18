@@ -11,7 +11,7 @@ namespace TP1.Influences
     {
         public InfluencesCollection()
         {
-            this.Values = new List<Influence<TData, TId>>(); //TODO replace with max-heap (max at the top)
+            this.Values = new List<Influence<TData, TId>>();
         }
 
         public List<Influence<TData, TId>> Values { get; set; }

@@ -73,6 +73,7 @@ namespace TP1.Test
             var recommendationsForCarlos = recommendations.Recommendations.FirstOrDefault(r => r.Person.Data.Name == "Carlos");
 
             // assert
+            Assert.IsNotNull(recommendationsForCarlos);
             Assert.AreEqual("Milena", recommendationsForCarlos.PersonToRecommend.Data.Name);
             Assert.AreEqual(2, recommendationsForCarlos.FriendCount);
         }
