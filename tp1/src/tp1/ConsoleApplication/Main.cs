@@ -1,4 +1,5 @@
 using System.Configuration;
+using System.Diagnostics;
 using TP1.Influences;
 using TP1.Sort;
 using TP1.Recommendations;
@@ -10,6 +11,8 @@ namespace ConsoleApplication
     {
         public static void Main()
         {
+            var stopwatch = new Stopwatch();
+            stopwatch.Start();
             var logger = new Logger(ConfigurationManager.AppSettings["logFileName"]);
             try
             {
@@ -28,7 +31,7 @@ namespace ConsoleApplication
                 logger.Log("INFLUENCIAS:");
                 foreach (var influence in graph.GetInfluences().OrderByDescending())
                 {
-                    logger.Log(influence.Node.Data.Name + " -" + influence.Value);
+                    logger.Log(influence.Node.Data.Name + " [" + influence.Value + "]");
                 }
 
                 // Punto 3
@@ -44,6 +47,8 @@ namespace ConsoleApplication
             }
             finally
             {
+                stopwatch.Stop();
+                logger.Log("Tiempo de ejecucion total (en segundos): " + stopwatch.Elapsed.TotalSeconds);
                 logger.Dispose();
                 System.Console.Write("Presione una tecla para finalizar...");
                 System.Console.ReadLine();
