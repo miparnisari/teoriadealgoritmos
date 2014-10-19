@@ -23,7 +23,6 @@ TP1_TEST_DLL_MDB=$(BUILD_DIR)/TP1.Test.dll.mdb
 REALDATA_TXT_SOURCE=Input/realdata.txt
 TEST_TXT_SOURCE=Input/test.txt
 TP1_DLL_SOURCE=../TP1/bin/Debug/tp1.dll
-TP1_DLL_MDB_SOURCE=../TP1/bin/Debug/tp1.dll.mdb
 
 endif
 
@@ -42,7 +41,6 @@ TP1_TEST_DLL_MDB=$(BUILD_DIR)/TP1.Test.dll.mdb
 REALDATA_TXT_SOURCE=Input/realdata.txt
 TEST_TXT_SOURCE=Input/test.txt
 TP1_DLL_SOURCE=../TP1/bin/Debug/tp1.dll
-TP1_DLL_MDB_SOURCE=../TP1/bin/Debug/tp1.dll.mdb
 
 endif
 
@@ -61,7 +59,6 @@ TP1_TEST_DLL_MDB=$(BUILD_DIR)/TP1.Test.dll.mdb
 REALDATA_TXT_SOURCE=Input/realdata.txt
 TEST_TXT_SOURCE=Input/test.txt
 TP1_DLL_SOURCE=../TP1/bin/Debug/tp1.dll
-TP1_DLL_MDB_SOURCE=../TP1/bin/Debug/tp1.dll.mdb
 
 endif
 
@@ -79,7 +76,6 @@ TP1_TEST_DLL_MDB=
 REALDATA_TXT_SOURCE=Input/realdata.txt
 TEST_TXT_SOURCE=Input/test.txt
 TP1_DLL_SOURCE=../TP1/bin/Debug/tp1.dll
-TP1_DLL_MDB_SOURCE=../TP1/bin/Debug/tp1.dll.mdb
 
 endif
 
@@ -97,7 +93,6 @@ TP1_TEST_DLL_MDB=
 REALDATA_TXT_SOURCE=Input/realdata.txt
 TEST_TXT_SOURCE=Input/test.txt
 TP1_DLL_SOURCE=../TP1/bin/Debug/tp1.dll
-TP1_DLL_MDB_SOURCE=../TP1/bin/Debug/tp1.dll.mdb
 
 endif
 
@@ -115,7 +110,6 @@ TP1_TEST_DLL_MDB=
 REALDATA_TXT_SOURCE=Input/realdata.txt
 TEST_TXT_SOURCE=Input/test.txt
 TP1_DLL_SOURCE=../TP1/bin/Debug/tp1.dll
-TP1_DLL_MDB_SOURCE=../TP1/bin/Debug/tp1.dll.mdb
 
 endif
 
@@ -124,8 +118,7 @@ SATELLITE_ASSEMBLY_NAME=$(notdir $(basename $(ASSEMBLY))).resources.dll
 
 PROGRAMFILES = \
 	$(TP1_TEST_DLL_MDB) \
-	$(TP1_DLL) \
-	$(TP1_DLL_MDB)  
+	$(TP1_DLL)  
 
 PROGRAMFILES_INPUT = \
 	$(REALDATA_TXT) \
@@ -140,7 +133,6 @@ RESGEN=resgen2
 REALDATA_TXT = $(BUILD_DIR)/Input/realdata.txt
 TEST_TXT = $(BUILD_DIR)/Input/test.txt
 TP1_DLL = $(BUILD_DIR)/tp1.dll
-TP1_DLL_MDB = $(BUILD_DIR)/tp1.dll.mdb
 TP1_TEST_PC = $(BUILD_DIR)/tp1.test.pc
 
 FILES = \
@@ -163,7 +155,9 @@ EXTRAS = \
 
 REFERENCES =  \
 	-pkg:mono-nunit \
-	System
+	System \
+	System.Data.Linq \
+	System.Core
 
 DLL_REFERENCES = 
 
@@ -180,7 +174,6 @@ include $(top_srcdir)/Makefile.include
 $(eval $(call emit-deploy-target,REALDATA_TXT))
 $(eval $(call emit-deploy-target,TEST_TXT))
 $(eval $(call emit-deploy-target,TP1_DLL))
-$(eval $(call emit-deploy-target,TP1_DLL_MDB))
 $(eval $(call emit-deploy-wrapper,TP1_TEST_PC,tp1.test.pc))
 
 
@@ -209,7 +202,6 @@ install-local: $(ASSEMBLY) $(ASSEMBLY_MDB)
 	$(call cp,$(REALDATA_TXT),$(DESTDIR)$(libdir)/$(PACKAGE)/Input)
 	$(call cp,$(TEST_TXT),$(DESTDIR)$(libdir)/$(PACKAGE)/Input)
 	$(call cp,$(TP1_DLL),$(DESTDIR)$(libdir)/$(PACKAGE))
-	$(call cp,$(TP1_DLL_MDB),$(DESTDIR)$(libdir)/$(PACKAGE))
 	mkdir -p '$(DESTDIR)$(libdir)/pkgconfig'
 	$(call cp,$(TP1_TEST_PC),$(DESTDIR)$(libdir)/pkgconfig)
 	make post-install-local-hook prefix=$(prefix)
@@ -223,7 +215,6 @@ uninstall-local: $(ASSEMBLY) $(ASSEMBLY_MDB)
 	$(call rm,$(REALDATA_TXT),$(DESTDIR)$(libdir)/$(PACKAGE)/Input)
 	$(call rm,$(TEST_TXT),$(DESTDIR)$(libdir)/$(PACKAGE)/Input)
 	$(call rm,$(TP1_DLL),$(DESTDIR)$(libdir)/$(PACKAGE))
-	$(call rm,$(TP1_DLL_MDB),$(DESTDIR)$(libdir)/$(PACKAGE))
 	$(call rm,$(TP1_TEST_PC),$(DESTDIR)$(libdir)/pkgconfig)
 	make post-uninstall-local-hook prefix=$(prefix)
 

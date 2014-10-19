@@ -22,8 +22,6 @@ CONSOLEAPPLICATION_EXE_MDB_SOURCE=bin/Debug/ConsoleApplication.exe.mdb
 CONSOLEAPPLICATION_EXE_MDB=$(BUILD_DIR)/ConsoleApplication.exe.mdb
 CONSOLEAPPLICATION_EXE_CONFIG_SOURCE=App.config
 TP1_DLL_SOURCE=../TP1/bin/Debug/tp1.dll
-TP1_DLL_MDB_SOURCE=../TP1/bin/Debug/tp1.dll.mdb
-TP1_DLL_MDB=$(BUILD_DIR)/tp1.dll.mdb
 
 endif
 
@@ -41,8 +39,6 @@ CONSOLEAPPLICATION_EXE_MDB_SOURCE=bin/Debug/ConsoleApplication.exe.mdb
 CONSOLEAPPLICATION_EXE_MDB=$(BUILD_DIR)/ConsoleApplication.exe.mdb
 CONSOLEAPPLICATION_EXE_CONFIG_SOURCE=App.config
 TP1_DLL_SOURCE=../TP1/bin/Debug/tp1.dll
-TP1_DLL_MDB_SOURCE=../TP1/bin/Debug/tp1.dll.mdb
-TP1_DLL_MDB=$(BUILD_DIR)/tp1.dll.mdb
 
 endif
 
@@ -60,8 +56,6 @@ CONSOLEAPPLICATION_EXE_MDB_SOURCE=bin/Debug/ConsoleApplication.exe.mdb
 CONSOLEAPPLICATION_EXE_MDB=$(BUILD_DIR)/ConsoleApplication.exe.mdb
 CONSOLEAPPLICATION_EXE_CONFIG_SOURCE=App.config
 TP1_DLL_SOURCE=../TP1/bin/Debug/tp1.dll
-TP1_DLL_MDB_SOURCE=../TP1/bin/Debug/tp1.dll.mdb
-TP1_DLL_MDB=$(BUILD_DIR)/tp1.dll.mdb
 
 endif
 
@@ -78,7 +72,6 @@ BUILD_DIR = bin/Release
 CONSOLEAPPLICATION_EXE_MDB=
 CONSOLEAPPLICATION_EXE_CONFIG_SOURCE=App.config
 TP1_DLL_SOURCE=../TP1/bin/Release/tp1.dll
-TP1_DLL_MDB=
 
 endif
 
@@ -95,7 +88,6 @@ BUILD_DIR = bin/Release
 CONSOLEAPPLICATION_EXE_MDB=
 CONSOLEAPPLICATION_EXE_CONFIG_SOURCE=App.config
 TP1_DLL_SOURCE=../TP1/bin/Release/tp1.dll
-TP1_DLL_MDB=
 
 endif
 
@@ -112,7 +104,6 @@ BUILD_DIR = bin/Release
 CONSOLEAPPLICATION_EXE_MDB=
 CONSOLEAPPLICATION_EXE_CONFIG_SOURCE=App.config
 TP1_DLL_SOURCE=../TP1/bin/Release/tp1.dll
-TP1_DLL_MDB=
 
 endif
 
@@ -122,8 +113,7 @@ SATELLITE_ASSEMBLY_NAME=$(notdir $(basename $(ASSEMBLY))).resources.dll
 PROGRAMFILES = \
 	$(CONSOLEAPPLICATION_EXE_MDB) \
 	$(CONSOLEAPPLICATION_EXE_CONFIG) \
-	$(TP1_DLL) \
-	$(TP1_DLL_MDB)  
+	$(TP1_DLL)  
 
 BINARIES = \
 	$(CONSOLEAPPLICATION)  
@@ -168,7 +158,6 @@ include $(top_srcdir)/Makefile.include
 
 $(eval $(call emit-deploy-target,CONSOLEAPPLICATION_EXE_CONFIG))
 $(eval $(call emit-deploy-target,TP1_DLL))
-$(eval $(call emit-deploy-target,TP1_DLL_MDB))
 $(eval $(call emit-deploy-wrapper,CONSOLEAPPLICATION,consoleapplication,x))
 
 
@@ -195,7 +184,6 @@ install-local: $(ASSEMBLY) $(ASSEMBLY_MDB)
 	$(call cp,$(CONSOLEAPPLICATION_EXE_MDB),$(DESTDIR)$(libdir)/$(PACKAGE))
 	$(call cp,$(CONSOLEAPPLICATION_EXE_CONFIG),$(DESTDIR)$(libdir)/$(PACKAGE))
 	$(call cp,$(TP1_DLL),$(DESTDIR)$(libdir)/$(PACKAGE))
-	$(call cp,$(TP1_DLL_MDB),$(DESTDIR)$(libdir)/$(PACKAGE))
 	mkdir -p '$(DESTDIR)$(bindir)'
 	$(call cp,$(CONSOLEAPPLICATION),$(DESTDIR)$(bindir))
 	make post-install-local-hook prefix=$(prefix)
@@ -208,7 +196,6 @@ uninstall-local: $(ASSEMBLY) $(ASSEMBLY_MDB)
 	$(call rm,$(CONSOLEAPPLICATION_EXE_MDB),$(DESTDIR)$(libdir)/$(PACKAGE))
 	$(call rm,$(CONSOLEAPPLICATION_EXE_CONFIG),$(DESTDIR)$(libdir)/$(PACKAGE))
 	$(call rm,$(TP1_DLL),$(DESTDIR)$(libdir)/$(PACKAGE))
-	$(call rm,$(TP1_DLL_MDB),$(DESTDIR)$(libdir)/$(PACKAGE))
 	$(call rm,$(CONSOLEAPPLICATION),$(DESTDIR)$(bindir))
 	make post-uninstall-local-hook prefix=$(prefix)
 

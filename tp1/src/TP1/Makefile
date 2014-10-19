@@ -135,7 +135,8 @@ EXTRAS = \
 
 REFERENCES =  \
 	System \
-	System.Configuration
+	System.Configuration \
+	System.Core
 
 DLL_REFERENCES = 
 
