@@ -1,15 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
-MinimumVisualStudioVersion = 10.0.40219.1
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP1", "TP1\TP1.csproj", "{CC0BBF6C-91EE-4C2E-8C67-F443BA4204E3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication", "ConsoleApplication\ConsoleApplication.csproj", "{506750AF-60BD-4B96-A8F3-DCC6D5034290}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP1.Test", "TP1.Test\TP1.Test.csproj", "{6FA45428-91F4-48A1-8C71-19D9E2D73E42}"
-EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingProject", "ModelingProject\ModelingProject.modelproj", "{6CDCC49C-DBBF-4C6B-9B5A-42988189B66F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,16 +49,6 @@ Global
 		{6FA45428-91F4-48A1-8C71-19D9E2D73E42}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{6FA45428-91F4-48A1-8C71-19D9E2D73E42}.Release|x86.ActiveCfg = Release|Any CPU
 		{6FA45428-91F4-48A1-8C71-19D9E2D73E42}.Release|x86.Build.0 = Release|Any CPU
-		{6CDCC49C-DBBF-4C6B-9B5A-42988189B66F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6CDCC49C-DBBF-4C6B-9B5A-42988189B66F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6CDCC49C-DBBF-4C6B-9B5A-42988189B66F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{6CDCC49C-DBBF-4C6B-9B5A-42988189B66F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{6CDCC49C-DBBF-4C6B-9B5A-42988189B66F}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{6CDCC49C-DBBF-4C6B-9B5A-42988189B66F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6CDCC49C-DBBF-4C6B-9B5A-42988189B66F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6CDCC49C-DBBF-4C6B-9B5A-42988189B66F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{6CDCC49C-DBBF-4C6B-9B5A-42988189B66F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{6CDCC49C-DBBF-4C6B-9B5A-42988189B66F}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

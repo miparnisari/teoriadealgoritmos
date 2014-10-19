@@ -44,10 +44,6 @@
       <HintPath>..\packages\NUnitTestAdapter.1.2\lib\nunit.util.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="NUnit.VisualStudio.TestAdapter">
-      <HintPath>..\packages\NUnitTestAdapter.1.2\lib\NUnit.VisualStudio.TestAdapter.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
