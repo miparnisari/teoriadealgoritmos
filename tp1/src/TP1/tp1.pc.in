@@ -1,0 +1,6 @@
+Name: TP1
+Description: TP1
+Version: 0.1
+
+Requires: 
+Libs: -r:@expanded_libdir@/@PACKAGE@/tp1.dll

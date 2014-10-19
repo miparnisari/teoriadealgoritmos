@@ -1,6 +1,7 @@
 #!/bin/bash
 VERSION=0.1
 PACKAGE=tp1
+prefix=/usr/local
 config=RELEASE
 configurations=" DEBUG DEBUG_MIXED_PLATFORMS DEBUG_X86 RELEASE RELEASE_MIXED_PLATFORMS RELEASE_X86"
 common_packages=" mono-nunit;2.5.10.11092"

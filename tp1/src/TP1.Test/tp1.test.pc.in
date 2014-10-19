@@ -1,0 +1,6 @@
+Name: TP1.Test
+Description: TP1.Test
+Version: 0.1
+
+Requires: 
+Libs: -r:@expanded_libdir@/@PACKAGE@/TP1.Test.dll

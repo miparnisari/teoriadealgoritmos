@@ -1,9 +1,9 @@
-prefix=/usr/local
-libdir=/usr/local/lib
-bindir=/usr/local/bin
-datadir=/usr/local/share
+prefix=
+libdir=
+bindir=
+datadir=
 RUNTIME=mono
-ASSEMBLY_VERSION=0.1.0.0
-VERSION=0.1
+ASSEMBLY_VERSION=1.0.0.0
+VERSION=1.0
 PACKAGE=tp1
 CONFIG=RELEASE
