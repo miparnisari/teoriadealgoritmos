@@ -10,31 +10,28 @@ namespace TP1.Graph
 		where TData : IIdentifiable<TId> 
 		where TId: IComparable
 	{
-		private readonly IDictionary<TId, Node<TData, TId>> adjacentNodes = new Dictionary<TId, Node<TData, TId>>();
+	    private const int InitialCapacity = 1000;
+	    private readonly IDictionary<TId, Node<TData, TId>> adjacentNodes;
 
-		/// <summary>
-		/// Initializes a new instance of the <see cref="TP1.Graph.Node`2"/> class.
-		/// </summary>
-		/// <param name="data">Data.</param>
+        /// <remarks>O(1)
+        /// </remarks>
+	    public Node(int initialCapacity = InitialCapacity)
+	    {
+            this.adjacentNodes = new Dictionary<TId, Node<TData, TId>>(initialCapacity);
+	    }
+
 		public Node(TData data)
+            : this()
 		{
 			Data = data;
 		}
 
-		/// <summary>
-		/// Gets the data.
-		/// </summary>
-		/// <value>The data.</value>
 		public TData Data
 		{
 			get;
 			private set;
 		}
 
-		/// <summary>
-		/// Gets the Node's identifier.
-		/// </summary>
-		/// <value>The identifier.</value>
 		public TId Id
 		{
 			get
@@ -43,22 +40,18 @@ namespace TP1.Graph
 			}
 		}
 
-		/// <summary>
-		/// Adds the adjacent node to this node.
-		/// </summary>
-		/// <param name="node">Node.</param>
+		/// <remarks>O(1)
+		/// </remarks>
 		public void AddAdjacentNode(Node<TData, TId> node)
 		{
-			if (!adjacentNodes.ContainsKey(node.Id))
+            if (!adjacentNodes.ContainsKey(node.Id)) // O(1) - Source: http://msdn.microsoft.com/en-us/library/kw5aaea4(v=vs.110).aspx
 			{
-				adjacentNodes.Add(node.Id, node);
+                adjacentNodes.Add(node.Id, node); // Best case O(1), worst case O(N) - source: http://msdn.microsoft.com/en-us/library/k7z0zy8k(v=vs.110).aspx
 			}
 		}
 
-		/// <summary>
-		/// Gets all adjacent nodes.
-		/// </summary>
-		/// <value>The adjacents.</value>
+        /// <remarks>O(1)
+        /// </remarks>
 		public IDictionary<TId, Node<TData, TId>> Adjacents
 		{
 			get
@@ -70,12 +63,13 @@ namespace TP1.Graph
 		/// <summary>
 		/// Gets the node degree (i.e. number of edges incident to the vertex)
 		/// </summary>
-		/// <value>The degree.</value>
+        /// <remarks>O(1)
+        /// </remarks> 
 		public int Degree
 		{
 			get
 			{
-				return adjacentNodes.Values.Count;
+                return adjacentNodes.Values.Count; // O(1) - source: http://msdn.microsoft.com/en-us/library/6z6y38za(v=vs.110).aspx
 			}
 		}
 

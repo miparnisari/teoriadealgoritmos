@@ -32,7 +32,7 @@ namespace TP1.Influences
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
-            var allShortestPaths = new ShortestPathsCollection<TData, TId>();
+            var allShortestPaths = new ShortestPathsCollection<TData, TId>(graph.EdgeCount);
 
             foreach (var nodeS in graph.Nodes)
             {

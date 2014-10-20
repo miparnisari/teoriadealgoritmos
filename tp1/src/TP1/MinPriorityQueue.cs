@@ -8,6 +8,8 @@ namespace TP1
     {
         private readonly MinHeap<TData, TPriority> heap;
 
+        /// <remarks>O(1)
+        /// </remarks>
         public MinPriorityQueue(int size)
         {
             this.heap = new MinHeap<TData, TPriority>(size);

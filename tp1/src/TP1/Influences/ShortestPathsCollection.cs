@@ -11,26 +11,27 @@ namespace TP1.Influences
     {
         public List<ShortestPath<TData, TId>> Paths { get; set; }
 
-        public ShortestPathsCollection()
+        /// <remarks>O(N)
+        /// Source: http://msdn.microsoft.com/en-us/library/dw8e0z9z(v=vs.110).aspx
+        /// </remarks>
+        public ShortestPathsCollection(int initialCapacity)
         {
-            this.Paths = new List<ShortestPath<TData, TId>>();
+            this.Paths = new List<ShortestPath<TData, TId>>(initialCapacity);
         }
 
-        public ShortestPath<TData, TId> this[int index]
-        {
-            get { return this.Paths[index]; }
-        }
-
+        /// <remarks>O(1)
+        /// Source: http://msdn.microsoft.com/es-AR/library/27b47ht3(v=vs.110).aspx
+        /// </remarks>
         public int Count
         {
             get { return this.Paths.Count; }
         }
 
-        public void AddPaths(IEnumerable<ShortestPath<TData, TId>> paths)
-        {
-            this.Paths.AddRange(paths);
-        }
-
+        /// <remarks> Best case: O(N), worst case: O(N+M)
+        /// N: size of "Paths"
+        /// M: current size
+        /// Source: http://msdn.microsoft.com/en-US/library/z883w3dc(v=vs.110).aspx
+        /// </remarks>
         public void AddPaths(ShortestPathsCollection<TData, TId> paths)
         {
             this.Paths.AddRange(paths.Paths);

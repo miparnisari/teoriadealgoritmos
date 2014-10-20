@@ -8,7 +8,8 @@ namespace TP1.Influences
         where TId : IComparable
     {
 
-        public Influence(Node<TData, TId> node, double value ) : this()
+        public Influence(Node<TData, TId> node, double value)
+            : this()
         {
             Node = node;
             Value = value;

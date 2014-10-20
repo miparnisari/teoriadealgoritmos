@@ -18,10 +18,10 @@ namespace TP1.Influences
             where TId : IComparable
         {
             // stores the shortest distance to each node, from "source"
-            var distanceTo = new Dictionary<TId, long>();
+            var distanceTo = new Dictionary<TId, long>(graph.NodeCount); // O(1) - source: http://msdn.microsoft.com/en-us/library/tk84bxf4(v=vs.110).aspx
 
             // stores each unvisited node, with its distance to the source
-            var unvisitedNodes = new MinPriorityQueue<TId, long>(graph.Count);
+            var unvisitedNodes = new MinPriorityQueue<TId, long>(graph.NodeCount); // O(1)
 
             // stores the node(s) used to reach a given node 
             // since we are finding *all* the shortest paths, we store them all, not just one
@@ -60,22 +60,23 @@ namespace TP1.Influences
             }
 
             // reconstruct the paths to each target
-            var result = new ShortestPathsCollection<TData, TId>();
+            var result = new ShortestPathsCollection<TData, TId>(graph.EdgeCount);
             foreach (var target in graph.Nodes.Except(new[] { source }))
             {
-                result.AddPaths(FindParents(previous, target));
+                result.AddPaths(FindParents(graph, previous, target));
             }
             return result;
         }
 
         private static ShortestPathsCollection<TData, TId> FindParents<TData, TId>
-             (Dictionary<TId, HashSet<Node<TData, TId>>> parent,
+             (Graph<TData, TId> graph,
+            Dictionary<TId, HashSet<Node<TData, TId>>> parent,
              Node<TData, TId> index)
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
             var prefix = new ShortestPath<TData, TId>();
-            var results = new ShortestPathsCollection<TData, TId>();
+            var results = new ShortestPathsCollection<TData, TId>(graph.NodeCount);
             FindParentsRecursive(parent, index, prefix, results);
             return results;
         }

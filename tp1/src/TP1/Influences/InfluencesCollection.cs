@@ -9,13 +9,21 @@ namespace TP1.Influences
         where TData : IIdentifiable<TId>
         where TId : IComparable
     {
-        public InfluencesCollection()
+        private const int InitialCapacity = 1000;
+
+        /// <remarks>O(1)
+        /// Source: http://msdn.microsoft.com/es-AR/library/4kf43ys3(v=vs.110).aspx
+        /// </remarks>
+        public InfluencesCollection(int initialCapacity = InitialCapacity)
         {
-            this.Values = new List<Influence<TData, TId>>();
+            this.Values = new List<Influence<TData, TId>>(initialCapacity);
         }
 
         public List<Influence<TData, TId>> Values { get; set; }
 
+        /// <remarks>O(1) best case, O(N) worst case
+        /// Source: http://msdn.microsoft.com/es-AR/library/3wcytfd1(v=vs.110).aspx
+        /// </remarks>
         public void Add(Influence<TData, TId> influence)
         {
             this.Values.Add(influence);

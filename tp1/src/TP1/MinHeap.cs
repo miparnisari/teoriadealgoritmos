@@ -21,6 +21,8 @@ namespace TP1
 
         public int Size { get; private set; }
 
+        /// <remarks>O(1)
+        /// </remarks>
         public MinHeap(int size)
         {
             this.Array = new Node[size];

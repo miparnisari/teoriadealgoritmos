@@ -23,7 +23,7 @@ namespace TP1.Test
             var g = builder.Build();
 
             // assert
-            Assert.AreEqual(2, g.Count);
+            Assert.AreEqual(2, g.NodeCount);
             Assert.AreEqual("Juan", g[1].Data.Name);
             Assert.AreEqual("Maria", g[2].Data.Name);
             Assert.AreEqual(1, g[1].Adjacents.Count);
