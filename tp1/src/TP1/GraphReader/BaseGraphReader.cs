@@ -18,7 +18,9 @@ namespace TP1.GraphReader
             get;
         }
 
-        public void Read(Action<string[]> onNodeRead, Action<string[]> onEdgeRead)
+		/// <remarks>O(N) - N = number of lines in the file - O(K+M) K = number of nodes, M = number of edges
+		/// </remarks>
+		public void Read(Action<string[]> onNodeRead, Action<string[]> onEdgeRead)
         {
             if (onNodeRead == null)
                 throw new ArgumentNullException("onNodeRead");
@@ -33,7 +35,7 @@ namespace TP1.GraphReader
                     // skip the first line
                     reader.ReadLine();
                     // process node definitions
-                    while (!reader.EndOfStream)
+                    while (!reader.EndOfStream) // O(K) - K = number of nodes
                     {
                         var values = reader.ReadLine().Split(',');
                         if (!StillInNodeDefinition(values))
@@ -42,7 +44,7 @@ namespace TP1.GraphReader
                         onNodeRead(values);
                     }
                     // process edge definitions
-                    while (!reader.EndOfStream)
+                    while (!reader.EndOfStream) // O(M) - M = number of edges
                     {
                         var values = reader.ReadLine().Split(',');
                         if (values.Length == 2)

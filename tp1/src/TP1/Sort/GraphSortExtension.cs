@@ -7,6 +7,8 @@ namespace TP1.Sort
 {
 	public static class GraphSortExtension
 	{
+		/// <remarks>O(1)
+		/// </remarks>
 		private static void Swap<TData, TId>(Node<TData, TId>[] nodes, int a, int b)
 			where TData : IIdentifiable<TId>
 				where TId : IComparable
@@ -16,6 +18,8 @@ namespace TP1.Sort
 			nodes[b] = temp;
 		}
 
+		/// <remarks>O(N)
+		/// </remarks>
 		private static void SiftDown<TData, TId>(Node<TData, TId>[] nodes, int start, int end, Func<Node<TData, TId>, Node<TData, TId>, bool> comparer)
 			where TData : IIdentifiable<TId>
 				where TId : IComparable
@@ -41,6 +45,8 @@ namespace TP1.Sort
 		/// <summary>
 		/// Sort the specified graph.
 		/// </summary>
+		/// <remarks>O(N Log N)
+		/// </remarks>
 		/// <param name='graph'>Graph to be sorted .</param>
 		/// <param name='comparer'>Comparer.</param>
 		/// <returns>A sorted list of nodes.</returns>
@@ -51,14 +57,14 @@ namespace TP1.Sort
 			var nodes = graph.Nodes.ToArray();
 			var count = nodes.Count();
 
-			// heapify
+			// heapify 
 			var start = (int)Math.Floor((count - 2.0) / 2.0);
 			while (start >= 0) {
 				SiftDown(nodes, start, count-1, comparer);
 				start = start - 1;
 			}
 
-			//sort
+			// sort
 			var end = count - 1;
 			while (end > 0) {
 				Swap(nodes, end, 0);
