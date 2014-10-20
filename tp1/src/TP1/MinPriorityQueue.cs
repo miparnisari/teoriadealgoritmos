@@ -13,6 +13,8 @@ namespace TP1
             this.heap = new MinHeap<TData, TPriority>(size);
         }
 
+        /// <remarks>O(log N)
+        /// </remarks>
         public void InsertWithPriority(TData data, TPriority priority)
         {
             MinHeap<TData, TPriority>.Node node = new MinHeap<TData, TPriority>.Node
@@ -21,19 +23,25 @@ namespace TP1
                 data = data
             };
 
-            heap.Insert(node);
+            this.heap.Insert(node);
         }
 
+        /// <remarks>O(log N)
+        /// </remarks>
         public MinHeap<TData, TPriority>.Node Remove()
         {
             return this.heap.Remove();
         }
 
-        public void DecreasePriority(TData data, TPriority newPriority)
+        /// <remarks>O(N log N)
+        /// </remarks>
+        public void IncreasePriority(TData data, TPriority newPriority)
         {
             this.heap.IncreasePriority(data, newPriority);
         }
 
+        /// <remarks>O(1)
+        /// </remarks>
         public bool ContainsElements()
         {
             return this.heap.Size > 0;

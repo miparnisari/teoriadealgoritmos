@@ -54,7 +54,7 @@ namespace TP1.Influences
                         // A shorter or equally short path has been found!
                         distanceTo[adjacent.Key] = currentDistance;
                         previous[adjacent.Value.Id].Add(graph[visitedNodeId]);
-                        unvisitedNodes.DecreasePriority(adjacent.Key, currentDistance);
+                        unvisitedNodes.IncreasePriority(adjacent.Key, currentDistance);
                     }
                 }
             }
