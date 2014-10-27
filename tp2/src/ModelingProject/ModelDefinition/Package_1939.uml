@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="4897a0fa-ebcb-4210-89ab-37f267d03d8a"
+  name="Sort"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="99ac38c9-4a9e-43f7-ab08-8910bcc9ef9e"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DTP1.Sort"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="6d8f5546-7aa9-47e0-b361-0af078ae5ce0"
+        name="GraphSortExtension"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="adc3c1f9-743b-4ced-85f2-11f6a02aa7c0"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Sort Type%3DGraphSortExtension"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e483f402-6266-4971-8e64-004627b7448e"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9f8cf3a0-36f0-4ffc-9a66-868581ba86c8">
+                <propertyInstance
+                  Id="d73ca6e8-9b94-42cb-9890-244fa5d8d7e3"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="31a26eb8-999e-45bd-9dc0-93a628749ff0">
+                <propertyInstance
+                  Id="34a34b53-9c36-486e-ac20-433e5736078e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="00babacc-6311-4670-8488-1218423c0c95">
+                <propertyInstance
+                  Id="13a1c049-0850-4dd1-a2ed-ec68cfc1a420"
+                  name="IsStatic"
+                  value="True" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a3d4f8e0-e711-40be-8ed8-4c16ddd8423c">
+                <propertyInstance
+                  Id="c5c3e391-3018-41f1-a7d0-299dfe063b14"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9cfd11f8-afef-47e1-b8b5-1714525dd7f8">
+                <propertyInstance
+                  Id="9ad0a25a-eb27-46d1-956e-d4a5899caf37"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="633b5100-d959-4289-b94e-180da7b6d11d">
+            <classMoniker
+              Id="4c4f1137-7795-4928-a930-89849a93ba8a"
+              LastKnownName="Graph"
+              LastKnownLocation="Package3_1938.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="45c0593c-84fe-4963-83ad-2263ac4c0bb9"
+            name="Swap‎&lt;TData‎, TId‎&gt;"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8b092b0b-ed07-4c10-ae55-29c76ef35e1c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Sort Type%3DGraphSortExtension Member%3D(Name%3DSwap GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode ArrayRank%3D1 ParentType%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)])))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="88a566c2-45fb-443d-94ef-f85a93b9fb9f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7efd6397-e52b-4fc3-8ba1-63e1df85a6b2">
+                    <propertyInstance
+                      Id="4d18dc40-61a4-4491-b8fc-43f997ca3a01"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c108b8ef-dc79-4285-9037-3f0cbf2c91b9">
+                    <propertyInstance
+                      Id="dea062af-d1a5-4252-b37e-f5488cf26173"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1877322d-9732-4fba-8d21-55c81e893b14">
+                    <propertyInstance
+                      Id="6605ec9a-74bc-4c5c-93c8-3673e31f9f66"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2dd187a-8cab-41a0-bbf2-f251a285867b">
+                    <propertyInstance
+                      Id="4608f8cb-34eb-461d-a4f3-3e6c18288880"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eecb606c-fb7e-4379-bf44-9b355de3e212">
+                    <propertyInstance
+                      Id="19e40fd3-9f77-43ee-91ce-e7f5e0ec8bac"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e66acc4c-3e34-48b5-af1f-fb9f091d9d70">
+                    <propertyInstance
+                      Id="297792f2-c43c-4210-b5d4-5e52e24ee4a8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c1485933-0c38-44ae-9f4b-15206862eadc"
+                  name="nodes"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="c867f4f4-c3d5-42ad-97af-d69218d13d9b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Sort Type%3DGraphSortExtension Member%3D(Name%3DSwap GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode ArrayRank%3D1 ParentType%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)])))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dnodes"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="03688825-aed9-4308-b8d3-348e4b0102da"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="3c4e3760-5b98-4933-ba0f-64d4bed38e6c"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="102e66aa-1433-413a-8df2-21e5e1c43412"
+                      LastKnownName="Node"
+                      LastKnownLocation="Package3_1938.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dc496f82-2249-47f5-b7c2-6892e2dbfa7f"
+                  name="a"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="706b77fa-5221-4116-8860-8e4df97fff80"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Sort Type%3DGraphSortExtension Member%3D(Name%3DSwap GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode ArrayRank%3D1 ParentType%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)])))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Da"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9bbf30a7-2bdd-4a9d-8994-f16b47e28bf2"
+                  name="b"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3917e76e-3b7f-4fca-b75f-6fd66d4f03d0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Sort Type%3DGraphSortExtension Member%3D(Name%3DSwap GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode ArrayRank%3D1 ParentType%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)])))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Db"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="eb83523b-76df-4f26-b1e8-5380c65e7cfe"
+            name="SiftDown‎&lt;TData‎, TId‎&gt;"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ef415952-c511-451d-847e-4a808a4c2e2e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Sort Type%3DGraphSortExtension Member%3D(Name%3DSiftDown GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode ArrayRank%3D1 ParentType%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)])))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="af32db08-abf5-45c5-bdc2-0c09785cc20f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bdd40b9b-070f-4f78-a72e-6394e126f48e">
+                    <propertyInstance
+                      Id="62c5e191-64eb-4088-960d-b99628ffab0f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="20e33bd9-cbdb-478b-8675-e45906128e0e">
+                    <propertyInstance
+                      Id="65b5fbb1-e408-4b86-ba93-53e031696171"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a8524c6-9d15-4f30-a43d-ce06836fdc39">
+                    <propertyInstance
+                      Id="ab500690-ae2a-40d1-8060-d16c961fc077"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa31fac5-adaf-4986-80d2-20d85c8c1b4b">
+                    <propertyInstance
+                      Id="aad7e97e-45d6-457e-bdca-0abc5fe3fcd1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="772bf49d-ceea-4fbe-975e-d41ef3c58770">
+                    <propertyInstance
+                      Id="0854362b-23eb-41c8-8382-03d9c3ee0697"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7201b732-739d-4781-b325-53c71ed77733">
+                    <propertyInstance
+                      Id="13b1b593-403c-4308-bb8d-88258fdd437c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c90b741a-197c-4563-8f14-9b8fc3ed4b26"
+                  name="nodes"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="a6b354a6-f41a-4949-8203-2d47564b4c32"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Sort Type%3DGraphSortExtension Member%3D(Name%3DSiftDown GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode ArrayRank%3D1 ParentType%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)])))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]))]) ParameterIdentifier%3Dnodes"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b54aa5f3-403f-45e9-9256-4ffcc067c298"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6ccdbafd-3745-4c03-b09c-685c9471c4a2"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="102e66aa-1433-413a-8df2-21e5e1c43412"
+                      LastKnownName="Node"
+                      LastKnownLocation="Package3_1938.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f8801c62-efd5-45f7-8c33-8a9c6c7d30c8"
+                  name="start"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1e3739f7-b1fb-40e7-bc57-749b186507b5"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Sort Type%3DGraphSortExtension Member%3D(Name%3DSiftDown GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode ArrayRank%3D1 ParentType%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)])))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]))]) ParameterIdentifier%3Dstart"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c149c49f-92a3-4ab2-b8cd-ed1f51ce8265"
+                  name="end"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="92c79fcb-3944-4438-8f98-dcacf3ae013a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Sort Type%3DGraphSortExtension Member%3D(Name%3DSiftDown GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode ArrayRank%3D1 ParentType%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)])))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]))]) ParameterIdentifier%3Dend"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c35d9e7a-e013-4100-9e32-8c6e80678bda"
+                  name="comparer"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="cbb4c257-7ca9-4b14-9407-cca7da10f9db"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Sort Type%3DGraphSortExtension Member%3D(Name%3DSiftDown GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode ArrayRank%3D1 ParentType%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)])))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]))]) ParameterIdentifier%3Dcomparer"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="445c2ad4-8230-4342-8c6c-ea2152b07365"
+                      LastKnownName="Func&lt;Node‎&lt;TData‎, TId‎&gt;‎, Node‎&lt;TData‎, TId‎&gt;‎, Boolean‎&gt;"
+                      LastKnownLocation="Package2_1938.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1b58b2e3-2b19-4a89-b846-71ddedd2040b"
+            name="Sort‎&lt;TData‎, TId‎&gt;"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1a14b9f9-222b-4408-a9c8-c5aacf70ced1"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Sort Type%3DGraphSortExtension Member%3D(Name%3DSort GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DGraph GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9330335d-812c-4bbe-b243-f9ebc38c4314"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ac482dd-c08d-4ffe-be37-143665345914">
+                    <propertyInstance
+                      Id="e63a410a-f60c-44e1-aedd-3a5ebfc80c1f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="68c33105-d882-4d7a-ab21-da804e692e9e">
+                    <propertyInstance
+                      Id="29b067ac-9eaa-4169-916b-6ce5e93fecb8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3b77cad-943d-48ba-9c74-ef8df91ab68e">
+                    <propertyInstance
+                      Id="c15fdeab-e988-4bad-9432-e41e8a5b113f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="96d7ff22-b51f-4ef5-9cbf-289e933999b3">
+                    <propertyInstance
+                      Id="25b2024b-aa99-41bf-9560-8907d84dd83d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c2ebe77c-f305-427a-85ae-8cc75188d927">
+                    <propertyInstance
+                      Id="a9e477d8-d09a-4c3e-8dce-7b2199f2ec8e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="384cd320-f709-4e5d-a804-8f17286004ec">
+                    <propertyInstance
+                      Id="d9690295-e16c-4a2b-926e-586dbce4c61e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="21ee7f67-31e1-412b-beea-756f15aaa7d2"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="24096239-a9d9-4eff-8e2d-b76f65c269a8"
+                      LastKnownName="IEnumerable&lt;Node‎&lt;TData‎, TId‎&gt;‎&gt;"
+                      LastKnownLocation="Package5_1938.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b0f80298-1bd7-4f82-98cb-e77c06b0ecda"
+                  name="graph"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7b70378a-75cd-4713-9024-e8d12693418e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Sort Type%3DGraphSortExtension Member%3D(Name%3DSort GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DGraph GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]))]) ParameterIdentifier%3Dgraph"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="be837675-8096-4b79-a943-d80ef6ff3f44"
+                      LastKnownName="Graph&lt;TData‎, TId‎&gt;"
+                      LastKnownLocation="Package3_1938.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="19d60f5d-13d3-4966-a05b-efb59bd839d4"
+                  name="comparer"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a9159fe7-4675-4f06-9e87-46adb0acd676"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Sort Type%3DGraphSortExtension Member%3D(Name%3DSort GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DGraph GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]))]) ParameterIdentifier%3Dcomparer"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2c9fb2c4-97e2-487f-bd80-b4fbde408fd7"
+                      LastKnownName="Func&lt;Node‎&lt;TData‎, TId‎&gt;‎, Node‎&lt;TData‎, TId‎&gt;‎, Boolean‎&gt;"
+                      LastKnownLocation="Package2_1938.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

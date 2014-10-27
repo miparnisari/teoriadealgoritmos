@@ -1,0 +1,687 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="58e8a0b7-d3d1-4c19-893f-bc4dc726408e"
+  name="TP1"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="bdae73d5-6a37-450f-8909-f0f7d883d402"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DTP1"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="adef26c8-5aab-417c-9d47-6dbc426fa134"
+        name="FacebookUser"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="ea41ab88-763a-477c-b6bb-f6849040e55b"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1 Type%3DFacebookUser"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="5e42181e-ff0d-401e-960f-794c05aec9db"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0d3cfc70-d336-4f26-8672-7bdd7f3f9ad3">
+                <propertyInstance
+                  Id="f3861f40-a651-46e2-a1b2-f11190da0562"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8e3c9f9e-1f54-4ba5-9444-d886a06841b8">
+                <propertyInstance
+                  Id="8db5bf3e-bce8-492f-9973-77e93f986bb8"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="788bb3f1-3ea9-4d15-896f-165bf80e22b4">
+                <propertyInstance
+                  Id="8a3afcb5-56f8-41ab-8a32-69ec8a29e52b"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="708f7c6c-6ccf-4b67-922f-89b5887c4ec3">
+                <propertyInstance
+                  Id="33cc4d60-cd9a-4c6e-acaa-2b1fdd6a95d2"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6eacf948-9eb1-45c0-8362-792d59074267">
+                <propertyInstance
+                  Id="7c411808-bfea-4815-be97-336c7de3cacc"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="b4e403a6-da3c-4b03-8afd-69ccd8fecdee">
+            <interfaceMoniker
+              Id="d17a4bb4-09a0-45fc-a2d5-acc3d0129659"
+              LastKnownName="IIdentifiable&lt;Int64‎&gt;"
+              LastKnownLocation="Package3_1938.uml" />
+          </interfaceRealization>
+          <interfaceRealization
+            Id="cda917b6-6d53-4f20-8058-9080f8da39a9">
+            <interfaceMoniker
+              Id="34d92b88-dd30-49ea-a275-b37df6ce6f92"
+              LastKnownName="IIdentifiable"
+              LastKnownLocation="Package3_1938.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="3f68d0b2-04b5-4270-bf2b-e145514ddc43"
+            isDerived="false"
+            sourceEndRoleName="FacebookUser"
+            targetEndRoleName="Id"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="2e21011e-533e-43a3-8fef-a77cdf3e6e3c"
+              LastKnownName="Int64"
+              LastKnownLocation="Package2_1938.uml" />
+            <description>Property Id references type Int64.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c0e36672-52ce-42e3-931c-913bcc655b1e"
+                  name="FacebookUser"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5000c466-aa7e-45ab-870c-38b5a251be95"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6967ff1c-210b-4a69-a18a-44c32125d9ce"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d5a96477-702a-467d-aa39-2b10ea23b0d5"
+                  name="Id"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9188d97c-2307-483a-95bf-b66cc0ca9594"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a0086395-b763-4e15-a790-49f2178f8ab5"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="31caaefe-b702-45f6-bab7-08076d6db00f"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ee4b092b-5ba9-495d-9813-0ee8fa9ef02a"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1 Type%3DFacebookUser Member%3DId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a5ae319d-21b5-4ed5-b569-4c0bc4c6a70a"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="891de985-308b-4739-a128-63e3685a4d49">
+                    <propertyInstance
+                      Id="ef367720-e954-4758-b636-b71cb7ca5235"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6536b74e-1467-47de-bfdf-ede4945e4105">
+                    <propertyInstance
+                      Id="70e73e53-eb48-438b-b8df-fd7572e83345"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b694370-971c-4468-93bb-d1275dad2775">
+                    <propertyInstance
+                      Id="a393f328-a6e8-43fd-88c2-dec57a8d579a"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="779a24f5-acac-4960-bdb4-bc56bacb7bfb">
+                    <propertyInstance
+                      Id="b95c29e2-6438-47d2-8600-56586c135cf6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="50ddb5cf-217e-47ca-a55a-e0aab4f9182b">
+                    <propertyInstance
+                      Id="cdedf6b4-7e68-4382-a0cc-512d2feb0102"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7748da4-0570-4022-a75f-aaa4e3c33d67">
+                    <propertyInstance
+                      Id="3d95b359-ec67-47f3-9850-13110d6da9e9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c04ecf5-3fc7-4dc7-b50e-b2101d5526bc">
+                    <propertyInstance
+                      Id="7532e685-b746-4c77-9989-b07e7cf0351e"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="2e21011e-533e-43a3-8fef-a77cdf3e6e3c"
+                LastKnownName="Int64"
+                LastKnownLocation="Package2_1938.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8be75ccc-d6ae-48a3-aa09-6a17f4b6e128"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="4033dc90-d5e0-4aee-b0ec-26c3e7a77229"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1 Type%3DFacebookUser Member%3DName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1fe1872a-ac6c-4799-a642-919194e0488d"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5fe4cb58-3308-4148-a922-7eb61ba6e962">
+                    <propertyInstance
+                      Id="4c3f5049-527a-4969-a1b2-1de6c77ecf29"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="95126e38-e2f0-47f6-b01b-5b4e041fbce7">
+                    <propertyInstance
+                      Id="829f3eb0-cafa-4590-a104-4fcbd5297b03"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b520c37-7ef6-45e2-b75f-383424ea15f5">
+                    <propertyInstance
+                      Id="fb13b0f1-d081-4010-9b7c-034b2349568d"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2d1274d-c2a7-4669-9d9d-c4056faceada">
+                    <propertyInstance
+                      Id="2086e568-3cd9-4685-bcd0-8cc50f801863"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="57a81583-af91-4dc5-820a-6d0d1d0ab17b">
+                    <propertyInstance
+                      Id="82066f38-8828-48ec-8322-68356eae291a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8801d959-328a-4dc0-87eb-37cd35cda240">
+                    <propertyInstance
+                      Id="dbe1ff4e-cfca-475e-abac-34ce71fcffcc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0deac23d-f571-4f21-880e-ed90851cd72e">
+                    <propertyInstance
+                      Id="52e8d0df-a224-4645-a905-cbc5147b2031"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d2c5e9fe-01f4-4550-b413-3f8fb5258aaf"
+            name="FacebookUser"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="bf5b0a9b-31cb-45d8-850b-14bcf8f37a97"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1 Type%3DFacebookUser Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b2d3214d-4027-47c3-9c8b-672891a129e9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4aed2b11-9638-4137-ace3-c731329c0250">
+                    <propertyInstance
+                      Id="ce5dea6c-af7a-4c0a-a8db-f53fb67de0b3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="954253cf-f4a4-4c24-9318-a158325190ee">
+                    <propertyInstance
+                      Id="f596ff8b-f22a-40c8-806b-23b59d794504"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dff3878e-d43a-40e2-aa8c-0c15f955ca82">
+                    <propertyInstance
+                      Id="d46f7070-31bf-462d-9581-187a784ecf17"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6407b341-5d63-45b1-9bea-399f8c4e85ef">
+                    <propertyInstance
+                      Id="29fde752-f92a-48a7-a4a4-509d6781b461"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46a1e907-f44f-4375-8659-89fa1ba9242e">
+                    <propertyInstance
+                      Id="c1f031de-8d7c-4e09-b4d6-2be87468c563"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="61cda3f0-10ae-4fc9-8078-664193384904">
+                    <propertyInstance
+                      Id="bb164350-f1b3-4d9e-b505-f359b8208685"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ee5ad5c2-1586-444a-bd4f-c3f15402d6aa"
+                  name="Id"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d0765f61-b09b-4595-9130-8675a881ff22"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1 Type%3DFacebookUser Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2e21011e-533e-43a3-8fef-a77cdf3e6e3c"
+                      LastKnownName="Int64"
+                      LastKnownLocation="Package2_1938.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="aca2c80d-092f-4f11-a037-6c674f8d442f"
+                  name="name"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f97df612-1ff6-4e06-ad9a-ee7af3b02a53"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1 Type%3DFacebookUser Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt64)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dname"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="90bfe33c-c8a0-4dcc-ac46-d5a32dd8f3bd"
+        LastKnownName="Graph"
+        LastKnownLocation="Package3_1938.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="530e963c-65e0-4371-94ad-96a18beef49e"
+        name="FacebookGraph"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="58783bc9-0921-4e73-be1e-0132d4ac409f"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1 Type%3DFacebookGraph"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="57057c9b-a6b8-4bfa-84a1-a931af95b624"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="87cda3cd-24c7-477a-a885-bdffc701b03a">
+                <propertyInstance
+                  Id="dd106531-19d6-4f96-b46b-fdb03f55f6ca"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9f34cf30-bbf8-43b1-ad93-403bad5799ed">
+                <propertyInstance
+                  Id="4b216d4b-166f-4668-bf9f-053f96185b80"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a0d47c92-30ab-4cfb-881d-d2b20d2ff9b4">
+                <propertyInstance
+                  Id="e1e53fb5-d4f6-4a9f-bffb-fef62cd4bf03"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6f7510a1-6929-4f3d-a296-f9935292770f">
+                <propertyInstance
+                  Id="a7eb7c8c-8244-4d92-8eab-04e8f4a6e965"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="64105902-9220-4014-8f19-9c0e20e9b206">
+                <propertyInstance
+                  Id="ffc08358-58d3-4275-96ea-2869b1bf7378"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="90dca152-7539-4115-a47b-6c67c81c219d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c25076db-4126-4acc-ae5b-d2878f186cf7"
+              LastKnownName="Graph&lt;FacebookUser‎, Int64‎&gt;"
+              LastKnownLocation="Package3_1938.uml" />
+          </generalization>
+          <generalization
+            Id="f5c92ff9-efcd-48bd-98fa-df7e7c07951a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="4c4f1137-7795-4928-a930-89849a93ba8a"
+              LastKnownName="Graph"
+              LastKnownLocation="Package3_1938.uml" />
+          </generalization>
+          <generalization
+            Id="52c74239-d304-4733-9c9f-14d2185ed859"
+            isSubstitutable="false">
+            <classMoniker
+              Id="be837675-8096-4b79-a943-d80ef6ff3f44"
+              LastKnownName="Graph&lt;TData‎, TId‎&gt;"
+              LastKnownLocation="Package3_1938.uml" />
+          </generalization>
+          <generalization
+            Id="b8aa86ef-978e-422b-bf56-11d1bc92876b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="103aa07f-f746-4ea6-ac83-10fb89fd6483"
+              LastKnownName="Graph&lt;TData‎, TId‎&gt;"
+              LastKnownLocation="Package3_1938.uml" />
+          </generalization>
+          <generalization
+            Id="352730a9-c372-42ef-ba72-40bccebd9f02"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2751edd0-df6e-4425-a2d2-1a395b1b47eb"
+              LastKnownName="Graph&lt;TData‎, TId‎&gt;"
+              LastKnownLocation="Package3_1938.uml" />
+          </generalization>
+          <generalization
+            Id="ad216e5e-9512-4fd7-9e3b-916afa5b259c"
+            isSubstitutable="false">
+            <classMoniker
+              Id="36e79e10-5cbf-4ec4-9d65-f592f68020ce"
+              LastKnownName="Graph&lt;TData‎, TId‎&gt;"
+              LastKnownLocation="Package3_1938.uml" />
+          </generalization>
+          <generalization
+            Id="a5d8bd37-fbb4-43d7-9192-90d5e1f17519"
+            isSubstitutable="false">
+            <classMoniker
+              Id="f0609962-ebe3-4374-8647-9870812b68d8"
+              LastKnownName="Graph"
+              LastKnownLocation="Package3_1938.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="bae1036a-010b-4067-9a38-c30ae952c050"
+            isDerived="false"
+            sourceEndRoleName="FacbookGraph"
+            targetEndRoleName="Nodes"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="adef26c8-5aab-417c-9d47-6dbc426fa134"
+              LastKnownName="FacebookUser"
+              LastKnownLocation="Package1_1938.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3f5e764b-ad62-4a55-9f2c-e579299cafea"
+                  name="FacbookGraph"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="71cb2e1b-228f-4a75-89c7-c8797ad75c6a"
+                  name="Nodes"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="668853e6-1528-4ba0-8696-65385d8516ba"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="595e3092-4c49-44ed-8b45-b52c488eca42"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="7b80200f-b838-48a1-8b46-c10dc5b0e341"
+            name="FacebookGraph"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="482885b8-3800-4f13-8d0e-dec33fb43246"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1 Type%3DFacebookGraph Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1cbbb9c5-53d5-4cd3-9e55-7dedd348406f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3631b6c5-0edb-4b81-9f8e-7ea1f8a5ca2b">
+                    <propertyInstance
+                      Id="9c7059d6-c4d6-4711-a631-e3f881fa0058"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d88502a1-6854-4d2b-9a04-2e07d9b650cf">
+                    <propertyInstance
+                      Id="5bb2581c-7053-4ef3-b115-7ead609b1ed1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44631f91-dcb3-4994-92cb-622b093e5681">
+                    <propertyInstance
+                      Id="cc48291d-dcfc-487b-80ce-4c60d59b9029"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6798c2e4-2936-494e-b191-3c14694087d1">
+                    <propertyInstance
+                      Id="170603dc-d4be-4205-95f1-200f2f790e7c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2cd40a3-d6df-4e7d-8a89-780e40224125">
+                    <propertyInstance
+                      Id="6456f5e9-de01-4159-92c1-dcc8d4e97b34"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e09e453-b82a-4b2d-8ae5-64403cdf7404">
+                    <propertyInstance
+                      Id="6fe80844-45c9-4400-9dfd-192a3e32982a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="4897a0fa-ebcb-4210-89ab-37f267d03d8a"
+        LastKnownName="Sort"
+        LastKnownLocation="Package_1939.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="5c81266d-cb28-4891-a453-8cd147bfce45"
+        LastKnownName="Recommendations"
+        LastKnownLocation="Package1_1939.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="0b10490e-f65c-47a7-a3fe-b162d05213bf"
+        LastKnownName="Influences"
+        LastKnownLocation="Package2_1939.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="5c81266d-cb28-4891-a453-8cd147bfce45"
+  name="Recommendations"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="2bde56e7-7525-4ccb-9aae-fd0085b60243"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DTP1.Recommendations"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="e33375ef-6d6a-4ae2-9e1e-8351093bebf4"
+        name="RecommendationsExtension"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="43d99ad7-e484-4d36-b0eb-d8ce5b047e7d"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Recommendations Type%3DRecommendationsExtension"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f3a76d37-68bb-4274-820c-95e01a8fb0b8"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fafb1a37-d65c-4486-ab21-7505450fd1bf">
+                <propertyInstance
+                  Id="3c51cffe-ad4b-4848-a2e2-6d1a72f2c546"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4da897dd-e8e5-479d-8f79-1f29bd196f2f">
+                <propertyInstance
+                  Id="48995e6a-9c57-4cfe-b66d-df2e63495244"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="15f40232-a334-4999-9f78-3ea6bd185cfc">
+                <propertyInstance
+                  Id="c76837b5-2cf1-49d8-8086-2b14aa630c61"
+                  name="IsStatic"
+                  value="True" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a6d65ce9-7777-43f8-abbb-3015645f2871">
+                <propertyInstance
+                  Id="7c03fd9b-6ef7-4ac8-9521-1ed55a8966dc"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7816067f-1976-4f22-9ece-90a0cf390317">
+                <propertyInstance
+                  Id="0b998cdc-6d75-4ccf-9c2d-051474ef5488"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="dda03edd-cc80-4a9b-901c-74ebdbfb3b41">
+            <classMoniker
+              Id="4c4f1137-7795-4928-a930-89849a93ba8a"
+              LastKnownName="Graph"
+              LastKnownLocation="Package3_1938.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="9d9cd281-f15c-4bd7-82d8-bb97137c98a2"
+            name="GetRecommendations‎&lt;TData‎, TId‎&gt;"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5b44b221-3686-4377-be53-f6fabbd2bbf7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Recommendations Type%3DRecommendationsExtension Member%3D(Name%3DGetRecommendations GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DGraph GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2379af43-a4e3-4630-be55-feccc0664e14"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fdd0b4bc-9b5d-47b3-b536-758192d0b7f5">
+                    <propertyInstance
+                      Id="9ba277bc-b879-423a-8534-51e7a22851f9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8bf5c88-769a-4e67-8542-7599e484e327">
+                    <propertyInstance
+                      Id="911bb925-ceba-446d-a72b-1da18c973e16"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="83533d77-ecfe-459a-ae24-2c0e69c6c423">
+                    <propertyInstance
+                      Id="7ad53355-94ee-4477-a45b-de2db71da11b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="72b89cc8-afad-4a43-a81c-c0dc5a17249d">
+                    <propertyInstance
+                      Id="15dde7c3-4567-4aeb-accf-31da91d6149c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b59643b7-ec38-4596-a91f-b0a2518fb305">
+                    <propertyInstance
+                      Id="e508f859-40da-43c4-a4f7-1b1355681a01"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="050fbf83-baaa-41c6-854d-a521e6efb9ce">
+                    <propertyInstance
+                      Id="2070b67b-5872-44c2-ab3f-bc425e1e8615"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4ae5616b-6397-40db-b42e-a3da7c82998f"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="3f50f2a6-a5ed-4b40-ab6c-324a1978bb1f"
+                      LastKnownName="RecommendationsCollection&lt;TData‎, TId‎&gt;"
+                      LastKnownLocation="Package1_1939.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ed84a957-005d-4958-9630-e4d1c528449b"
+                  name="graph"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a08f0004-3541-409d-afe1-5ee4e1be5ccf"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Recommendations Type%3DRecommendationsExtension Member%3D(Name%3DGetRecommendations GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DGraph GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))]) ParameterIdentifier%3Dgraph"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="be837675-8096-4b79-a943-d80ef6ff3f44"
+                      LastKnownName="Graph&lt;TData‎, TId‎&gt;"
+                      LastKnownLocation="Package3_1938.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3f50f2a6-a5ed-4b40-ab6c-324a1978bb1f"
+        name="RecommendationsCollection&lt;TData‎, TId‎&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2f5d030a-6d20-4297-afbe-03d3f371260c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5c66337a-0bed-423a-a47a-1cd77068c9d9">
+                <propertyInstance
+                  Id="6d87c58e-4939-4b26-b788-f7bb652ea3e5"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8a54e082-06f1-42e6-9447-5beb02614b22">
+                <propertyInstance
+                  Id="88d4b084-48c3-49a4-a40b-ab2a609b771f"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6e62c70b-1c1f-4365-948d-2bd551bd10b6">
+                <propertyInstance
+                  Id="9a1f0175-3379-4769-a27d-9fab257b7306"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4b128412-036a-4b01-befa-8c4f26e88cb1">
+                <propertyInstance
+                  Id="626c528d-ecc2-4a8c-af1a-2b9b0a21a6de"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="aa9ebd4d-4ba1-455e-be30-f61830f6eb5a">
+                <propertyInstance
+                  Id="86db3508-aadb-4bb7-aead-638119040972"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <signatures>
+          <templateBinding
+            Id="0240c7ca-bb2b-48cc-9f3b-d620d1d8be06">
+            <redefinableTemplateSignatureMoniker
+              Id="56e8bc82-ad22-4ee0-9147-052b619e65b3"
+              LastKnownLocation="Package1_1939.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="290d16aa-cd06-4f9f-a301-8f684d7419dd">
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="87dd4071-0923-4469-a190-23082cef97cd"
+                      LastKnownLocation="Package1_1939.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="a7c7d189-f560-4e46-af21-39365b3f136e">
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="1723cc50-a62f-43f1-b760-f2248787fcf6"
+                      LastKnownLocation="Package1_1939.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="074bbfde-1038-41fa-9b62-54e415409d14"
+        name="RecommendationsCollection"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f770f14b-cf14-4229-8247-8d99fcd47af9"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Recommendations Type%3D(Name%3DRecommendationsCollection GenericParameterCount%3D2)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="29ac6ef9-67b1-410b-a2c7-796ad4f6ee97"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="61bae24e-b96c-4ed5-83ba-b7dff018c611">
+                <propertyInstance
+                  Id="1921705b-1fc1-412c-af51-d34bc498e87d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="84208267-9f4b-473d-a243-a27c937789b1">
+                <propertyInstance
+                  Id="197ccb96-e883-4ca5-aa99-82373dfdb1ac"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="67bf05a8-e74b-40da-951e-545cb626fe3b">
+                <propertyInstance
+                  Id="4d93d4eb-7955-46de-93d5-be396460b11c"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f79068f7-e78b-47df-9c51-eb9d8bcc586f">
+                <propertyInstance
+                  Id="c8d00588-87ec-43bd-b112-2a30000697f6"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="030680e1-ba0c-4da6-b4ab-a8bb4b36b289">
+                <propertyInstance
+                  Id="84700dbd-ae89-4656-b93c-44fb8cc13f2d"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="56e8bc82-ad22-4ee0-9147-052b619e65b3"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="87dd4071-0923-4469-a190-23082cef97cd">
+                <referencesInternal>
+                  <reference
+                    Id="ede20fb0-9654-4db6-a172-021e5380c26c"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Recommendations Type%3D(Name%3DRecommendationsCollection GenericParameterCount%3D2) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="9eac14ee-a5df-4815-bfb4-72cf626b978f"
+                    name="TData"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+              <classifierTemplateParameter
+                Id="1723cc50-a62f-43f1-b760-f2248787fcf6">
+                <referencesInternal>
+                  <reference
+                    Id="4dffea24-a0b8-4933-890c-31efeb929892"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Recommendations Type%3D(Name%3DRecommendationsCollection GenericParameterCount%3D2) ParameterIdentifier%3D1"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="dfc658b4-b978-4d74-95e9-3e562092551a"
+                    name="TId"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
