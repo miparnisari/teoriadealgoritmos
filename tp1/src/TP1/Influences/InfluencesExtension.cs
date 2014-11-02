@@ -40,7 +40,7 @@ namespace TP1.Influences
 
             foreach (var nodeS in graph.Nodes) // O(N) * O(N^3) = O(N^4)
             {
-                var shortestPaths = graph.GetShortestPathsWithDijkstra(nodeS); // O(N^3)
+                var shortestPaths = graph.GetShortestPathsWithBFS(nodeS); // O(N^3)
 
                 allShortestPaths.AddPaths(shortestPaths);
             }

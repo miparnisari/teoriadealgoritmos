@@ -37,6 +37,11 @@ namespace TP1.Influences
             this.Paths.AddRange(paths.Paths);
         }
 
+        public void AddPaths(IEnumerable<ShortestPath<TData, TId>> paths)
+        {
+            this.Paths.AddRange(paths);
+        }
+
         public IEnumerator GetEnumerator()
         {
             return this.Paths.GetEnumerator();

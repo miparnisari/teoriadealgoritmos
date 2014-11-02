@@ -17,7 +17,7 @@ namespace TP1.Test
             var graph = builder.Build();
 
             // act
-            var paths = graph.GetShortestPathsWithDijkstra(graph[1]);
+            var paths = graph.GetShortestPathsWithBFS(graph[1]);
 
             // assert
             Assert.AreEqual(14, paths.Count);
@@ -31,7 +31,7 @@ namespace TP1.Test
             var graph = builder.Build();
 
             // act
-            var paths = graph.GetShortestPathsWithDijkstra(graph[6]);
+            var paths = graph.GetShortestPathsWithBFS(graph[6]);
 
             // assert
             Assert.AreEqual(12, paths.Count);
@@ -45,7 +45,7 @@ namespace TP1.Test
             var graph = builder.Build();
 
             // act
-            int sum = graph.Nodes.Select(graph.GetShortestPathsWithDijkstra).Select(paths => paths.Count).Sum();
+            int sum = graph.Nodes.Select(graph.GetShortestPathsWithBFS).Select(paths => paths.Count).Sum();
 
             // assert
             Assert.AreEqual(132, sum);
@@ -62,7 +62,7 @@ namespace TP1.Test
             var source = graph[3]; //Juana
             var destination = graph[1]; //Milena
 
-            var shortestPaths = graph.GetShortestPathsWithDijkstra(source).Paths
+            var shortestPaths = graph.GetShortestPathsWithBFS(source).Paths
                 .Where(p => p.EndNode.Equals(destination))
                 .ToList();
 
@@ -85,7 +85,7 @@ namespace TP1.Test
             var source = graph[3]; //Juana
             var destination = graph[3]; //Juana
 
-            var shortestPaths = graph.GetShortestPathsWithDijkstra(source).Paths
+            var shortestPaths = graph.GetShortestPathsWithBFS(source).Paths
                 .Where(p => p.EndNode.Equals(destination))
                 .ToList();
 
@@ -104,7 +104,7 @@ namespace TP1.Test
             var source = graph[1]; // Milena
             var destination = graph[2]; //Monica
 
-            var shortestPaths = graph.GetShortestPathsWithDijkstra(source).Paths
+            var shortestPaths = graph.GetShortestPathsWithBFS(source).Paths
                 .Where(p => p.EndNode.Equals(destination))
                 .ToList();
 
@@ -138,7 +138,7 @@ namespace TP1.Test
             var source = graph[1]; // Juana
             var destination = graph[2]; //Maria
 
-            var shortestPaths = graph.GetShortestPathsWithDijkstra(source).Paths
+            var shortestPaths = graph.GetShortestPathsWithBFS(source).Paths
                 .Where(p => p.EndNode.Equals(destination))
                 .ToList();
 
