@@ -32,14 +32,19 @@ namespace TP1.Influences
         /// M: current size
         /// Source: http://msdn.microsoft.com/en-US/library/z883w3dc(v=vs.110).aspx
         /// </remarks>
-        public void AddPaths(ShortestPathsCollection<TData, TId> paths)
+        public void Add(ShortestPathsCollection<TData, TId> paths)
         {
             this.Paths.AddRange(paths.Paths);
         }
 
-        public void AddPaths(IEnumerable<ShortestPath<TData, TId>> paths)
+        public void Add(IEnumerable<ShortestPath<TData, TId>> paths)
         {
             this.Paths.AddRange(paths);
+        }
+
+        public void Add(ShortestPath<TData, TId> path)
+        {
+            this.Paths.Add(path);
         }
 
         public IEnumerator GetEnumerator()

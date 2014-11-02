@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using TP1.Graph;
 
@@ -33,6 +31,12 @@ namespace TP1.Influences
             var previous = new Dictionary<TId, HashSet<Node<TData, TId>>>(graph.NodeCount); // O(1)
             #endregion
 
+            foreach (var node in graph.Nodes)
+            {
+                previous[node.Id] = new HashSet<Node<TData, TId>>();
+                node.Visited = false;
+            }
+
             unvisitedNodesQueue.Enqueue(source);
 
             while (unvisitedNodesQueue.Count > 0)
@@ -47,10 +51,6 @@ namespace TP1.Influences
                     // The node has not yet been discovered by BFS or it is the source node itself
                     if (!adjacent.Value.Visited)
                     {
-                        if (!previous.ContainsKey(adjacent.Value.Id))
-                        {
-                            previous[adjacent.Value.Id] = new HashSet<Node<TData, TId>>();
-                        }
                         previous[adjacent.Value.Id].Add(graph[visitedNode.Id]); // Best case O(1), worst case O(N) - http://msdn.microsoft.com/en-us/library/bb353005(v=vs.110).aspx
 
                         unvisitedNodesQueue.Enqueue(adjacent.Value);
@@ -60,11 +60,15 @@ namespace TP1.Influences
 
             // reconstruct the paths to each target
             var result = new ShortestPathsCollection<TData, TId>(graph.EdgeCount);
-            foreach (var target in graph.Nodes.Except(new[] { source })) // O(N) * O(N^2) = O(N^3)
+            foreach (var target in graph.Nodes.Except(new[] { source }))
             {
-                var allPaths = FindParents(graph, previous, target); //O(N^2) worst case
-                var minLength = allPaths.Paths.Min(p => p.Length);
-                result.AddPaths(allPaths.Paths.Where(p => p.Length == minLength));
+                var allPaths = FindParents(graph, previous, target);
+                if (allPaths.Count > 0)
+                {
+                    var minLength = allPaths.Paths.Min(p => p.Length);
+                    var pathsWithMinLength = allPaths.Paths.Where(p => p.Length == minLength).ToList();
+                    result.Add(pathsWithMinLength);
+                }
             }
             return result;
         }
@@ -97,11 +101,10 @@ namespace TP1.Influences
             var newShortestPath = new ShortestPath<TData, TId>();
             newShortestPath.Path.AddRange(prefix.Path);
             newShortestPath.Path.Add(target);
-            if (!parent.ContainsKey(target.Id))
+            if (parent[target.Id].Count == 0 && newShortestPath.Length > 1)
             {
                 newShortestPath.Path.Reverse(); // Worst case: O(N)
-                results.Paths.Add(newShortestPath);
-                Debug.WriteLine(newShortestPath);
+                results.Add(newShortestPath);
                 return;
             }
             foreach (var previous in parent[target.Id]) // Worst case: O(N)

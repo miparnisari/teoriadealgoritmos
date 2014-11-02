@@ -24,6 +24,20 @@ namespace TP1.Test
         }
 
         [Test()]
+        public void ShouldList109Influences_With109nodesInGraph()
+        {
+            // arrange
+            var builder = new GraphBuilder(new GraphReader.GraphReader(@"Input\realdata-small.txt"));
+            var graph = builder.Build();
+
+            // act
+            var influences = graph.GetInfluences().OrderByDescending();
+
+            // assert
+            Assert.AreEqual(109, influences.Count());
+        }
+
+        [Test()]
         public void ShouldList11Influences_With11NodesInGraph()
         {
             // arrange

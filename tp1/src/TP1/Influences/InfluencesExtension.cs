@@ -12,15 +12,15 @@ namespace TP1.Influences
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
-            var shortestPaths = GetTotalShortestPaths(graph); // O(N^4) worst case
+            var shortestPaths = GetTotalShortestPaths(graph); 
 
             double bottom = shortestPaths.Count;
 
             var influences = new InfluencesCollection<TData, TId>(graph.NodeCount);
 
-            foreach (var node in graph.Nodes) // O(N) * O((N*(N-1))/2) = O(N^3)
+            foreach (var node in graph.Nodes)
             {
-                double top = shortestPaths.Paths.Count(p => p.PassesThrough(node)); // O((N*(N-1))/2) average case
+                double top = shortestPaths.Paths.Count(p => p.PassesThrough(node));
 
                 double influence = top/bottom; 
 
@@ -42,7 +42,7 @@ namespace TP1.Influences
             {
                 var shortestPaths = graph.GetShortestPathsWithBFS(nodeS); // O(N^3)
 
-                allShortestPaths.AddPaths(shortestPaths);
+                allShortestPaths.Add(shortestPaths);
             }
 
             return allShortestPaths;
