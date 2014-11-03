@@ -6,21 +6,21 @@ namespace TP1.Influences
 {
     public static class InfluencesExtension
     {
-        /// <remarks>O(N^4)
+        /// <remarks>O(|E||V|^3) average case
         /// </remarks>
         public static InfluencesCollection<TData, TId> GetInfluences<TData, TId>(this Graph<TData, TId> graph)
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
-            var shortestPaths = GetTotalShortestPaths(graph); 
+            var shortestPaths = GetTotalShortestPaths(graph); // O(|E||V|^3) average case
 
             double bottom = shortestPaths.Count;
 
             var influences = new InfluencesCollection<TData, TId>(graph.NodeCount);
 
-            foreach (var node in graph.Nodes)
+            foreach (var node in graph.Nodes) // O(|V|) * O((V*(V-1))/2) = O((V^2 * (V-1))/2) 
             {
-                double top = shortestPaths.Paths.Count(p => p.PassesThrough(node));
+                double top = shortestPaths.Paths.Count(p => p.PassesThrough(node)); // O((V*(V-1))/2) average case
 
                 double influence = top/bottom; 
 
@@ -30,7 +30,7 @@ namespace TP1.Influences
             return influences;
         }
 
-        /// <remarks>O(N^4)
+        /// <remarks>O(|E||V|^3)
         /// </remarks>
         private static ShortestPathsCollection<TData, TId> GetTotalShortestPaths<TData, TId>(Graph<TData, TId> graph)
             where TData : IIdentifiable<TId>
@@ -38,9 +38,9 @@ namespace TP1.Influences
         {
             var allShortestPaths = new ShortestPathsCollection<TData, TId>(graph.EdgeCount);
 
-            foreach (var nodeS in graph.Nodes) // O(N) * O(N^3) = O(N^4)
+            foreach (var nodeS in graph.Nodes) // O(|V|) * O(|E||V|^2) = O(|E||V|^3)
             {
-                var shortestPaths = graph.GetShortestPathsWithBFS(nodeS); // O(N^3)
+                var shortestPaths = graph.GetShortestPathsWithBFS(nodeS); // O(|E||V|^2)
 
                 allShortestPaths.Add(shortestPaths);
             }
