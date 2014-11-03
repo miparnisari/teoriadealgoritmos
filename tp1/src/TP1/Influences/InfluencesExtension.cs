@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using TP1.Graph;
 
@@ -6,46 +7,111 @@ namespace TP1.Influences
 {
     public static class InfluencesExtension
     {
-        /// <remarks>O(|E||V|^3) average case
-        /// </remarks>
+        const long infinity = long.MaxValue - 1;
+
+        /// <remarks>Source: http://www.inf.uni-konstanz.de/algo/publications/b-vspbc-08.pdf </remarks>
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="TData"></typeparam>
+        /// <typeparam name="TId"></typeparam>
+        /// <param name="graph"></param>
+        /// <returns></returns>
         public static InfluencesCollection<TData, TId> GetInfluences<TData, TId>(this Graph<TData, TId> graph)
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
-            var shortestPaths = GetTotalShortestPaths(graph); // O(|E||V|^3) average case
+            #region initialize data structures and variables
 
-            double bottom = shortestPaths.Count;
+            // distance from source
+            var dist = new Dictionary<TId, long>(graph.NodeCount);
 
-            var influences = new InfluencesCollection<TData, TId>(graph.NodeCount);
+            // list of predecessors on shortest paths from source
+            var pred = new Dictionary<TId, List<Node<TData, TId>>>(graph.NodeCount); // O(1)
 
-            foreach (var node in graph.Nodes) // O(|V|) * O((V*(V-1))/2) = O((V^2 * (V-1))/2) 
+            // number of shortest paths from source to v ∈ V
+            var number = new Dictionary<TId, int>(graph.EdgeCount);
+
+            // dependency of source on v ∈ V
+            var dependency = new Dictionary<TId, double>(graph.NodeCount);
+
+            var betweenness = new Dictionary<TId, double>(graph.NodeCount);
+
+            #endregion
+
+            foreach (var source in graph.Nodes)
             {
-                double top = shortestPaths.Paths.Count(p => p.PassesThrough(node)); // O((V*(V-1))/2) average case
+                var queue = new Queue<Node<TData, TId>>(graph.NodeCount);
 
-                double influence = top/bottom; 
+                var stack = new Stack<Node<TData, TId>>(graph.NodeCount);
 
-                influences.Add(new Influence<TData, TId>(node, influence));
+                #region single-source shortest-paths problem
+
+                foreach (var node in graph.Nodes)
+                {
+                    pred[node.Id] = new List<Node<TData, TId>>();
+                    dist[node.Id] = infinity;
+                    number[node.Id] = 0;
+                    betweenness[node.Id] = 0.0;
+                }
+
+                dist[source.Id] = 0;
+                number[source.Id] = 1;
+                queue.Enqueue(source);
+
+                while (queue.Any())
+                {
+                    var visitedNode = queue.Dequeue();
+                    stack.Push(visitedNode);
+
+                    foreach (var adjacent in visitedNode.Adjacents)
+                    {
+                        if (dist[adjacent.Key] == infinity)
+                        {
+                            dist[adjacent.Key] = dist[visitedNode.Id] + 1;
+                            queue.Enqueue(adjacent.Value);
+                        }
+
+                        if (dist[adjacent.Key] == (dist[visitedNode.Id] + 1))
+                        {
+                            number[adjacent.Key] += number[visitedNode.Id];
+                            pred[adjacent.Key].Add(visitedNode);
+                        }
+                    }
+                }
+
+                #endregion
+
+                #region accumulation
+
+                foreach (var node in graph.Nodes)
+                {
+                    dependency[node.Id] = 0.0;
+                }
+                
+                while (stack.Any())
+                {
+                    var element = stack.Pop();
+                    foreach (var node in pred[element.Id])
+                    {
+                        double division = number[node.Id]/(double) number[element.Id];
+                        dependency[node.Id] = dependency[node.Id] + division * (1.0 + dependency[element.Id]);
+                    }
+                    if (!element.Equals(source))
+                    {
+                        betweenness[element.Id] = betweenness[element.Id] + dependency[element.Id];
+                    }
+                }
+                #endregion
             }
 
-            return influences;
-        }
-
-        /// <remarks>O(|E||V|^3)
-        /// </remarks>
-        private static ShortestPathsCollection<TData, TId> GetTotalShortestPaths<TData, TId>(Graph<TData, TId> graph)
-            where TData : IIdentifiable<TId>
-            where TId : IComparable
-        {
-            var allShortestPaths = new ShortestPathsCollection<TData, TId>(graph.EdgeCount);
-
-            foreach (var nodeS in graph.Nodes) // O(|V|) * O(|E||V|^2) = O(|E||V|^3)
+            var result = new InfluencesCollection<TData, TId>(graph.NodeCount);
+            foreach (var influence in betweenness)
             {
-                var shortestPaths = graph.GetShortestPathsWithBFS(nodeS); // O(|E||V|^2)
-
-                allShortestPaths.Add(shortestPaths);
+                result.Add(new Influence<TData, TId>(graph[influence.Key], influence.Value));
             }
 
-            return allShortestPaths;
+            return result;
         }
     }
 }
