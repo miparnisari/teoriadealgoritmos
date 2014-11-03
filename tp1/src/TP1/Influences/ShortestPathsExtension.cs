@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using TP1.Graph;
 
@@ -7,13 +8,13 @@ namespace TP1.Influences
 {
     public static class ShortestPathsExtension
     {
+        const long infinity = int.MaxValue - 1;
+
         /// <summary>
         /// Returns all the shortest paths from a node to every other node in a graph.
         /// If the nodes's IDs are equal, it returns an empty collection.
         /// </summary>
-        /// <remarks>O(N log N) + O(N^3 log N) + O(N^3) = O(N^3)
-        /// N: node count for the graph
-        /// E: edge count for the graph
+        /// <remarks>
         /// </remarks>
         public static ShortestPathsCollection<TData, TId> GetShortestPathsWithBFS<TData, TId>
             (this Graph<TData, TId> graph,
@@ -21,22 +22,29 @@ namespace TP1.Influences
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
-            #region initialize data structures
+            #region initialize data structures and variables
 
             // stores each unvisited node
             var unvisitedNodesQueue = new Queue<Node<TData, TId>>(graph.NodeCount); // O(1)
 
+            // stores the shortest distance to each node, from "source"
+            var distanceTo = new Dictionary<TId, long>();
+
             // stores the node(s) used to reach a given node 
             // since we are finding *all* the shortest paths, we store them all, not just one
             var previous = new Dictionary<TId, HashSet<Node<TData, TId>>>(graph.NodeCount); // O(1)
-            #endregion
-
             foreach (var node in graph.Nodes)
             {
-                previous[node.Id] = new HashSet<Node<TData, TId>>();
                 node.Visited = false;
+                previous[node.Id] = new HashSet<Node<TData, TId>>();
+                if (!node.Equals(source))
+                {
+                    distanceTo[node.Id] = infinity;
+                }
             }
+            #endregion
 
+            distanceTo[source.Id] = 0;
             unvisitedNodesQueue.Enqueue(source);
 
             while (unvisitedNodesQueue.Count > 0)
@@ -48,9 +56,13 @@ namespace TP1.Influences
                 // Visit the node's neighbors
                 foreach (var adjacent in graph[visitedNode.Id].Adjacents)
                 {
+                    var currentDistance = distanceTo[visitedNode.Id] + 1;
+
                     // The node has not yet been discovered by BFS or it is the source node itself
-                    if (!adjacent.Value.Visited)
+                    if (!adjacent.Value.Visited && currentDistance <= distanceTo[adjacent.Key])
                     {
+                        distanceTo[adjacent.Key] = currentDistance;
+
                         previous[adjacent.Value.Id].Add(graph[visitedNode.Id]); // Best case O(1), worst case O(N) - http://msdn.microsoft.com/en-us/library/bb353005(v=vs.110).aspx
 
                         unvisitedNodesQueue.Enqueue(adjacent.Value);
@@ -63,12 +75,7 @@ namespace TP1.Influences
             foreach (var target in graph.Nodes.Except(new[] { source }))
             {
                 var allPaths = FindParents(graph, previous, target);
-                if (allPaths.Count > 0)
-                {
-                    var minLength = allPaths.Paths.Min(p => p.Length);
-                    var pathsWithMinLength = allPaths.Paths.Where(p => p.Length == minLength).ToList();
-                    result.Add(pathsWithMinLength);
-                }
+                result.Add(allPaths);
             }
             return result;
         }

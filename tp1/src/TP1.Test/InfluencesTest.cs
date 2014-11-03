@@ -9,7 +9,6 @@ namespace TP1.Test
     public class InfluencesTest
     {
         [Test()]
-        [Ignore]
         public void ShouldList231Influences_With231nodesInGraph()
         {
             // arrange
