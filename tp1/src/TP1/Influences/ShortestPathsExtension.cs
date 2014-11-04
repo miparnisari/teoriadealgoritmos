@@ -8,7 +8,7 @@ namespace TP1.Influences
 {
     public static class ShortestPathsExtension
     {
-        const long infinity = int.MaxValue - 1;
+        const long Infinity = int.MaxValue - 1;
 
         /// <summary>
         /// Returns all the shortest paths from a node to every other node in a graph.
@@ -40,7 +40,7 @@ namespace TP1.Influences
                 previous[node.Id] = new HashSet<Node<TData, TId>>(); // 0(1)
                 if (!node.Equals(source))
                 {
-                    distanceTo[node.Id] = infinity;
+                    distanceTo[node.Id] = Infinity;
                 }
             }
             #endregion
