@@ -7,7 +7,7 @@ namespace TP1.Influences
 {
     public static class InfluencesExtension
     {
-        const long infinity = long.MaxValue - 1;
+        const long Infinity = long.MaxValue - 1;
 
         /// <remarks>Source: http://www.inf.uni-konstanz.de/algo/publications/b-vspbc-08.pdf </remarks>
         /// <summary>
@@ -21,44 +21,50 @@ namespace TP1.Influences
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
-            #region initialize data structures and variables
+            var queue = new Queue<Node<TData, TId>>(graph.NodeCount);
 
-            // distance from source
-            var dist = new Dictionary<TId, long>(graph.NodeCount);
+            var stack = new Stack<Node<TData, TId>>(graph.NodeCount);
 
-            // list of predecessors on shortest paths from source
-            var pred = new Dictionary<TId, List<Node<TData, TId>>>(graph.NodeCount); // O(1)
+            var betweenness = new Dictionary<TId, int>(graph.NodeCount);
 
-            // number of shortest paths from source to v ∈ V
-            var number = new Dictionary<TId, int>(graph.EdgeCount);
-
-            // dependency of source on v ∈ V
-            var dependency = new Dictionary<TId, double>(graph.NodeCount);
-
-            var betweenness = new Dictionary<TId, double>(graph.NodeCount);
-
-            #endregion
+            foreach (var node in graph.Nodes)
+            {
+                betweenness[node.Id] = 0;
+            }
 
             foreach (var source in graph.Nodes)
             {
-                var queue = new Queue<Node<TData, TId>>(graph.NodeCount);
+                #region initialize data structures and variables
 
-                var stack = new Stack<Node<TData, TId>>(graph.NodeCount);
+                // distance from source to to v ∈ V
+                var distanceTo = new Dictionary<TId, long>(graph.NodeCount);
+
+                // list of predecessors on shortest paths from source
+                var previous = new Dictionary<TId, HashSet<Node<TData, TId>>>(graph.NodeCount); // O(1)
+
+                // number of shortest paths from source to v ∈ V
+                var numberOfShortestPathsTo = new Dictionary<TId, int>(graph.EdgeCount);
+
+                // dependency of source on v ∈ V
+                var dependency = new Dictionary<TId, int>(graph.NodeCount);
+
+                #endregion
 
                 #region single-source shortest-paths problem
 
                 foreach (var node in graph.Nodes)
                 {
-                    pred[node.Id] = new List<Node<TData, TId>>();
-                    dist[node.Id] = infinity;
-                    number[node.Id] = 0;
-                    betweenness[node.Id] = 0.0;
+                    previous[node.Id] = new HashSet<Node<TData, TId>>();
+                    distanceTo[node.Id] = Infinity;
+                    numberOfShortestPathsTo[node.Id] = 0;
+                    dependency[node.Id] = 0;
                 }
 
-                dist[source.Id] = 0;
-                number[source.Id] = 1;
+                numberOfShortestPathsTo[source.Id] = 1;
+                distanceTo[source.Id] = 0;
                 queue.Enqueue(source);
 
+                // breadth first search
                 while (queue.Any())
                 {
                     var visitedNode = queue.Dequeue();
@@ -66,16 +72,17 @@ namespace TP1.Influences
 
                     foreach (var adjacent in visitedNode.Adjacents)
                     {
-                        if (dist[adjacent.Key] == infinity)
+                        // a short path has been found! update the min dist and add the vertex to the queue
+                        if (distanceTo[adjacent.Key] == Infinity)
                         {
-                            dist[adjacent.Key] = dist[visitedNode.Id] + 1;
+                            distanceTo[adjacent.Key] = distanceTo[visitedNode.Id] + 1;
                             queue.Enqueue(adjacent.Value);
                         }
 
-                        if (dist[adjacent.Key] == (dist[visitedNode.Id] + 1))
+                        if (distanceTo[adjacent.Key] == (distanceTo[visitedNode.Id] + 1))
                         {
-                            number[adjacent.Key] += number[visitedNode.Id];
-                            pred[adjacent.Key].Add(visitedNode);
+                            numberOfShortestPathsTo[adjacent.Key] += numberOfShortestPathsTo[visitedNode.Id];
+                            previous[adjacent.Key].Add(visitedNode);
                         }
                     }
                 }
@@ -84,27 +91,25 @@ namespace TP1.Influences
 
                 #region accumulation
 
-                foreach (var node in graph.Nodes)
-                {
-                    dependency[node.Id] = 0.0;
-                }
-                
+                //betweenness[source.Id] = stack.Count - 1;
+
                 while (stack.Any())
                 {
                     var element = stack.Pop();
-                    foreach (var node in pred[element.Id])
+                    foreach (var node in previous[element.Id])
                     {
-                        double division = number[node.Id]/(double) number[element.Id];
-                        dependency[node.Id] = dependency[node.Id] + division * (1.0 + dependency[element.Id]);
+                        dependency[node.Id] += (numberOfShortestPathsTo[node.Id] / numberOfShortestPathsTo[element.Id]) * (1 + dependency[element.Id]);
                     }
                     if (!element.Equals(source))
                     {
-                        betweenness[element.Id] = betweenness[element.Id] + dependency[element.Id];
+                        betweenness[element.Id] += dependency[element.Id];// + 1;
                     }
                 }
                 #endregion
             }
 
+            var min = betweenness.Min(i => i.Value);
+            var max = betweenness.Max(i => i.Value);
             var result = new InfluencesCollection<TData, TId>(graph.NodeCount);
             foreach (var influence in betweenness)
             {
