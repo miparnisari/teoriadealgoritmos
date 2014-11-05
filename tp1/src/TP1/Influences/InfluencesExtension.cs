@@ -21,11 +21,27 @@ namespace TP1.Influences
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
+            #region initialize data structures and variables
+
+            // distance from source to to v ∈ V
+            var distanceTo = new Dictionary<TId, long>(graph.NodeCount);
+
+            // list of predecessors on shortest paths from source
+            var previous = new Dictionary<TId, HashSet<Node<TData, TId>>>(graph.NodeCount); // O(1)
+
+            // number of shortest paths from source to v ∈ V
+            var numberOfShortestPathsTo = new Dictionary<TId, double>(graph.EdgeCount);
+
+            // dependency of source on v ∈ V
+            var dependency = new Dictionary<TId, double>(graph.NodeCount);
+
             var queue = new Queue<Node<TData, TId>>(graph.NodeCount);
 
             var stack = new Stack<Node<TData, TId>>(graph.NodeCount);
 
-            var betweenness = new Dictionary<TId, int>(graph.NodeCount);
+            var betweenness = new Dictionary<TId, double>(graph.NodeCount);
+
+            #endregion
 
             foreach (var node in graph.Nodes)
             {
@@ -34,22 +50,6 @@ namespace TP1.Influences
 
             foreach (var source in graph.Nodes)
             {
-                #region initialize data structures and variables
-
-                // distance from source to to v ∈ V
-                var distanceTo = new Dictionary<TId, long>(graph.NodeCount);
-
-                // list of predecessors on shortest paths from source
-                var previous = new Dictionary<TId, HashSet<Node<TData, TId>>>(graph.NodeCount); // O(1)
-
-                // number of shortest paths from source to v ∈ V
-                var numberOfShortestPathsTo = new Dictionary<TId, int>(graph.EdgeCount);
-
-                // dependency of source on v ∈ V
-                var dependency = new Dictionary<TId, int>(graph.NodeCount);
-
-                #endregion
-
                 #region single-source shortest-paths problem
 
                 foreach (var node in graph.Nodes)
@@ -91,8 +91,6 @@ namespace TP1.Influences
 
                 #region accumulation
 
-                //betweenness[source.Id] = stack.Count - 1;
-
                 while (stack.Any())
                 {
                     var element = stack.Pop();
@@ -102,7 +100,7 @@ namespace TP1.Influences
                     }
                     if (!element.Equals(source))
                     {
-                        betweenness[element.Id] += dependency[element.Id];// + 1;
+                        betweenness[element.Id] += dependency[element.Id];
                     }
                 }
                 #endregion
