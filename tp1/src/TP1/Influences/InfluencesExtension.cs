@@ -9,13 +9,10 @@ namespace TP1.Influences
     {
         const long Infinity = long.MaxValue - 1;
 
-        /// <remarks>Source: http://www.inf.uni-konstanz.de/algo/publications/b-vspbc-08.pdf </remarks>
+        /// <remarks>Reference: http://www.inf.uni-konstanz.de/algo/publications/b-vspbc-08.pdf </remarks>
         /// <summary>
-        /// 
+        /// Calculates the betweenness centrality of all the nodes in a graph using the Brandes algorithm
         /// </summary>
-        /// <typeparam name="TData"></typeparam>
-        /// <typeparam name="TId"></typeparam>
-        /// <param name="graph"></param>
         /// <returns></returns>
         public static InfluencesCollection<TData, TId> GetInfluences<TData, TId>(this Graph<TData, TId> graph)
             where TData : IIdentifiable<TId>
@@ -35,22 +32,24 @@ namespace TP1.Influences
             // dependency of source on v ∈ V
             var dependency = new Dictionary<TId, double>(graph.NodeCount);
 
+            // used in BFS
             var queue = new Queue<Node<TData, TId>>(graph.NodeCount);
 
+            // nodes reachable from a source
             var stack = new Stack<Node<TData, TId>>(graph.NodeCount);
 
             var betweenness = new Dictionary<TId, double>(graph.NodeCount);
-
-            #endregion
 
             foreach (var node in graph.Nodes)
             {
                 betweenness[node.Id] = 0;
             }
 
-            foreach (var source in graph.Nodes)
+            #endregion
+
+            foreach (var source in graph.Nodes) // O(|V|) * O(|V| + |E|) = O(|V|^2 + |V||E|)
             {
-                #region single-source shortest-paths problem
+                #region single-source shortest-paths problem with BFS O(|V| + |E|)
 
                 foreach (var node in graph.Nodes)
                 {
@@ -64,8 +63,8 @@ namespace TP1.Influences
                 distanceTo[source.Id] = 0;
                 queue.Enqueue(source);
 
-                // breadth first search
-                while (queue.Any())
+                #region breadth first search O(|V| + |E|)
+                while (queue.Any()) 
                 {
                     var visitedNode = queue.Dequeue();
                     stack.Push(visitedNode);
@@ -86,10 +85,11 @@ namespace TP1.Influences
                         }
                     }
                 }
+                #endregion
 
                 #endregion
 
-                #region accumulation
+                #region accumulation O(|E|)
 
                 while (stack.Any())
                 {
@@ -106,8 +106,6 @@ namespace TP1.Influences
                 #endregion
             }
 
-            var min = betweenness.Min(i => i.Value);
-            var max = betweenness.Max(i => i.Value);
             var result = new InfluencesCollection<TData, TId>(graph.NodeCount);
             foreach (var influence in betweenness)
             {
