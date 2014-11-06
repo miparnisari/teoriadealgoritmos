@@ -1,25 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="25b7e2fc-d4b9-4d39-b3d9-afdaa68a6f50" name="UMLClassDiagram" linkedPackageId="2fbf785d-f8c5-4382-8232-f01930cf6bfc" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="33e725a8-8dce-4934-a8df-ca2c95a7d1e4">
-      <profileInstance Id="c4735733-0160-4db3-aab8-562bd7c7c6b9" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="76eea4db-d689-471f-b2f7-85d0acbdaf55">
-      <profileInstance Id="bef34df8-0129-41e9-a228-334e50028c06" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="7f954dfe-cd58-47a2-b87d-cf901876baf1">
-      <profileInstance Id="c8866e3f-b5db-4379-862c-58df6ddc429b" name="CSharpProfile">
-        <elementDefinition Id="2f539781-0f1e-434c-b8b7-1547b4d929ad" />
-      </profileInstance>
-      <elementDefinition Id="3982347a-0c5b-4b24-88af-77598f5b4c8c" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="25b7e2fc-d4b9-4d39-b3d9-afdaa68a6f50" name="UMLClassDiagram" linkedPackageId="2fbf785d-f8c5-4382-8232-f01930cf6bfc" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="6cc913cf-bb77-4534-8a59-d5a5dbc764e9" name="MainClass" visibility="Package" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -445,11 +425,11 @@
           </generalization>
         </generalsInternal>
         <targetEnds>
-          <association Id="458c5c43-dc00-4a1f-a8cf-62fd0d67cbcb" isDerived="false" sourceEndRoleName="FacbookGraph" targetEndRoleName="Nodes" isLeaf="false" isAbstract="false">
+          <association Id="458c5c43-dc00-4a1f-a8cf-62fd0d67cbcb" isDerived="false" sourceEndRoleName="FacebookGraph" targetEndRoleName="Nodes" isLeaf="false" isAbstract="false">
             <classMoniker Id="39580b11-f2e0-415d-b7f0-ed428a4c2f0c" LastKnownName="FacebookUser" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="e5263a09-1a58-4368-824c-7a92d0aff611" name="FacbookGraph" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="e5263a09-1a58-4368-824c-7a92d0aff611" name="FacebookGraph" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="3f5e764b-ad62-4a55-9f2c-e579299cafea" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -1729,568 +1709,6 @@
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="f504d283-2314-4ea1-b0d3-b4900ec39b09" name="ShortestPathsExtension" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <referencesInternal>
-          <reference Id="56bcd706-d79c-4691-b104-8799de138c03" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3DShortestPathsExtension" tag="ViewCode">
-            <elementDefinition Id="cd632ec0-aede-4e76-90ac-d6d1412ecc48" />
-          </reference>
-        </referencesInternal>
-        <appliedStereotypesInternal>
-          <stereotypeInstance Id="3324ff46-6bd8-4cf6-bc2a-e37b6988eee1" name="class" profile="CSharpProfile">
-            <elementDefinition Id="f587fa8d-a20c-4e9a-892a-f56e5b3983fe" />
-            <propertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="7b73a93e-0c13-4ad9-a6a8-6b03da07bcc1">
-                <propertyInstance Id="36501357-28fa-4c7b-98c9-2dbfb9fabeb6" name="ClrAttributes">
-                  <elementDefinition Id="37ccc0ee-8c3e-430f-a71d-574b79d619b7" />
-                </propertyInstance>
-                <elementDefinition Id="93afc84b-b24a-44f2-93e4-5d89e1b7fa17" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="9bccb0de-49ff-4f6f-b27f-37684618121e">
-                <propertyInstance Id="f60552d7-e856-46c9-bcd6-58f2c061b4f4" name="IsPartial" value="false">
-                  <elementDefinition Id="49d6a2f4-cf41-40cc-bc09-600280fb4733" />
-                </propertyInstance>
-                <elementDefinition Id="b3b700a4-fa02-40b4-a6d9-88032309e573" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="924a3f13-5420-4f9d-afd4-21e2dbb66f14">
-                <propertyInstance Id="6cf93893-5eb6-4cf4-aa76-7f0b3a0f5b1f" name="IsStatic" value="True">
-                  <elementDefinition Id="e9e0926d-3c4f-49e9-8a5e-888e33e4d1f1" />
-                </propertyInstance>
-                <elementDefinition Id="59fabfaf-f29b-4c6e-8ab8-d2b2b96d947c" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="9ab787ef-6d04-49b9-bfbb-b256ea8742a7">
-                <propertyInstance Id="789bdbc8-c56c-42f5-ad70-4ef8f7b3b3be" name="IsUnsafe" value="false">
-                  <elementDefinition Id="2d74b8b1-9645-4888-817c-319f16e3ea7e" />
-                </propertyInstance>
-                <elementDefinition Id="6fe63fc3-9564-49f9-8f43-bb72c289a9f4" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="8b302fd1-296e-4774-a380-9123bd703434">
-                <propertyInstance Id="cefd6c4e-adfd-4107-919a-7283627011b7" name="PackageVisibility" value="internal">
-                  <elementDefinition Id="e71d4c83-6020-410b-a48c-801a281cfbfd" />
-                </propertyInstance>
-                <elementDefinition Id="9a70b0e1-6232-4df7-a4da-1ac003073a4d" />
-              </stereotypeInstanceHasPropertyInstances>
-            </propertyInstances>
-          </stereotypeInstance>
-        </appliedStereotypesInternal>
-        <elementDefinition Id="63914148-0357-4f35-9d72-f4a6aa71c981" />
-        <suppliersInternal>
-          <dependency Id="1773df60-d472-40d1-923a-703cb4113317">
-            <classMoniker Id="301f25b0-2b27-4cd9-a80b-8950b9e8c0cb" LastKnownName="Graph" />
-            <elementDefinition Id="c1c99b30-248e-4ada-821d-f9c32a6c038f" />
-          </dependency>
-        </suppliersInternal>
-        <ownedOperationsInternal>
-          <operation Id="3c86937c-6bd2-43d8-b216-adf50195cfa9" name="GetShortestPathsWithDijkstra‎&lt;TData‎, TId‎&gt;" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <referencesInternal>
-              <reference Id="aeb8f63a-20c4-49fd-a79a-5e618d66b022" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3DShortestPathsExtension Member%3D(Name%3DGetShortestPathsWithDijkstra GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DGraph GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))])" tag="ViewCode">
-                <elementDefinition Id="6cc8ce4f-c84e-43ee-bca6-3909349e7402" />
-              </reference>
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance Id="411dddb6-2b34-4e2d-a38c-7ffe232cfb4e" name="method" profile="CSharpProfile">
-                <elementDefinition Id="8c32940f-9c9e-4506-ab25-3f68f53119db" />
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="3001eccc-693a-4133-986d-1daaa59e99b8">
-                    <propertyInstance Id="efdf6f10-05a0-4ee8-bf1b-f61b5ac9eb63" name="ClrAttributes">
-                      <elementDefinition Id="3246eafb-d9ad-4b96-8213-031ac84480a9" />
-                    </propertyInstance>
-                    <elementDefinition Id="ff6d90d8-9a92-4636-b202-35ac81b3c53e" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="83391c93-29d3-403d-8ca6-323f62cd2c97">
-                    <propertyInstance Id="04bd7258-4a34-4390-8f8e-5b24d9eb281a" name="IsPartial" value="false">
-                      <elementDefinition Id="380ff1ea-1484-4c83-91dc-ba15c3388de6" />
-                    </propertyInstance>
-                    <elementDefinition Id="6eca8577-11cf-46b8-a517-da8dfc55ddaf" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="09379753-9c18-4a84-93d4-d8d36ecde87f">
-                    <propertyInstance Id="97bda366-e5e7-4c39-bff3-88a2585d9e6a" name="IsUnsafe" value="false">
-                      <elementDefinition Id="5fcf890f-1f25-4646-980f-88cd7fcd9da8" />
-                    </propertyInstance>
-                    <elementDefinition Id="7a4893c0-035c-4eb5-b37f-8d0baa92a0ec" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="5387f69f-fb6a-468d-91e2-fd4c5aeca75b">
-                    <propertyInstance Id="4d332d7c-fc62-4442-9b42-c7cd1430869e" name="Inheritance" value="none">
-                      <elementDefinition Id="3dc0266a-d461-40cb-8998-3d88d6c85345" />
-                    </propertyInstance>
-                    <elementDefinition Id="79f095dd-ef5a-491e-b4d3-2cd9a11b0dc1" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="c1de1bc5-79db-4cb6-9534-4119b2fb0ba4">
-                    <propertyInstance Id="978a197a-7b8e-4d84-a7c1-2f0ce45ba58e" name="PackageVisibility" value="internal">
-                      <elementDefinition Id="e1df6ed9-a38a-4721-9d28-ea0afce5e091" />
-                    </propertyInstance>
-                    <elementDefinition Id="1bd81bf3-36ce-4fe4-b3c7-00efe9692134" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="635c07fe-0a40-4330-b8e9-2646adc3a560">
-                    <propertyInstance Id="2b5da20f-a663-469d-a120-d0fa8ed330f2" name="params" value="false">
-                      <elementDefinition Id="18590854-1479-49fd-8cb7-aaf5cce2cb30" />
-                    </propertyInstance>
-                    <elementDefinition Id="91b12e02-bc34-4caf-926c-6912d864a405" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <elementDefinition Id="f8d7be80-aac5-4f27-92ac-d3dac14f0884" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="e4ed1439-3eeb-4280-80f8-20a9e3aab095" direction="Return">
-                  <elementDefinition Id="c7aa1a34-bd1c-4143-affa-1154e88a59b8" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="4f58f213-aad6-49e5-bd0a-b09dc2b16323" LastKnownName="ShortestPathsCollection&lt;TData‎, TId‎&gt;" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="31de148d-ff47-4600-99e6-7fb6eced4c21" name="graph" direction="In">
-                  <referencesInternal>
-                    <reference Id="25c6f774-832b-4429-b22d-40ff29b7c9c8" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3DShortestPathsExtension Member%3D(Name%3DGetShortestPathsWithDijkstra GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DGraph GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))]) ParameterIdentifier%3Dgraph" tag="ViewCode">
-                      <elementDefinition Id="846f7b31-9ce3-4aff-80fa-a62293afe826" />
-                    </reference>
-                  </referencesInternal>
-                  <elementDefinition Id="b1bf9e25-6796-475a-9d85-1e682c9db41c" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="879ea046-af17-4404-baa3-8c581d7c7c2d" LastKnownName="Graph&lt;TData‎, TId‎&gt;" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="f0634aa6-f423-4c3e-abf2-fce7e93927b2" name="source" direction="In">
-                  <referencesInternal>
-                    <reference Id="12e62c9b-a9ca-47cc-8578-6614b629c4d6" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3DShortestPathsExtension Member%3D(Name%3DGetShortestPathsWithDijkstra GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DGraph GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))]) ParameterIdentifier%3Dsource" tag="ViewCode">
-                      <elementDefinition Id="3da73bf6-877b-40e9-903f-aee5ada557bc" />
-                    </reference>
-                  </referencesInternal>
-                  <elementDefinition Id="688e064d-05c9-43ff-a2b6-4630f0f74315" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="bb9aeaf4-9a0c-4735-bd3b-2e17d11c2a51" LastKnownName="Node&lt;TData‎, TId‎&gt;" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="1d0b9166-7031-4f8d-9a48-c43824d66572" name="FindParents‎&lt;TData‎, TId‎&gt;" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <referencesInternal>
-              <reference Id="18cb8a75-a66e-4468-b20a-cc9fefacb852" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3DShortestPathsExtension Member%3D(Name%3DFindParents GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DDictionary GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D1)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Core.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DHashSet GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))]))]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))])" tag="ViewCode">
-                <elementDefinition Id="1064e9ae-4931-41c0-92de-25ee31cdd7ac" />
-              </reference>
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance Id="c026665f-9a05-45cc-8118-3ddee72c0117" name="method" profile="CSharpProfile">
-                <elementDefinition Id="f5b07e53-2c30-474a-bc86-65287707cfd6" />
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="e3d6e581-d055-4d08-976d-07979a0ce3ca">
-                    <propertyInstance Id="405ee9dd-7a2d-4392-9ad0-565c74ef2d54" name="ClrAttributes">
-                      <elementDefinition Id="d5ed9a0d-2d1b-4cb7-9f23-724179be5138" />
-                    </propertyInstance>
-                    <elementDefinition Id="aea00f69-ca94-448d-8b46-aed768f2b2b6" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="ce5846ab-9660-463e-8895-9e540b130775">
-                    <propertyInstance Id="1895a8fe-8cad-4598-a7f8-ebfa79d87d70" name="IsPartial" value="false">
-                      <elementDefinition Id="2b097dfa-aa6a-434e-9819-5e6d935ed6be" />
-                    </propertyInstance>
-                    <elementDefinition Id="7fe1e5a5-ff96-42a9-86d3-83f964b754fe" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="b7a03b13-311c-40d3-b76f-72ad09360cdc">
-                    <propertyInstance Id="f610ac66-a92c-4265-8bd6-f92a4b6c8586" name="IsUnsafe" value="false">
-                      <elementDefinition Id="ea3c7b6a-f96c-4585-92d2-f4fbcbab7a85" />
-                    </propertyInstance>
-                    <elementDefinition Id="6c1b1ec1-ef81-431b-a825-77c7cc0625de" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="d98db3c2-aeb6-4bdf-be28-200b05ee76d1">
-                    <propertyInstance Id="ad149970-5ba3-4004-8a62-eb8214c392f2" name="Inheritance" value="none">
-                      <elementDefinition Id="e68e5dfe-323a-400a-9f1c-5f2b89ad124a" />
-                    </propertyInstance>
-                    <elementDefinition Id="cfbdb968-7518-4ad7-ab8f-71ce51303e18" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="0a014bd0-9f4b-4ff9-b652-d91ce75f32d2">
-                    <propertyInstance Id="74d24edc-c173-4cff-8482-2234f288a0d2" name="PackageVisibility" value="internal">
-                      <elementDefinition Id="90aca42d-f043-4c7c-a6a3-254efa82dae9" />
-                    </propertyInstance>
-                    <elementDefinition Id="690c65a3-6f56-4bef-b32f-f0aa9e602df1" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="8b0a317b-98cf-4e13-8695-41e29b221420">
-                    <propertyInstance Id="e3fe585a-07d6-483d-a882-acf4beb6bfba" name="params" value="false">
-                      <elementDefinition Id="8b8d5fcb-e607-471a-be20-33696ce0eaf5" />
-                    </propertyInstance>
-                    <elementDefinition Id="04bf5ac1-a482-4e50-9b38-44d335c24526" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <elementDefinition Id="11a0739a-3bbc-4557-9cc6-edac4a6e9711" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="a2740fc8-1514-4f67-a1c6-266456962c36" direction="Return">
-                  <elementDefinition Id="86c4cc19-c713-4f97-97cd-668b1e85129f" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="4f58f213-aad6-49e5-bd0a-b09dc2b16323" LastKnownName="ShortestPathsCollection&lt;TData‎, TId‎&gt;" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="78e9eda0-1e9c-48c5-936b-f513ffb9b425" name="parent" direction="In">
-                  <referencesInternal>
-                    <reference Id="e7e8c1f6-b78a-4c83-8fe1-9e856457a7de" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3DShortestPathsExtension Member%3D(Name%3DFindParents GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DDictionary GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D1)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Core.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DHashSet GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))]))]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))]) ParameterIdentifier%3Dparent" tag="ViewCode">
-                      <elementDefinition Id="0958a4ec-916e-448f-bd69-1092e4187dd7" />
-                    </reference>
-                  </referencesInternal>
-                  <elementDefinition Id="9789898a-9909-4f48-8abe-caf123318ee6" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="a849a695-ec15-4f7b-a1e7-f1e163991611" LastKnownName="Dictionary&lt;TId‎, HashSet‎&lt;Node‎&lt;TData‎, TId‎&gt;‎&gt;‎&gt;" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="6d28bc2f-929e-4302-a92c-a80bbc78c4c8" name="index" direction="In">
-                  <referencesInternal>
-                    <reference Id="f6a4bd2c-abc3-4411-ab1e-12a02e305cba" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3DShortestPathsExtension Member%3D(Name%3DFindParents GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DDictionary GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D1)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Core.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DHashSet GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))]))]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))]) ParameterIdentifier%3Dindex" tag="ViewCode">
-                      <elementDefinition Id="277b83f0-45b4-4abb-9159-ad42cdd6a8dd" />
-                    </reference>
-                  </referencesInternal>
-                  <elementDefinition Id="4ba5f3ac-c6b1-4bd7-b8f7-1f8576b31665" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="bb9aeaf4-9a0c-4735-bd3b-2e17d11c2a51" LastKnownName="Node&lt;TData‎, TId‎&gt;" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="91343a37-e27a-4397-882c-23231ffa74b8" name="FindParentsRecursive‎&lt;TData‎, TId‎&gt;" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <referencesInternal>
-              <reference Id="2ebc9e57-6571-4f1f-91c1-884ce2a7e20b" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3DShortestPathsExtension Member%3D(Name%3DFindParentsRecursive GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DDictionary GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D1)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Core.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DHashSet GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))]))]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3D(Name%3DShortestPath GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3D(Name%3DShortestPathsCollection GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))])" tag="ViewCode">
-                <elementDefinition Id="427ed663-583b-48aa-baa9-e5246c24ec25" />
-              </reference>
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance Id="26838022-b949-46d3-a44e-ae74bb22b260" name="method" profile="CSharpProfile">
-                <elementDefinition Id="e919d2bc-9175-480e-90d4-ad3fbfcd2b4b" />
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="463d7f36-1bf8-411e-9550-ac8eb92afb2a">
-                    <propertyInstance Id="fc59928e-5067-4842-b0c3-38a4afa39b14" name="ClrAttributes">
-                      <elementDefinition Id="b2493273-5a41-4083-acb6-9379053b59dc" />
-                    </propertyInstance>
-                    <elementDefinition Id="d32ca1d3-7c53-40f7-b337-90fb48ee9487" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="610513ae-7ec8-40e3-b224-d29343188718">
-                    <propertyInstance Id="68208e57-b334-49f3-b8aa-9caed353cbd1" name="IsPartial" value="false">
-                      <elementDefinition Id="0a4c8c03-1435-4efd-92d5-81c4f13f2763" />
-                    </propertyInstance>
-                    <elementDefinition Id="c7fa2b42-5406-4d1c-be89-fd09d85a9511" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="26baebd6-3de3-496d-8f47-0ea56ea69b6b">
-                    <propertyInstance Id="7ff144ea-d9b9-45d7-a70c-c376868ac72b" name="IsUnsafe" value="false">
-                      <elementDefinition Id="0138dbb1-cf1e-43ea-acdf-c0cf42012260" />
-                    </propertyInstance>
-                    <elementDefinition Id="a348c941-4591-404b-81ea-0da45c27aeb9" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="b2b89724-7e9d-4df1-9e8e-b20bd455d951">
-                    <propertyInstance Id="0eb23662-e126-4484-918a-b6ca5095d7d6" name="Inheritance" value="none">
-                      <elementDefinition Id="a5414ba5-6787-444d-91bb-e2057794639d" />
-                    </propertyInstance>
-                    <elementDefinition Id="d7508142-ccfa-4f4f-994d-5bf0b066bc19" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="ff2c70b8-3890-4ac4-b893-fff866638553">
-                    <propertyInstance Id="a4d4e14e-72d2-4308-ba99-725cd6bc6716" name="PackageVisibility" value="internal">
-                      <elementDefinition Id="79f74353-4865-4e1e-b0f4-24c926eb731f" />
-                    </propertyInstance>
-                    <elementDefinition Id="78e2a3d9-967c-4634-8f1f-0bdc9b971180" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="0fa3b127-b1a1-4cbb-9519-74cbf2876241">
-                    <propertyInstance Id="75e37dea-ef5b-4b5a-9a91-2099320a1c19" name="params" value="false">
-                      <elementDefinition Id="9240757f-f91d-46d3-afb3-208672f5605b" />
-                    </propertyInstance>
-                    <elementDefinition Id="4130de80-5f4b-41ef-9e4f-4a2198abd2d3" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <elementDefinition Id="140f3238-f5d0-4098-8cbd-5dd381973324" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="f03adec9-51da-474c-af70-0420cbcd5578" name="parent" direction="In">
-                  <referencesInternal>
-                    <reference Id="d37b8479-59d8-4712-9f9a-607cf9a851fe" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3DShortestPathsExtension Member%3D(Name%3DFindParentsRecursive GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DDictionary GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D1)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Core.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DHashSet GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))]))]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3D(Name%3DShortestPath GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3D(Name%3DShortestPathsCollection GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))]) ParameterIdentifier%3Dparent" tag="ViewCode">
-                      <elementDefinition Id="26f603e3-519e-4ab3-8c21-3fef6db72128" />
-                    </reference>
-                  </referencesInternal>
-                  <elementDefinition Id="e599eabf-c600-40fd-941b-65dca39c95f5" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="dd8b4487-8d42-41ec-9e2e-cce26eaa3ad2" LastKnownName="Dictionary&lt;TId‎, HashSet‎&lt;Node‎&lt;TData‎, TId‎&gt;‎&gt;‎&gt;" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="a69d3f1f-a84b-4443-b9dd-04aa5a3ed377" name="index" direction="In">
-                  <referencesInternal>
-                    <reference Id="74f8bd59-529c-4d25-b62c-0e6ccbe58278" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3DShortestPathsExtension Member%3D(Name%3DFindParentsRecursive GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DDictionary GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D1)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Core.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DHashSet GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))]))]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3D(Name%3DShortestPath GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3D(Name%3DShortestPathsCollection GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))]) ParameterIdentifier%3Dindex" tag="ViewCode">
-                      <elementDefinition Id="73606263-6396-4d02-8c14-013c245605cc" />
-                    </reference>
-                  </referencesInternal>
-                  <elementDefinition Id="99532bf2-f094-4b16-80bf-4418bacc6731" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="bb9aeaf4-9a0c-4735-bd3b-2e17d11c2a51" LastKnownName="Node&lt;TData‎, TId‎&gt;" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="df1f8fff-77fa-4c90-b56a-7e291e498489" name="prefix" direction="In">
-                  <referencesInternal>
-                    <reference Id="b39c90d9-6a42-483f-a2a5-5e1c4ed4a276" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3DShortestPathsExtension Member%3D(Name%3DFindParentsRecursive GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DDictionary GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D1)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Core.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DHashSet GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))]))]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3D(Name%3DShortestPath GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3D(Name%3DShortestPathsCollection GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))]) ParameterIdentifier%3Dprefix" tag="ViewCode">
-                      <elementDefinition Id="94ffb6d1-7144-4f90-9c5f-5052caeb09bd" />
-                    </reference>
-                  </referencesInternal>
-                  <elementDefinition Id="aa01e7e0-7dea-446a-9b3a-7c3bc12b9110" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="fb453a07-5682-4683-b9e9-bd4e61a241ee" LastKnownName="ShortestPath&lt;TData‎, TId‎&gt;" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="079facf6-184f-4260-b880-72544a6779f8" name="results" direction="In">
-                  <referencesInternal>
-                    <reference Id="b7d559c8-a300-4a16-82c7-285cf6775eaa" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3DShortestPathsExtension Member%3D(Name%3DFindParentsRecursive GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DDictionary GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D1)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Core.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DHashSet GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))]))]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DNode GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3D(Name%3DShortestPath GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3D(Name%3DShortestPathsCollection GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))]) ParameterIdentifier%3Dresults" tag="ViewCode">
-                      <elementDefinition Id="99164a75-1eb1-4132-9879-a2cc5e0778ca" />
-                    </reference>
-                  </referencesInternal>
-                  <elementDefinition Id="74c5cabb-7cb8-4950-b277-5dc49433648a" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="4f58f213-aad6-49e5-bd0a-b09dc2b16323" LastKnownName="ShortestPathsCollection&lt;TData‎, TId‎&gt;" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <packageHasNamedElement>
-      <referencedType Id="4f58f213-aad6-49e5-bd0a-b09dc2b16323" name="ShortestPathsCollection&lt;TData‎, TId‎&gt;" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::TP1::Influences::ShortestPathsCollection&lt;TData‎, TId‎&gt;">
-        <elementDefinition Id="b8d53d39-c9ce-4930-8b44-8bd95561652f" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="879ea046-af17-4404-baa3-8c581d7c7c2d" name="Graph&lt;TData‎, TId‎&gt;" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::TP1::Graph::Graph&lt;TData‎, TId‎&gt;">
-        <elementDefinition Id="103aa07f-f746-4ea6-ac83-10fb89fd6483" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="a849a695-ec15-4f7b-a1e7-f1e163991611" name="Dictionary&lt;TId‎, HashSet‎&lt;Node‎&lt;TData‎, TId‎&gt;‎&gt;‎&gt;" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::System::Collections::Generic::Dictionary&lt;TId‎, HashSet‎&lt;Node‎&lt;TData‎, TId‎&gt;‎&gt;‎&gt;">
-        <elementDefinition Id="5818e3bc-202d-4465-b05c-5fdc6b513dcf" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="dd8b4487-8d42-41ec-9e2e-cce26eaa3ad2" name="Dictionary&lt;TId‎, HashSet‎&lt;Node‎&lt;TData‎, TId‎&gt;‎&gt;‎&gt;" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::System::Collections::Generic::Dictionary&lt;TId‎, HashSet‎&lt;Node‎&lt;TData‎, TId‎&gt;‎&gt;‎&gt;">
-        <elementDefinition Id="f106daf5-836e-4d57-acf7-d50861435a7f" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="fb453a07-5682-4683-b9e9-bd4e61a241ee" name="ShortestPath&lt;TData‎, TId‎&gt;" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::TP1::Influences::ShortestPath&lt;TData‎, TId‎&gt;">
-        <elementDefinition Id="6da91fd8-0b69-4be8-b6d1-a7140c26a2f0" />
-      </referencedType>
-    </packageHasNamedElement>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="0d736cb1-a3e2-4837-b3a1-32ec8f39cc2d" name="InfluencesExtension" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <referencesInternal>
-          <reference Id="f34e85be-f768-4da0-a191-eca7f59cbdd4" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3DInfluencesExtension" tag="ViewCode">
-            <elementDefinition Id="e7f0126d-5c37-4e85-b483-df44e0c91e42" />
-          </reference>
-        </referencesInternal>
-        <appliedStereotypesInternal>
-          <stereotypeInstance Id="a7c24172-bc08-43c7-9b8f-4ecf78c5a937" name="class" profile="CSharpProfile">
-            <elementDefinition Id="02f5818b-8763-41a8-92be-3984fd79813a" />
-            <propertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="0a434798-0296-4c64-a6a9-c7230c6b7d3c">
-                <propertyInstance Id="2e3147e1-c6ec-4d55-8efb-88858be55b42" name="ClrAttributes">
-                  <elementDefinition Id="7314ad6e-73b5-4bd2-83fa-f86853a10e8c" />
-                </propertyInstance>
-                <elementDefinition Id="a983a989-81ca-4b3e-a717-f33e1678e394" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="2700d6ac-3768-4158-b348-96e0efcf09f3">
-                <propertyInstance Id="2dcc1a26-c6c1-438d-9188-be274d59d059" name="IsPartial" value="false">
-                  <elementDefinition Id="b04cb71d-01df-449d-ad6c-e6c3c6dc3b85" />
-                </propertyInstance>
-                <elementDefinition Id="a9691b0f-6ec5-4957-af8e-02b7233de0e3" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="e56e6b35-d4cc-46f3-bfc2-49b9dc6988d4">
-                <propertyInstance Id="d0beb168-1c1c-4f5d-a2ce-29cb384bfa93" name="IsStatic" value="True">
-                  <elementDefinition Id="567d2eae-8607-44ec-9f18-4a58bb891308" />
-                </propertyInstance>
-                <elementDefinition Id="637b469c-b309-4f94-a1fa-39069c324647" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="b9f51187-1f5f-471a-8af7-e57ed78a09f2">
-                <propertyInstance Id="f2e4dec9-a4c6-4a85-bdbf-8bb45712fb6c" name="IsUnsafe" value="false">
-                  <elementDefinition Id="9abfd42c-bedd-48fe-95c4-11adbe9e1bcb" />
-                </propertyInstance>
-                <elementDefinition Id="1db5c16f-70ab-44e1-be89-49cb8acc017f" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="53f937c4-d147-462d-a45f-202c5192499d">
-                <propertyInstance Id="ae869afe-b25f-40ea-82d8-27f664fa3bb5" name="PackageVisibility" value="internal">
-                  <elementDefinition Id="0422626b-3ffd-43d6-b938-9dbd987ac439" />
-                </propertyInstance>
-                <elementDefinition Id="0856b3a6-f8bf-49ca-8585-e2ef440dea6b" />
-              </stereotypeInstanceHasPropertyInstances>
-            </propertyInstances>
-          </stereotypeInstance>
-        </appliedStereotypesInternal>
-        <elementDefinition Id="8cae35d4-8940-4e45-bc1e-e80f194c310a" />
-        <suppliersInternal>
-          <dependency Id="69995aa4-dc8f-4ecf-8762-22169a3a7a6d">
-            <classMoniker Id="301f25b0-2b27-4cd9-a80b-8950b9e8c0cb" LastKnownName="Graph" />
-            <elementDefinition Id="e95b7ba5-baf7-4ca4-8b5f-8fd908c5e11b" />
-          </dependency>
-        </suppliersInternal>
-        <ownedOperationsInternal>
-          <operation Id="35020696-89e0-4356-8de6-a7f39c527c22" name="GetInfluences‎&lt;TData‎, TId‎&gt;" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <referencesInternal>
-              <reference Id="84e4e070-5317-411f-b8d1-aaed68b96b6e" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3DInfluencesExtension Member%3D(Name%3DGetInfluences GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DGraph GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))])" tag="ViewCode">
-                <elementDefinition Id="0f108c93-434f-476f-9fcd-cee0cb8006cf" />
-              </reference>
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance Id="c0ea040c-4032-4820-b31f-6fb5ca7bd4b0" name="method" profile="CSharpProfile">
-                <elementDefinition Id="008946b7-8b27-4ecc-ba4d-84caf0aa1026" />
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="7d5629b2-131f-43f6-8517-b31bf72109b4">
-                    <propertyInstance Id="9260a403-a3d9-4110-b15a-c60a750d3c75" name="ClrAttributes">
-                      <elementDefinition Id="e9fa8be0-c241-43b7-a6f3-ab2a240c5d9d" />
-                    </propertyInstance>
-                    <elementDefinition Id="21ae362b-203c-4380-9bf5-53eb83731995" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="20569ef5-ed9f-409e-bf53-68ae4826a7e6">
-                    <propertyInstance Id="69882e41-7e59-4daa-8cc9-78183e0d455d" name="IsPartial" value="false">
-                      <elementDefinition Id="185c91dd-1bf6-4664-80fc-a3f1d544016a" />
-                    </propertyInstance>
-                    <elementDefinition Id="f5e99e2e-0813-403f-acf3-84dba5e60817" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="edf3c06b-fdef-4361-9da1-c6be08848750">
-                    <propertyInstance Id="ce81cee2-4208-41a2-91d1-eea2f0621bd9" name="IsUnsafe" value="false">
-                      <elementDefinition Id="0420fecf-2d63-4c09-8709-22f56f709758" />
-                    </propertyInstance>
-                    <elementDefinition Id="240ba18d-83d8-4812-b1e4-441147bfdb50" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="bdb395c8-2372-463a-8127-3d818cf79d26">
-                    <propertyInstance Id="a71210d1-7f25-4987-8b07-ad3236776733" name="Inheritance" value="none">
-                      <elementDefinition Id="c78e2e53-c548-4cea-b428-cf7339d28fe1" />
-                    </propertyInstance>
-                    <elementDefinition Id="5f00ad0c-4e75-4e80-a67c-4fb61c294eb1" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="7db62a15-87f0-4e3d-b737-abef19a2503d">
-                    <propertyInstance Id="5c97fdfe-1ff6-4107-8120-aed01ca838d2" name="PackageVisibility" value="internal">
-                      <elementDefinition Id="f93fa1c8-d599-41f0-aaab-5347c6c65a2d" />
-                    </propertyInstance>
-                    <elementDefinition Id="4615a04e-a752-411e-88f6-092f026a5b8d" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="d06715d1-7ac3-4ebe-bcfa-8e630db339d5">
-                    <propertyInstance Id="ebf2aa58-8f15-404c-a5bf-3f374caeec9c" name="params" value="false">
-                      <elementDefinition Id="e1dc14c3-0aaa-4fb8-81c9-6d659643fc16" />
-                    </propertyInstance>
-                    <elementDefinition Id="61435cf8-c435-44f3-a325-f76178cd9caf" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <elementDefinition Id="f0a065c3-f752-4b63-9acc-10d7a1f0f04c" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="4c65e8e0-198a-4230-b6c2-e644e207270a" direction="Return">
-                  <elementDefinition Id="a25f0b94-5510-4f16-bf7a-36479c625ae7" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="6a30f1b7-7447-4382-bab5-e83c7f33b7b0" LastKnownName="InfluencesCollection&lt;TData‎, TId‎&gt;" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="8c8b2f55-2127-4ed9-b322-76af489848f2" name="graph" direction="In">
-                  <referencesInternal>
-                    <reference Id="2eb200dc-1d9f-4341-ba70-01b45d3599f0" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3DInfluencesExtension Member%3D(Name%3DGetInfluences GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DGraph GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))]) ParameterIdentifier%3Dgraph" tag="ViewCode">
-                      <elementDefinition Id="1c6621c7-133d-4acc-94cf-8431a41e7bd7" />
-                    </reference>
-                  </referencesInternal>
-                  <elementDefinition Id="57df662d-ca0f-408c-adce-2a7ca277c226" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="10efa27d-0b7f-4320-b863-89c1ca698c10" LastKnownName="Graph&lt;TData‎, TId‎&gt;" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="15b1e217-d8d6-43df-9a99-eafd559f7b93" name="GetTotalShortestPaths‎&lt;TData‎, TId‎&gt;" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <referencesInternal>
-              <reference Id="44993eeb-d5f0-4874-b4d3-73423916bf5d" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3DInfluencesExtension Member%3D(Name%3DGetTotalShortestPaths GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DGraph GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))])" tag="ViewCode">
-                <elementDefinition Id="33f96257-6eee-446e-aff8-06a5b527d07e" />
-              </reference>
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance Id="eebc9bfc-cd44-4c20-a9c8-1d37baba2eff" name="method" profile="CSharpProfile">
-                <elementDefinition Id="91b022dc-a26c-4329-b96e-4305fe4b2d30" />
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="361c3c09-eb95-44a8-ac67-70fb6ae646ba">
-                    <propertyInstance Id="e83139e1-1ac2-4548-9aae-4440a4877a81" name="ClrAttributes">
-                      <elementDefinition Id="f12994a1-be5b-41ff-a8d5-91eb2b8bc092" />
-                    </propertyInstance>
-                    <elementDefinition Id="7759cfdb-1c94-48ab-b4a8-dcc1374bb76f" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="4a4f5033-6b9f-4dfc-9747-85d61cec72a2">
-                    <propertyInstance Id="52d487c5-d25e-4702-90ce-a7bb5f369021" name="IsPartial" value="false">
-                      <elementDefinition Id="7591be4d-ecbf-41f4-a36c-a4e39fab9cf1" />
-                    </propertyInstance>
-                    <elementDefinition Id="0bfd3644-ac76-475b-bb65-ae1c10063596" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="44ad9f51-9747-47ae-a544-7ce0249797cb">
-                    <propertyInstance Id="6cabd7d0-3d51-48fc-a18d-b29affd01322" name="IsUnsafe" value="false">
-                      <elementDefinition Id="4e8b0902-ce7d-4f50-8aa7-e9f3356bd85d" />
-                    </propertyInstance>
-                    <elementDefinition Id="71610945-2043-4bf3-93a3-fbfb1d0cc104" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="d57ac663-707f-4bb7-ba3a-e9ec6b897920">
-                    <propertyInstance Id="b1238678-3c1a-4c60-b6b6-731e8a389f2d" name="Inheritance" value="none">
-                      <elementDefinition Id="abecb8a7-322f-411a-8ffc-1a0fb983b89b" />
-                    </propertyInstance>
-                    <elementDefinition Id="0ae90795-a130-4aa5-8fea-cc8c5c6584d6" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="c34c6220-dd6b-4dcd-9604-c5e1542b7f25">
-                    <propertyInstance Id="8aa7f531-296a-4fb4-bebc-a508ec1ea7cb" name="PackageVisibility" value="internal">
-                      <elementDefinition Id="358ebfa7-be78-4491-84ef-1f9cb18d364a" />
-                    </propertyInstance>
-                    <elementDefinition Id="87128834-e851-4965-bdac-a16e346b0672" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances Id="b2d0cb1c-33d9-4529-a966-8de0c0b36028">
-                    <propertyInstance Id="a952fc98-d19f-4982-9f0b-055a72d03daf" name="params" value="false">
-                      <elementDefinition Id="df5e1f8d-1092-488e-9753-bb4e48e82c65" />
-                    </propertyInstance>
-                    <elementDefinition Id="f3b2291f-f261-451c-89b4-176cce92c76c" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <elementDefinition Id="b001e452-b5f4-43c4-b780-b59c1b2f1124" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="3d467284-2411-4850-91fd-a2956db75724" direction="Return">
-                  <elementDefinition Id="f9313bb4-89c4-47d7-8f4a-35c94a79c7c6" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="7bb68b5d-40f7-4481-adbf-bfd90bef279d" LastKnownName="ShortestPathsCollection&lt;TData‎, TId‎&gt;" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="0c9afbe6-1871-41a9-9c54-b9a28d340108" name="graph" direction="In">
-                  <referencesInternal>
-                    <reference Id="e44ba143-5b87-4c4a-8ce2-f0057fb75d71" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Influences Type%3DInfluencesExtension Member%3D(Name%3DGetTotalShortestPaths GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DGraph GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))]) ParameterIdentifier%3Dgraph" tag="ViewCode">
-                      <elementDefinition Id="07f6bf4d-e389-459a-aabe-186cb9dcd2fc" />
-                    </reference>
-                  </referencesInternal>
-                  <elementDefinition Id="4327b801-3ca1-4ec3-b783-e555b1c429b7" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="10efa27d-0b7f-4320-b863-89c1ca698c10" LastKnownName="Graph&lt;TData‎, TId‎&gt;" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
       <Interface Id="06a15c77-d9fa-4a91-84b2-2b4f2a84419a" name="IIdentifiable" isAbstract="false" isLeaf="false">
         <referencesInternal>
           <reference Id="57a56f6f-72ed-4eed-9785-6de0c56729ad" handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2Ftp1%2Ftp1%2Fbin%2FRelease%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DIIdentifiable GenericParameterCount%3D1)" tag="ViewCode">
@@ -2418,23 +1836,167 @@
         <elementDefinition Id="21d820ff-5e28-45ac-826e-7170414e96f1" />
       </referencedType>
     </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2bc9a116-7a01-404b-b4d3-048e4c964795" name="InfluencesExtension" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="52cbe4d4-aa47-42d2-9e55-287e52e5eaad" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2FTP1%2Fbin%2FDebug%2Ftp1.dll Namespace%3DTP1.Influences Type%3DInfluencesExtension" tag="ViewCode">
+            <elementDefinition Id="e7f0126d-5c37-4e85-b483-df44e0c91e42" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="2f8a03a0-c80d-4b7d-9b56-f04f7e3438cf" name="class" profile="CSharpProfile">
+            <elementDefinition Id="02f5818b-8763-41a8-92be-3984fd79813a" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="8be5dcc1-2c7f-445c-bbca-45adebde0cbc">
+                <propertyInstance Id="a35c8294-4625-4a8d-93b9-4435d8c9ea3f" name="ClrAttributes">
+                  <elementDefinition Id="7314ad6e-73b5-4bd2-83fa-f86853a10e8c" />
+                </propertyInstance>
+                <elementDefinition Id="a983a989-81ca-4b3e-a717-f33e1678e394" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="a01b17f2-472c-428f-9a71-8358c3446776">
+                <propertyInstance Id="563f4566-a5e6-47e7-8c07-f082281446c8" name="IsPartial" value="false">
+                  <elementDefinition Id="b04cb71d-01df-449d-ad6c-e6c3c6dc3b85" />
+                </propertyInstance>
+                <elementDefinition Id="a9691b0f-6ec5-4957-af8e-02b7233de0e3" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="a7f06ebd-1d30-4ad2-b187-b13ff90abb8c">
+                <propertyInstance Id="8eba4a0f-9b29-41a2-8a9f-8270aa499dae" name="IsStatic" value="True">
+                  <elementDefinition Id="567d2eae-8607-44ec-9f18-4a58bb891308" />
+                </propertyInstance>
+                <elementDefinition Id="637b469c-b309-4f94-a1fa-39069c324647" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="e845a46c-b301-4102-a1c5-f6d863f8ee57">
+                <propertyInstance Id="f9e29888-eb48-420c-82d8-d03101cea561" name="IsUnsafe" value="false">
+                  <elementDefinition Id="9abfd42c-bedd-48fe-95c4-11adbe9e1bcb" />
+                </propertyInstance>
+                <elementDefinition Id="1db5c16f-70ab-44e1-be89-49cb8acc017f" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="a33b0db7-40ad-4cce-92e4-9c2f93a34649">
+                <propertyInstance Id="b5ce43f9-bad9-47a4-a3b2-6e50f88eec13" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="0422626b-3ffd-43d6-b938-9dbd987ac439" />
+                </propertyInstance>
+                <elementDefinition Id="0856b3a6-f8bf-49ca-8585-e2ef440dea6b" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="8cae35d4-8940-4e45-bc1e-e80f194c310a" />
+        <suppliersInternal>
+          <dependency Id="7ed1f373-b929-4283-8307-6142de20b656">
+            <classMoniker Id="301f25b0-2b27-4cd9-a80b-8950b9e8c0cb" LastKnownName="Graph" />
+            <elementDefinition Id="e95b7ba5-baf7-4ca4-8b5f-8fd908c5e11b" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="46b35baa-7d3d-4209-b278-572e6ddd9585" name="GetInfluences‎&lt;TData‎, TId‎&gt;" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="a5c47502-e12a-4883-a1d8-6763c4ab8405" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2FTP1%2Fbin%2FDebug%2Ftp1.dll Namespace%3DTP1.Influences Type%3DInfluencesExtension Member%3D(Name%3DGetInfluences GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2FTP1%2Fbin%2FDebug%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DGraph GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))])" tag="ViewCode">
+                <elementDefinition Id="54676ab1-860e-4d57-82ad-1a9bbf7c5fef" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="ed1c59c0-4af5-440a-b64e-a423dc1a39c3" name="method" profile="CSharpProfile">
+                <elementDefinition Id="ed2582e6-abbf-4072-a900-8219d0a5673e" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3da4eca2-d85d-4164-adf7-9a5c1b8cd8d8">
+                    <propertyInstance Id="c0f178c4-41eb-4a14-b331-f366812d8a13" name="ClrAttributes">
+                      <elementDefinition Id="fb3e41f5-5b87-431f-81a0-c091e0a2fc97" />
+                    </propertyInstance>
+                    <elementDefinition Id="c393e79b-9327-4a39-a12b-eec0faefce6e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0ca78f53-1ff9-45f9-a472-3662840373ad">
+                    <propertyInstance Id="ba806394-e21a-4572-b407-5e5dec9b7491" name="IsPartial" value="false">
+                      <elementDefinition Id="79dc8b01-89d8-463c-8be1-d1c837249cda" />
+                    </propertyInstance>
+                    <elementDefinition Id="53bf3036-83f7-402a-842c-7ce74e47bfff" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ca90c3fb-0453-4a67-b0f1-06d89659e50d">
+                    <propertyInstance Id="794d658c-8652-481e-87ed-eb62d6c6350d" name="IsUnsafe" value="false">
+                      <elementDefinition Id="f049e24f-574a-4ae4-8eff-cc785e835cbd" />
+                    </propertyInstance>
+                    <elementDefinition Id="aa12435d-e976-4246-9d4c-0f4a8a1e779c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="96ecca16-abb5-4651-a6d6-ce1727782e88">
+                    <propertyInstance Id="08952724-8ea1-4bbd-a430-28887c998702" name="Inheritance" value="none">
+                      <elementDefinition Id="5735dd34-4aed-4610-a42e-3dbd94afe108" />
+                    </propertyInstance>
+                    <elementDefinition Id="cafcacd3-9733-4131-8dac-7ea79cf7310c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e0fd5c64-55d4-4d4c-8fc9-1167d6fda552">
+                    <propertyInstance Id="6b502a05-0bd3-49bf-a0f4-0bb7b0d6722d" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="03f5673e-ba17-4f50-bdd9-c0f77788e88f" />
+                    </propertyInstance>
+                    <elementDefinition Id="bd4c29eb-5655-4951-9eba-b2533238eef5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="69a6e378-217e-4d5f-b009-af162ce8c112">
+                    <propertyInstance Id="6b94d44f-5c76-4169-a71a-6ee8e256fbe1" name="params" value="false">
+                      <elementDefinition Id="b7ba5b50-fc1e-46f5-82bc-fd6058a2a69e" />
+                    </propertyInstance>
+                    <elementDefinition Id="f4e574ea-71c2-4b36-a5d8-77a45444ea30" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="7b026525-5520-4729-968e-1d42a6a1d936" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9da75c9c-3186-4f65-93f8-7dd151bb3259" direction="Return">
+                  <elementDefinition Id="646f3249-1b08-41e2-ab37-a2318428b8ec" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9c35e0e8-f095-430e-b1f5-83e057fb643c" LastKnownName="InfluencesCollection&lt;TData‎, TId‎&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f6f5cbdc-8b2f-4277-bf19-f95bf349746c" name="graph" direction="In">
+                  <referencesInternal>
+                    <reference Id="43c36676-0102-4e53-bfdf-369b62495b0c" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2FTP1%2Fbin%2FDebug%2Ftp1.dll Namespace%3DTP1.Influences Type%3DInfluencesExtension Member%3D(Name%3DGetInfluences GenericParameterCount%3D2 OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp1%2Fsrc%2FTP1%2Fbin%2FDebug%2Ftp1.dll Namespace%3DTP1.Graph Type%3D(Name%3DGraph GenericParameterCount%3D2 GenericArguments%3D[(ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D1)]))]) ParameterIdentifier%3Dgraph" tag="ViewCode">
+                      <elementDefinition Id="ec28c3ff-3569-4157-9d29-e09d63ba8aa1" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="a625e58f-7fbc-477a-9b4d-a04f1ec64a87" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2aeb6bbd-00f2-403e-a6ba-6e1c5b80c5fb" LastKnownName="Graph&lt;TData‎, TId‎&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
     <packageHasNamedElement>
-      <referencedType Id="6a30f1b7-7447-4382-bab5-e83c7f33b7b0" name="InfluencesCollection&lt;TData‎, TId‎&gt;" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::TP1::Influences::InfluencesCollection&lt;TData‎, TId‎&gt;">
-        <elementDefinition Id="59659c21-bdf5-4789-a36a-732c5be25149" />
+      <referencedType Id="9c35e0e8-f095-430e-b1f5-83e057fb643c" name="InfluencesCollection&lt;TData‎, TId‎&gt;" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::TP1::Influences::InfluencesCollection&lt;TData‎, TId‎&gt;">
+        <elementDefinition Id="97425348-56e4-400f-9830-9a5d645a96ad" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="10efa27d-0b7f-4320-b863-89c1ca698c10" name="Graph&lt;TData‎, TId‎&gt;" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::TP1::Graph::Graph&lt;TData‎, TId‎&gt;">
-        <elementDefinition Id="36e79e10-5cbf-4ec4-9d65-f592f68020ce" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="7bb68b5d-40f7-4481-adbf-bfd90bef279d" name="ShortestPathsCollection&lt;TData‎, TId‎&gt;" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::TP1::Influences::ShortestPathsCollection&lt;TData‎, TId‎&gt;">
-        <elementDefinition Id="fbcbfbff-5cd7-4d77-b56d-1360aa1c4279" />
+      <referencedType Id="2aeb6bbd-00f2-403e-a6ba-6e1c5b80c5fb" name="Graph&lt;TData‎, TId‎&gt;" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::TP1::Graph::Graph&lt;TData‎, TId‎&gt;">
+        <elementDefinition Id="8c9f5f6d-cb1f-4173-b87d-0066e4a66086" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>
   <package Id="2fbf785d-f8c5-4382-8232-f01930cf6bfc" name="ModelingProject">
     <elementDefinition Id="62cdb81a-661f-4c9f-bdad-bea3f3006ef0" />
+    <profileInstances>
+      <packageHasProfileInstances Id="33e725a8-8dce-4934-a8df-ca2c95a7d1e4">
+        <profileInstance Id="c4735733-0160-4db3-aab8-562bd7c7c6b9" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="76eea4db-d689-471f-b2f7-85d0acbdaf55">
+        <profileInstance Id="bef34df8-0129-41e9-a228-334e50028c06" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="7f954dfe-cd58-47a2-b87d-cf901876baf1">
+        <profileInstance Id="c8866e3f-b5db-4379-862c-58df6ddc429b" name="CSharpProfile">
+          <elementDefinition Id="2f539781-0f1e-434c-b8b7-1547b4d929ad" />
+        </profileInstance>
+        <elementDefinition Id="3982347a-0c5b-4b24-88af-77598f5b4c8c" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>
