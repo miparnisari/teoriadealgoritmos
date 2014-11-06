@@ -18,7 +18,6 @@ namespace TP1.Graph
 	    public Node(int initialCapacity = InitialCapacity)
 	    {
             this.adjacentNodes = new Dictionary<TId, Node<TData, TId>>(initialCapacity);
-            this.Visited = false;
 	    }
 
 		public Node(TData data)
@@ -73,8 +72,6 @@ namespace TP1.Graph
                 return adjacentNodes.Values.Count; // O(1) - source: http://msdn.microsoft.com/en-us/library/6z6y38za(v=vs.110).aspx
 			}
 		}
-
-	    public bool Visited { get; set; }
 
 	    public override bool Equals(object obj)
 	    {
