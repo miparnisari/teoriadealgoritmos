@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using TP1.Graph;
 
@@ -6,46 +7,112 @@ namespace TP1.Influences
 {
     public static class InfluencesExtension
     {
-        /// <remarks>O(|E||V|^3) average case
-        /// </remarks>
+        const long Infinity = long.MaxValue - 1;
+
+        /// <remarks>Reference: http://www.inf.uni-konstanz.de/algo/publications/b-vspbc-08.pdf </remarks>
+        /// <summary>
+        /// Calculates the betweenness centrality of all the nodes in a graph using the Brandes algorithm
+        /// </summary>
+        /// <returns></returns>
         public static InfluencesCollection<TData, TId> GetInfluences<TData, TId>(this Graph<TData, TId> graph)
             where TData : IIdentifiable<TId>
             where TId : IComparable
         {
-            var shortestPaths = GetTotalShortestPaths(graph); // O(|E||V|^3) average case
+            #region initialize data structures and variables
 
-            double bottom = shortestPaths.Count;
+            // distance from source to to v ∈ V
+            var distanceTo = new Dictionary<TId, long>(graph.NodeCount);
 
-            var influences = new InfluencesCollection<TData, TId>(graph.NodeCount);
+            // list of predecessors on shortest paths from source
+            var previous = new Dictionary<TId, HashSet<Node<TData, TId>>>(graph.NodeCount); // O(1)
 
-            foreach (var node in graph.Nodes) // O(|V|) * O((V*(V-1))/2) = O((V^2 * (V-1))/2) 
+            // number of shortest paths from source to v ∈ V
+            var numberOfShortestPathsTo = new Dictionary<TId, double>(graph.EdgeCount);
+
+            // dependency of source on v ∈ V
+            var dependency = new Dictionary<TId, double>(graph.NodeCount);
+
+            // used in BFS
+            var queue = new Queue<Node<TData, TId>>(graph.NodeCount);
+
+            // nodes reachable from a source
+            var stack = new Stack<Node<TData, TId>>(graph.NodeCount);
+
+            var betweenness = new Dictionary<TId, double>(graph.NodeCount);
+
+            foreach (var node in graph.Nodes)
             {
-                double top = shortestPaths.Paths.Count(p => p.PassesThrough(node)); // O((V*(V-1))/2) average case
-
-                double influence = top/bottom; 
-
-                influences.Add(new Influence<TData, TId>(node, influence));
+                betweenness[node.Id] = 0;
             }
 
-            return influences;
-        }
+            #endregion
 
-        /// <remarks>O(|E||V|^3)
-        /// </remarks>
-        private static ShortestPathsCollection<TData, TId> GetTotalShortestPaths<TData, TId>(Graph<TData, TId> graph)
-            where TData : IIdentifiable<TId>
-            where TId : IComparable
-        {
-            var allShortestPaths = new ShortestPathsCollection<TData, TId>(graph.EdgeCount);
-
-            foreach (var nodeS in graph.Nodes) // O(|V|) * O(|E||V|^2) = O(|E||V|^3)
+            foreach (var source in graph.Nodes) // O(|V|) * O(|V| + |E|) = O(|V|^2 + |V||E|)
             {
-                var shortestPaths = graph.GetShortestPathsWithBFS(nodeS); // O(|E||V|^2)
+                #region single-source shortest-paths problem with BFS O(|V| + |E|)
 
-                allShortestPaths.Add(shortestPaths);
+                foreach (var node in graph.Nodes)
+                {
+                    previous[node.Id] = new HashSet<Node<TData, TId>>();
+                    distanceTo[node.Id] = Infinity;
+                    numberOfShortestPathsTo[node.Id] = 0;
+                    dependency[node.Id] = 0;
+                }
+
+                numberOfShortestPathsTo[source.Id] = 1;
+                distanceTo[source.Id] = 0;
+                queue.Enqueue(source);
+
+                #region breadth first search O(|V| + |E|)
+                while (queue.Any()) 
+                {
+                    var visitedNode = queue.Dequeue();
+                    stack.Push(visitedNode);
+
+                    foreach (var adjacent in visitedNode.Adjacents)
+                    {
+                        // a short path has been found! update the min dist and add the vertex to the queue
+                        if (distanceTo[adjacent.Key] == Infinity)
+                        {
+                            distanceTo[adjacent.Key] = distanceTo[visitedNode.Id] + 1;
+                            queue.Enqueue(adjacent.Value);
+                        }
+
+                        if (distanceTo[adjacent.Key] == (distanceTo[visitedNode.Id] + 1))
+                        {
+                            numberOfShortestPathsTo[adjacent.Key] += numberOfShortestPathsTo[visitedNode.Id];
+                            previous[adjacent.Key].Add(visitedNode);
+                        }
+                    }
+                }
+                #endregion
+
+                #endregion
+
+                #region accumulation O(|E|)
+
+                while (stack.Any())
+                {
+                    var element = stack.Pop();
+                    foreach (var node in previous[element.Id])
+                    {
+                        dependency[node.Id] += (numberOfShortestPathsTo[node.Id] / numberOfShortestPathsTo[element.Id]) * (1 + dependency[element.Id]);
+                    }
+                    if (!element.Equals(source))
+                    {
+                        betweenness[element.Id] += dependency[element.Id];
+                    }
+                }
+                #endregion
             }
 
-            return allShortestPaths;
+            var result = new InfluencesCollection<TData, TId>(graph.NodeCount);
+            foreach (var influence in betweenness)
+            {
+                result.Add(new Influence<TData, TId>(graph[influence.Key], influence.Value));
+            }
+
+            return result;
         }
     }
 }

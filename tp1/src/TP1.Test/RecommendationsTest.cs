@@ -69,7 +69,7 @@ namespace TP1.Test
             var g = builder.Build();
 
             // act
-            var recommendations = g.GetRecommendationsUsingBfs();
+            var recommendations = g.GetRecommendations();
             var recommendationsForCarlos = recommendations.Recommendations.FirstOrDefault(r => r.Person.Data.Name == "Carlos");
 
             // assert

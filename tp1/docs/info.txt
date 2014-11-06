@@ -1,0 +1,4 @@
+El punto de influencias se puede hacer en
+O(V^2 + VE)
+
+Fuente: martin albarracin
