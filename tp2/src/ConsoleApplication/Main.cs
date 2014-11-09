@@ -12,7 +12,9 @@ namespace ConsoleApplication
             var logger = new Logger(ConfigurationManager.AppSettings["logFileName"]);
             try
             {
-                // Code goes here
+                // Punto 1
+
+                // Punto 2
             }
             catch (System.Exception)
             {

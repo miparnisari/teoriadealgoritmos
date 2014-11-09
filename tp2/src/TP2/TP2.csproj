@@ -53,15 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="BaseScenarioReader.cs" />
-    <Compile Include="Model\Journey.cs" />
-    <Compile Include="Model\Request.cs" />
-    <Compile Include="Model\Scenario.cs" />
-    <Compile Include="Model\City.cs" />
-    <Compile Include="Model\Train.cs" />
-    <Compile Include="Model\Route.cs" />
-    <Compile Include="ScenarioBuilder.cs" />
-    <Compile Include="ScenarioFileReader.cs" />
+    <Compile Include="InventoryManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
@@ -71,9 +63,7 @@
       </Properties>
     </MonoDevelop>
   </ProjectExtensions>
-  <ItemGroup>
-    <Folder Include="FileReader\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

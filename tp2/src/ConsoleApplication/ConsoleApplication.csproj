@@ -48,8 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Input\miparnisari.gdf" />
-    <None Include="Input\cbuffevant.gdf" />
   </ItemGroup>
   <ItemGroup />
 </Project>

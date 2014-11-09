@@ -1,0 +1,373 @@
+<!--
+This spreadsheet is copyright 2009, all rights reserved.
+-->
+<document currentResultWorksheet="MainSheet" verticalSplitterRatio="0.64453125" horizontalSplitterRatio="0.75" splitterOrientation="Vertical" suspendRecalculations="True" license="Closed source/proprietary" copyrightOwner="" resolverVersion="1.6" resolverBuild="4653" documentVersion="11">
+    <foldState license="True" imports="True" worksheetCreation="True" preConstantsUserCode="True" constants="True" preFormulaeUserCode="False" generated="False" postFormulaeUserCode="False"/>
+    <traitDefaults>
+
+    </traitDefaults>
+    <preConstantsUserCode><![CDATA[
+]]></preConstantsUserCode>
+    <preFormulaeUserCode><![CDATA[
+]]></preFormulaeUserCode>
+    <names />
+    <viewStates>
+        <viewState worksheet="MainSheet">
+            <currentCell col="9" row="8" />
+            <scrollPos col="1" row="1" />
+            <virtualGridSize width="23" height="54" />
+        </viewState>
+    </viewStates>
+    <worksheetOrder>
+        <orderentry name="MainSheet" />
+    </worksheetOrder>
+    <worksheet name="MainSheet" value="" showGrid="True" showBounds="False" headerWidth="-1" headerHeight="-1">
+        <trait name="FontSize">
+            <traitentry col="1" row="1" value="28.0" />
+            <traitentry col="1" row="2" value="28.0" />
+            <traitentry col="2" row="10" value="28.0" />
+            <traitentry col="2" row="4" value="28.0" />
+        </trait>
+        <trait name="ColWidth">
+            <traitentry col="1" row="0" value="62" />
+            <traitentry col="2" row="0" value="172" />
+            <traitentry col="9" row="0" value="98" />
+            <traitentry col="4" row="0" value="82" />
+            <traitentry col="4" row="7" value="65" />
+        </trait>
+        <trait name="Color">
+            <traitentry col="1" row="1" value="named color: White" />
+            <traitentry col="1" row="2" value="named color: White" />
+            <traitentry col="1" row="3" value="named color: White" />
+            <traitentry col="2" row="1" value="named color: White" />
+            <traitentry col="2" row="2" value="named color: White" />
+            <traitentry col="2" row="4" value="named color: White" />
+            <traitentry col="2" row="5" value="named color: White" />
+            <traitentry col="2" row="6" value="named color: White" />
+            <traitentry col="2" row="7" value="named color: White" />
+            <traitentry col="2" row="8" value="named color: White" />
+            <traitentry col="2" row="10" value="named color: White" />
+            <traitentry col="2" row="12" value="named color: White" />
+            <traitentry col="2" row="13" value="named color: White" />
+            <traitentry col="2" row="14" value="named color: White" />
+            <traitentry col="2" row="15" value="named color: White" />
+            <traitentry col="2" row="16" value="named color: White" />
+            <traitentry col="2" row="17" value="named color: White" />
+            <traitentry col="2" row="18" value="named color: White" />
+            <traitentry col="2" row="19" value="named color: White" />
+            <traitentry col="3" row="1" value="named color: White" />
+            <traitentry col="3" row="2" value="named color: White" />
+            <traitentry col="3" row="12" value="named color: White" />
+            <traitentry col="3" row="19" value="named color: White" />
+            <traitentry col="4" row="1" value="named color: White" />
+            <traitentry col="4" row="2" value="named color: White" />
+            <traitentry col="4" row="12" value="named color: White" />
+            <traitentry col="4" row="19" value="named color: White" />
+            <traitentry col="5" row="1" value="named color: White" />
+            <traitentry col="5" row="2" value="named color: White" />
+            <traitentry col="5" row="11" value="named color: White" />
+            <traitentry col="5" row="12" value="named color: White" />
+            <traitentry col="5" row="19" value="named color: White" />
+            <traitentry col="6" row="1" value="named color: White" />
+            <traitentry col="6" row="2" value="named color: White" />
+            <traitentry col="6" row="12" value="named color: White" />
+            <traitentry col="6" row="19" value="named color: White" />
+            <traitentry col="7" row="1" value="named color: White" />
+            <traitentry col="7" row="2" value="named color: White" />
+            <traitentry col="7" row="12" value="named color: White" />
+            <traitentry col="7" row="19" value="named color: White" />
+            <traitentry col="8" row="12" value="named color: White" />
+            <traitentry col="8" row="19" value="named color: White" />
+            <traitentry col="9" row="11" value="named color: White" />
+            <traitentry col="9" row="12" value="named color: White" />
+            <traitentry col="9" row="13" value="named color: Yellow" />
+            <traitentry col="9" row="14" value="named color: Yellow" />
+            <traitentry col="9" row="15" value="named color: Yellow" />
+            <traitentry col="9" row="16" value="named color: Yellow" />
+            <traitentry col="9" row="17" value="named color: Yellow" />
+            <traitentry col="9" row="18" value="named color: Yellow" />
+            <traitentry col="9" row="19" value="named color: White" />
+        </trait>
+        <trait name="RowHeight">
+            <traitentry col="0" row="1" value="57" />
+            <traitentry col="0" row="2" value="61" />
+            <traitentry col="0" row="10" value="50" />
+            <traitentry col="0" row="4" value="49" />
+        </trait>
+        <trait name="BackColor">
+            <traitentry col="1" row="1" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="1" row="2" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="1" row="3" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="2" row="1" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="2" row="2" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="2" row="3" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="2" row="4" value="named color: Maroon" />
+            <traitentry col="2" row="5" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="2" row="6" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="2" row="7" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="2" row="8" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="2" row="10" value="named color: Maroon" />
+            <traitentry col="2" row="11" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="2" row="12" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="2" row="13" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="2" row="14" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="2" row="15" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="2" row="16" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="2" row="17" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="2" row="18" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="2" row="19" value="ARGB color: 255, 98, 0, 0" />
+            <traitentry col="3" row="1" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="3" row="2" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="3" row="3" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="3" row="5" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="3" row="6" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="3" row="7" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="3" row="8" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="3" row="11" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="3" row="12" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="3" row="13" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="3" row="14" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="3" row="15" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="3" row="16" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="3" row="17" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="3" row="18" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="3" row="19" value="ARGB color: 255, 98, 0, 0" />
+            <traitentry col="4" row="1" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="4" row="2" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="4" row="3" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="4" row="5" value="named color: White" />
+            <traitentry col="4" row="6" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="4" row="7" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="4" row="8" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="4" row="11" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="4" row="12" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="4" row="13" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="4" row="14" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="4" row="15" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="4" row="16" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="4" row="17" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="4" row="18" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="4" row="19" value="ARGB color: 255, 98, 0, 0" />
+            <traitentry col="5" row="1" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="5" row="2" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="5" row="3" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="5" row="5" value="named color: White" />
+            <traitentry col="5" row="6" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="5" row="7" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="5" row="8" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="5" row="11" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="5" row="12" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="5" row="13" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="5" row="14" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="5" row="15" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="5" row="16" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="5" row="17" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="5" row="18" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="5" row="19" value="ARGB color: 255, 98, 0, 0" />
+            <traitentry col="6" row="1" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="6" row="2" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="6" row="3" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="6" row="5" value="named color: White" />
+            <traitentry col="6" row="6" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="6" row="7" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="6" row="8" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="6" row="11" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="6" row="12" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="6" row="13" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="6" row="14" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="6" row="15" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="6" row="16" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="6" row="17" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="6" row="18" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="6" row="19" value="ARGB color: 255, 98, 0, 0" />
+            <traitentry col="7" row="1" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="7" row="2" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="7" row="3" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="7" row="5" value="named color: White" />
+            <traitentry col="7" row="6" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="7" row="7" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="7" row="8" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="7" row="11" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="7" row="12" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="7" row="13" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="7" row="14" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="7" row="15" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="7" row="16" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="7" row="17" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="7" row="18" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="7" row="19" value="ARGB color: 255, 98, 0, 0" />
+            <traitentry col="8" row="1" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="8" row="2" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="8" row="3" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="8" row="5" value="named color: White" />
+            <traitentry col="8" row="6" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="8" row="7" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="8" row="8" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="8" row="11" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="8" row="12" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="8" row="13" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="8" row="14" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="8" row="15" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="8" row="16" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="8" row="17" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="8" row="18" value="ARGB color: 255, 255, 255, 128" />
+            <traitentry col="8" row="19" value="ARGB color: 255, 98, 0, 0" />
+            <traitentry col="9" row="1" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="9" row="2" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="9" row="3" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="9" row="11" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="9" row="12" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="9" row="13" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="9" row="14" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="9" row="15" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="9" row="16" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="9" row="17" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="9" row="18" value="ARGB color: 255, 64, 0, 0" />
+            <traitentry col="9" row="19" value="ARGB color: 255, 64, 0, 0" />
+        </trait>
+        <cell name="B8" value="d (demand)" type="general">
+        </cell>
+        <cell name="A1" value="Lot Sizing Problem Solver" type="general">
+        </cell>
+        <cell name="B12" value="J           " type="general">
+        </cell>
+        <cell name="H19" value="0" type="general">
+        </cell>
+        <cell name="E7" value="40" type="general">
+        </cell>
+        <cell name="F7" value="40" type="general">
+        </cell>
+        <cell name="G19" value="0" type="general">
+        </cell>
+        <cell name="G6" value="2" type="general">
+        </cell>
+        <cell name="D12" value="2" type="general">
+        </cell>
+        <cell name="B16" value="4" type="general">
+        </cell>
+        <cell name="B5" value="Number of periods" type="general">
+        </cell>
+        <cell name="E11" value="Cjk Matrix" type="general">
+        </cell>
+        <cell name="D8" value="12" type="general">
+        </cell>
+        <cell name="C8" value="10" type="general">
+        </cell>
+        <cell name="D7" value="40" type="general">
+        </cell>
+        <cell name="B13" value="1" type="general">
+        </cell>
+        <cell name="E19" value="0" type="general">
+        </cell>
+        <cell name="C12" value="k--&gt;1" type="general">
+        </cell>
+        <cell name="F19" value="0" type="general">
+        </cell>
+        <cell name="A2" value="Wagner-Whitin Algorithm  " type="general">
+        </cell>
+        <cell name="B17" value="5" type="general">
+        </cell>
+        <cell name="B6" value="h (holding cost)" type="general">
+        </cell>
+        <cell name="E8" value="9" type="general">
+        </cell>
+        <cell name="C7" value="40" type="general">
+        </cell>
+        <cell name="F8" value="10" type="general">
+        </cell>
+        <cell name="D6" value="2" type="general">
+        </cell>
+        <cell name="E12" value="3" type="general">
+        </cell>
+        <cell name="B10" value="Outputs" type="general">
+        </cell>
+        <cell name="F12" value="4" type="general">
+        </cell>
+        <cell name="A3" value=" See http://resolverone.wordpress.com/2009/09/02/wagner/" type="general">
+        </cell>
+        <cell name="H12" value="6" type="general">
+        </cell>
+        <cell name="B14" value="2" type="general">
+        </cell>
+        <cell name="B7" value="K (setup cost)" type="general">
+        </cell>
+        <cell name="H8" value="10" type="general">
+        </cell>
+        <cell name="D19" value="0" type="general">
+        </cell>
+        <cell name="C6" value="2" type="general">
+        </cell>
+        <cell name="H7" value="40" type="general">
+        </cell>
+        <cell name="B18" value="6" type="general">
+        </cell>
+        <cell name="I11" value="Production Plan" type="general">
+        </cell>
+        <cell name="G8" value="10" type="general">
+        </cell>
+        <cell name="C19" value="0" type="general">
+        </cell>
+        <cell name="G12" value="5" type="general">
+        </cell>
+        <cell name="B15" value="3" type="general">
+        </cell>
+        <cell name="E6" value="2" type="general">
+        </cell>
+        <cell name="F6" value="2" type="general">
+        </cell>
+        <cell name="I12" value="(Pay setup cost)" type="general">
+        </cell>
+        <cell name="G7" value="40" type="general">
+        </cell>
+        <cell name="H6" value="2" type="general">
+        </cell>
+        <cell name="B19" value="Min (cost)" type="general">
+        </cell>
+        <cell name="B4" value="Inputs" type="general">
+        </cell>
+        <cell name="C5" value="6" type="general">
+        </cell>
+    </worksheet>
+    <postFormulaeUserCode><![CDATA[def calcbutton_clicked():
+    periods = workbook["MainSheet"].Cells[3, 5].Value
+    for i in range(1,periods+1): #column index
+        for j in range(1,periods+1): #row index
+            if (j>i):
+                #getting rid of infeasible solutions
+                workbook["MainSheet"].Cells[i+2, j+12].Value="X"
+            else:
+                if ((j==1)&(i==1)):
+                    workbook["MainSheet"].Cells[i+2, j+12].Value=workbook["MainSheet"].Cells[i+2, 7].Value
+                    workbook["MainSheet"].Cells[i+2, 19].Value=workbook["MainSheet"].Cells[i+2, j+12].Value
+                else:     
+                    if (i==j): #if a diagonal element
+                        lastmin = MIN(CellRange(workbook["MainSheet"].Cells[i+1, 13],workbook["MainSheet"].Cells[i+1, 18])) #stores the minimum for the last column
+                        workbook["MainSheet"].Cells[i+2, j+12].Value=lastmin + workbook["MainSheet"].Cells[i+2, 7].Value #second part is the setup cost
+                        newlastmin = MIN(CellRange(workbook["MainSheet"].Cells[i+2, 13],workbook["MainSheet"].Cells[i+2, 18])) #stores the minimum for the last column
+                        workbook["MainSheet"].Cells[i+2, 19].Value=newlastmin
+                    else:
+                        #if not on the diagonal and is on the upper triangle
+                        workbook["MainSheet"].Cells[i+2, j+12].Value=workbook["MainSheet"].Cells[i+1, j+12].Value+(i-j)*(workbook["MainSheet"].Cells[i+2, 8].Value)*(workbook["MainSheet"].Cells[i+2, 6].Value) #(i-1)*demand*holdingcost
+    
+    # Now we find the production schedule                    
+    i=periods
+    ResultsArray=""
+    
+    while (i>=1):  
+        mincostindex=i
+        for j in reversed(range(1,periods+1)): 
+            if (workbook["MainSheet"].Cells[i+2, j+12].Value<workbook["MainSheet"].Cells[i+2, mincostindex+12].Value): #stores the minimum for the last column
+                mincostindex=j
+        workbook["MainSheet"].Cells[9, mincostindex+12].Value="†Pay setup cost†"
+        ResultsArray=str(mincostindex) + " " + ResultsArray
+        i=mincostindex-1
+    print "The optimal solution is to pay the setup cost at stages: ", ResultsArray   
+        
+#Calculations
+calcbutton = Button(Text="Calculate")
+calcbutton.Click += calcbutton_clicked
+workbook["MainSheet"].I8 = calcbutton
+    
+
+]]></postFormulaeUserCode>
+</document>
