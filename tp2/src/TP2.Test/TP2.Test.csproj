@@ -69,6 +69,6 @@
     <Compile Include="CityProfileTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TestInventoryManager.cs" />
+    <Compile Include="InventoryManagerTest.cs" />
   </ItemGroup>
 </Project>

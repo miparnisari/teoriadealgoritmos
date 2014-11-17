@@ -1,4 +1,4 @@
-﻿namespace TP2
+﻿namespace TP2.InventoryManager
 {
     public struct InventoryData
     {

@@ -2,7 +2,7 @@
 using System.IO;
 using System.Linq;
 
-namespace TP2
+namespace TP2.InventoryManager
 {
     public class InventoryManagerReader
     {

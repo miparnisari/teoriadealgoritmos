@@ -2,14 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace TP2
+namespace TP2.InventoryManager
 {
     public class InventoryManager
     {
 
-        public int[,] CalculateResults(InventoryData inventoryData)
+        public int[,] CalculateCosts(InventoryData inventoryData)
         {
-            return this.Calculate(inventoryData.NumberOfPeriods,
+            return this.CalculateCosts(inventoryData.NumberOfPeriods,
                 inventoryData.MaxStock,
                 inventoryData.HoldingCost,
                 inventoryData.OrderCost,
@@ -29,7 +29,7 @@ namespace TP2
             return min;
         }
 
-        private int[,] Calculate(int numberOfPeriods, int maxStock, int holdingCost, int orderCost, IList<int> demands)
+        private int[,] CalculateCosts(int numberOfPeriods, int maxStock, int holdingCost, int orderCost, IList<int> demands)
         {
             if (demands.Count() != numberOfPeriods)
             {

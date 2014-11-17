@@ -1,6 +1,6 @@
 ﻿using System;
 using NUnit.Framework;
-using TP2;
+using TP2.InventoryManager;
 
 namespace TP2.Test
 {
@@ -8,7 +8,7 @@ namespace TP2.Test
     public class InventoryManagerTest
     {
         [Test]
-        public void ShouldBuildCorrectMatrix()
+        public void ShouldBuildCorrectCostsMatrix()
         {
             // setup
             var data = new InventoryData
@@ -19,10 +19,10 @@ namespace TP2.Test
                 NumberOfPeriods = 3,
                 OrderCost = 2
             };
-            var manager = new InventoryManager();
+            var manager = new InventoryManager.InventoryManager();
 
             // act
-            var actualCosts = manager.CalculateResults(data);
+            var actualCosts = manager.CalculateCosts(data);
 
             // assert
             const int infinity = int.MaxValue;

@@ -50,12 +50,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="InventoryManager.cs" />
+    <Compile Include="InventoryManager\InventoryManager.cs" />
     <Compile Include="CityProfile\Building.cs" />
     <Compile Include="CityProfile\ProfileCityCalculator.cs" />
     <Compile Include="CityProfile\BuildingsFileReader.cs" />
-    <Compile Include="InventoryManagerReader.cs" />
-    <Compile Include="InventoryData.cs" />
+    <Compile Include="InventoryManager\InventoryManagerReader.cs" />
+    <Compile Include="InventoryManager\InventoryData.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
@@ -69,7 +69,5 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CityProfile\" />
-  </ItemGroup>
+  <ItemGroup />
 </Project>
