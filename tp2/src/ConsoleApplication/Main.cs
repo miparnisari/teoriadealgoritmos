@@ -1,5 +1,7 @@
+using System;
 using System.Configuration;
 using System.Diagnostics;
+using TP2;
 
 namespace ConsoleApplication
 {
@@ -15,6 +17,14 @@ namespace ConsoleApplication
                 // Punto 1
 
                 // Punto 2
+                System.Console.Write("Ingrese el nombre del archivo:");
+                var path = System.Console.ReadLine();
+                var reader = new InventoryManagerReader();
+                var inputData = reader.GetDataFromFile(path);
+
+                var inventoryManager = new InventoryManager();
+                inventoryManager.CalculateResults(inputData);
+
             }
             catch (System.Exception)
             {
