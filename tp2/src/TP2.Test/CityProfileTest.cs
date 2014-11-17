@@ -10,7 +10,7 @@ namespace TP2.Test
 	public class CityProfileTest
 	{
 		[Test()]
-		public void TestCase ()
+		public void ShouldBuildCorrectProfile ()
 		{
 			// set up
 			var buildings = new List<Building>
