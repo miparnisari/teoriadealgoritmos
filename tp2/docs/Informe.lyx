@@ -109,30 +109,52 @@ s de ventas para los próximos
 \end_inset
 
  meses.
- 
+ Para simplificar, asumimos que todas las ventas mensuales y compras se
+ producen el primer día del mes, y que los camiones que no se vendieron
+ deben almacenarse en un depósito hasta el primer día del próximo mes.
+\end_layout
+
+\begin_layout Itemize
 \begin_inset Formula $d_{i}$
 \end_inset
 
  representa la cantidad de camiones que se esperan vender en el i-esimo
  mes.
- Para simplificar, asumimos que todas las ventas mensuales y compras se
- producen el primer día del mes, y que los camiones que no se vendieron
- deben almacenarse en un depósito hasta el primer día del próximo mes.
- El depósito tiene capacidad para almacenar hasta 
+\end_layout
+
+\begin_layout Itemize
+El depósito tiene capacidad para almacenar hasta 
 \begin_inset Formula $S$
 \end_inset
 
- camiones y el costo de almacenar un camión es 
+ camiones.
+\end_layout
+
+\begin_layout Itemize
+El costo de almacenar un camión es 
 \begin_inset Formula $C$
 \end_inset
 
 .
- Para comprar camiones se debe librar una orden de compra, y por cada orden
- librada se debe pagar una tasa , independientemente de la cantidad de camiones
- ordenados.
+ 
+\end_layout
+
+\begin_layout Itemize
+Para comprar camiones se debe librar una orden de compra, y por cada orden
+ librada se debe pagar una tasa fija 
+\begin_inset Formula $K$
+\end_inset
+
+, independientemente de la cantidad de camiones ordenados.
  En el momento inicial, antes del inicio del primer mes, no hay ningún camión
  almacenado en el depósito.
- Pista: Al finalizar el mes 
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Pista: Al finalizar el mes 
 \begin_inset Formula $n$
 \end_inset
 
@@ -220,7 +242,7 @@ The key to developing an efficient algorithm for finding an optimal inventory
 Sea 
 \begin_inset Formula 
 \[
-C_{i}=\mbox{costo total óptimo para el período \ensuremath{i} , \ensuremath{i\in[1,\ldots,n]}}
+C_{i}=\mbox{costo total óptimo para el período \ensuremath{i}, \ensuremath{i\in[1,\ldots,n]}}
 \]
 
 \end_inset
