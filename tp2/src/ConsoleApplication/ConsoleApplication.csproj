@@ -49,5 +49,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Input\punto2.txt" />
+  </ItemGroup>
 </Project>

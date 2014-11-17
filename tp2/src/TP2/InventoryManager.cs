@@ -1,15 +1,24 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace TP2
 {
     public class InventoryManager
     {
-        public int[] Calculate(int periods, int maxStock, double storageCost, double orderCost, int[] demands)
+
+        //public int[] CalculateResults(InventoryData inventoryData)
+        //{
+        //   return this.Calculate(inventoryData.NumberOfPeriods,
+        //        inventoryData.MaxStock,
+        //        inventoryData.HoldingCost,
+        //        inventoryData.OrderCost,
+        //        inventoryData.Demands);
+        //}
+
+        private int[] Calculate(uint numberOfPeriods, uint maxStock, double holdingCost, double orderCost, IList<uint> demands)
         {
-            if (demands.Count() != periods)
+            if (demands.Count() != numberOfPeriods)
             {
                 throw new Exception("Values for demands should be # of periods");
             }
@@ -18,24 +27,27 @@ namespace TP2
                 throw new Exception("Can't meet demand for period 1");
             }
 
-            int[,] results = new int[periods + 1, periods]; //last row contains the minimum
+            uint[,] results = new uint[numberOfPeriods + 1, numberOfPeriods]; //last row contains the minimum
+            uint INDEX_MINIMUM_OF_PERIOD = numberOfPeriods;
 
             //iterate over the matrix
-            for (int col = 0; col < periods; col++)
+            for (int col = 0; col < numberOfPeriods; col++)
             {
-                for (int row = 0; row < periods; row++)
+                for (int row = 0; row < numberOfPeriods; row++)
                 {
                     if (row > col)
                     {
-                        //getting rid of infeasible solutions
+                        //infeasible solution
                         results[row, col] = int.MaxValue;
+                        
                     }
                     else
                     {
-                        if (row == 0 && col == 0)
+                        if (row == 0 && col == 0) //first period
                         {
                             results[row, col] = demands[0];
-                            results[periods, col] = results[row, col]; //store the minimum
+                            //store the minimum
+                            results[INDEX_MINIMUM_OF_PERIOD, col] = results[row, col];
                         }
                         else
                         {
@@ -43,11 +55,16 @@ namespace TP2
                             {
                                 //TODO
                             }
+                            else
+                            {
+                                // (i-1) * demand * holding cost
+                                var demand = demands[row];
+                                //results[row,col] = results[row-1,col]+(row-col)*(results[])
+                            }
                         }
                     }
                 }
             }
-			return null; // Para que compile!
         }
     }
 }
