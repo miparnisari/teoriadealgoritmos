@@ -19,7 +19,7 @@ namespace TP2
         private int FindMinimum(int[,] matrix, int size, int column)
         {
             int min = matrix[0, column];
-            for (int i = 0; i < size - 1; i++)
+            for (int i = 0; i < size; i++)
             {
                 if (matrix[i, column] < min)
                 {
@@ -68,19 +68,21 @@ namespace TP2
                             if (row == col) // diagonal
                             {
                                 costs[row, col] = costs[INDEX_MINIMUM_OF_PERIOD, col - 1] + orderCost;
-                                costs[INDEX_MINIMUM_OF_PERIOD, col] = FindMinimum(costs, numberOfPeriods, col);
+                                
                             }
                             else //upper triangle
                             {
                                 var costPrevious = costs[row, col - 1];
-                                var lotFromLastPeriod = (maxStock - demands[col - 1]);
+                                var lotFromLastPeriod = lots[row, col - 1];
                                 var lotForThisPeriod = (lotFromLastPeriod > demands[col]) ? 0 : orderCost;
                                 costs[row, col] = costPrevious + lotFromLastPeriod * holdingCost + lotForThisPeriod;
+                                lots[row, col] = lotForThisPeriod;
                             }
 
                         }
                     }
                 }
+                costs[INDEX_MINIMUM_OF_PERIOD, col] = FindMinimum(costs, numberOfPeriods, col);
             }
 
             return costs;

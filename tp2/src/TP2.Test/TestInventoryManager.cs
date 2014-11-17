@@ -28,8 +28,8 @@ namespace TP2.Test
             const int infinity = int.MaxValue;
             var expectedCosts = new[,]
             {
-                {2, 44, 136},
-                {infinity, 4, 14},
+                {2, 44, 46},
+                {infinity, 4, 38},
                 {infinity, infinity, 6},
                 {2, 4, 6}
             };
