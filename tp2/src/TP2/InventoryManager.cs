@@ -7,7 +7,7 @@ namespace TP2
     public class InventoryManager
     {
 
-        public int[] CalculateResults(InventoryData inventoryData)
+        public int[,] CalculateResults(InventoryData inventoryData)
         {
             return this.Calculate(inventoryData.NumberOfPeriods,
                 inventoryData.MaxStock,
@@ -16,7 +16,20 @@ namespace TP2
                 inventoryData.Demands);
         }
 
-        private int[] Calculate(uint numberOfPeriods, uint maxStock, double holdingCost, double orderCost, IList<uint> demands)
+        private int FindMinimum(int[,] matrix, int column)
+        {
+            int min = matrix[0, column];
+            for (int i = 0; i < matrix.Length; i++)
+            {
+                if (matrix[i, column] < min)
+                {
+                    min = matrix[i, column];
+                }
+            }
+            return min;
+        }
+
+        private int[,] Calculate(int numberOfPeriods, int maxStock, int holdingCost, int orderCost, IList<int> demands)
         {
             if (demands.Count() != numberOfPeriods)
             {
@@ -27,33 +40,33 @@ namespace TP2
                 throw new Exception("Can't meet demand for period 1");
             }
 
-            uint[,] results = new uint[numberOfPeriods + 1, numberOfPeriods]; //last row contains the minimum
-            uint INDEX_MINIMUM_OF_PERIOD = numberOfPeriods;
+            int[,] costs = new int[numberOfPeriods + 1, numberOfPeriods]; //last row contains the minimum
+            int INDEX_MINIMUM_OF_PERIOD = numberOfPeriods;
 
             //iterate over the matrix
-            for (int col = 0; col < numberOfPeriods; col++)
+            for (int row = 0; row < numberOfPeriods; row++)
             {
-                for (int row = 0; row < numberOfPeriods; row++)
+                for (int col = 0; col < numberOfPeriods; col++)
                 {
                     if (row > col)
                     {
                         //infeasible solution
-                        results[row, col] = int.MaxValue;
-                        
+                        costs[row, col] = int.MaxValue;
                     }
                     else
                     {
                         if (row == 0 && col == 0) //first period
                         {
-                            results[row, col] = demands[0];
+                            costs[row, col] = demands[0];
                             //store the minimum
-                            results[INDEX_MINIMUM_OF_PERIOD, col] = results[row, col];
+                            costs[INDEX_MINIMUM_OF_PERIOD, col] = costs[row, col];
                         }
                         else
                         {
                             if (row == col)
                             {
-                                //TODO
+                                costs[row, col] = costs[INDEX_MINIMUM_OF_PERIOD, col - 1];
+                                var newMinimum = FindMinimum(costs, col - 1);
                             }
                             else
                             {
@@ -65,6 +78,8 @@ namespace TP2
                     }
                 }
             }
+
+            return costs;
         }
     }
 }

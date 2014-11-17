@@ -41,15 +41,17 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\TP2\TP2.csproj">
-      <Project>{CC0BBF6C-91EE-4C2E-8C67-F443BA4204E3}</Project>
-      <Name>TP1</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Input\punto2.txt" />
+    <Content Include="Input\punto2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TP2\TP2.csproj">
+      <Project>{cc0bbf6c-91ee-4c2e-8c67-f443ba4204e3}</Project>
+      <Name>TP2</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
