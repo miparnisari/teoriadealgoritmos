@@ -16,10 +16,10 @@ namespace TP2
                 inventoryData.Demands);
         }
 
-        private int FindMinimum(int[,] matrix, int column)
+        private int FindMinimum(int[,] matrix, int size, int column)
         {
             int min = matrix[0, column];
-            for (int i = 0; i < matrix.Length; i++)
+            for (int i = 0; i < size - 1; i++)
             {
                 if (matrix[i, column] < min)
                 {
@@ -41,12 +41,13 @@ namespace TP2
             }
 
             int[,] costs = new int[numberOfPeriods + 1, numberOfPeriods]; //last row contains the minimum
+            int[,] lots = new int[numberOfPeriods, numberOfPeriods]; //last row contains the minimum
             int INDEX_MINIMUM_OF_PERIOD = numberOfPeriods;
 
             //iterate over the matrix
-            for (int row = 0; row < numberOfPeriods; row++)
+            for (int col = 0; col < numberOfPeriods; col++)
             {
-                for (int col = 0; col < numberOfPeriods; col++)
+                for (int row = 0; row < numberOfPeriods; row++)
                 {
                     if (row > col)
                     {
@@ -57,23 +58,26 @@ namespace TP2
                     {
                         if (row == 0 && col == 0) //first period
                         {
-                            costs[row, col] = demands[0];
-                            //store the minimum
+                            costs[row, col] = orderCost;
+                            lots[row, col] = demands[col];
+                            //store the minimum cost
                             costs[INDEX_MINIMUM_OF_PERIOD, col] = costs[row, col];
                         }
                         else
                         {
-                            if (row == col)
+                            if (row == col) // diagonal
                             {
-                                costs[row, col] = costs[INDEX_MINIMUM_OF_PERIOD, col - 1];
-                                var newMinimum = FindMinimum(costs, col - 1);
+                                costs[row, col] = costs[INDEX_MINIMUM_OF_PERIOD, col - 1] + orderCost;
+                                costs[INDEX_MINIMUM_OF_PERIOD, col] = FindMinimum(costs, numberOfPeriods, col);
                             }
-                            else
+                            else //upper triangle
                             {
-                                // (i-1) * demand * holding cost
-                                var demand = demands[row];
-                                //results[row,col] = results[row-1,col]+(row-col)*(results[])
+                                var costPrevious = costs[row, col - 1];
+                                var lotFromLastPeriod = (maxStock - demands[col - 1]);
+                                var lotForThisPeriod = (lotFromLastPeriod > demands[col]) ? 0 : orderCost;
+                                costs[row, col] = costPrevious + lotFromLastPeriod * holdingCost + lotForThisPeriod;
                             }
+
                         }
                     }
                 }
