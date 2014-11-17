@@ -42,7 +42,10 @@ namespace ConsoleApplication
                 var inputData = reader.GetDataFromFile(Path.Combine(Environment.CurrentDirectory, path));
 
                 var inventoryManager = new InventoryManager();
-                inventoryManager.CalculateCosts(inputData);
+                var costs = inventoryManager.CalculateCosts(inputData);
+
+                //TODO 
+                inventoryManager.CalculateOrderQuantities(costs);
 
             }
             catch (System.Exception)

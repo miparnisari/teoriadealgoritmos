@@ -87,5 +87,10 @@ namespace TP2.InventoryManager
 
             return costs;
         }
+
+        public void CalculateOrderQuantities(int[,] costs)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

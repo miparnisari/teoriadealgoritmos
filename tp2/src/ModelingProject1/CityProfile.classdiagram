@@ -1,0 +1,1101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="13ed0ca1-5d1d-4a93-b8ed-714595661d6d" name="UMLClassDiagram1" linkedPackageId="95e4656f-d94c-4080-9acc-d532be5faae8" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="755ed879-8adf-4b98-8ad8-8afc84c17c31">
+      <profileInstance Id="61ffbd70-55d3-4e9d-b5ed-786f19692753" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2d9c3f41-8f97-4ff8-9e1a-8a990067e2dc">
+      <profileInstance Id="813f8e65-b270-4aba-a972-0000d11b7bb0" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a1304434-ef82-4d03-b7c3-dad489832255">
+      <profileInstance Id="c4e0cef8-25bf-474b-8d76-5976ebc95de7" name="CSharpProfile">
+        <elementDefinition Id="9eab10bc-6432-43af-b56e-d618d8187206" />
+      </profileInstance>
+      <elementDefinition Id="b6395ec1-54b0-4ce5-b4fb-07b22d80780b" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="247ae48d-16bc-4857-bbb4-24887b740b6a" name="Building" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="37f21d59-f031-4783-9bb5-416fd2b4f788" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding" tag="ViewCode">
+            <elementDefinition Id="3fbd48f9-265a-43d4-a4e4-e8260f37b7fd" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="97b2fb67-ac97-4864-9839-9d3e8ebb0212" name="class" profile="CSharpProfile">
+            <elementDefinition Id="92d0bd67-0a9c-4818-94d0-54294b2420bc" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="43358d65-927e-407c-af1d-036dae678a0d">
+                <propertyInstance Id="8a2f2ffc-0a03-4763-9869-ef6e5c090b91" name="ClrAttributes">
+                  <elementDefinition Id="ee68abf3-e81a-4d3b-89e4-145df26cd138" />
+                </propertyInstance>
+                <elementDefinition Id="6b669d97-6b2c-4b37-a487-8b9862cd8712" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="0b63f59a-421c-47be-b177-29b93332f639">
+                <propertyInstance Id="9ed40b1f-8845-47d8-aff6-3f364cf1684a" name="IsPartial" value="false">
+                  <elementDefinition Id="bbbb48e8-1f9d-4df3-a776-4ec5b6c0952d" />
+                </propertyInstance>
+                <elementDefinition Id="2edc5249-7448-488a-890d-75954dad2dc2" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="9584dc4a-7030-4dcf-992d-bad0dc772adf">
+                <propertyInstance Id="9504ee6a-b85f-47f6-a3ec-61bd149973fb" name="IsStatic" value="False">
+                  <elementDefinition Id="6445b760-603c-4a0d-a3e9-2d55ab0f6178" />
+                </propertyInstance>
+                <elementDefinition Id="255324ce-f3f6-4b22-a85a-c12033644354" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="feb937d2-76a3-4988-a73f-1b4980913898">
+                <propertyInstance Id="b752051b-0565-4f18-b848-e6013e44f1f8" name="IsUnsafe" value="false">
+                  <elementDefinition Id="3bf5ccb0-22b5-4d42-bb23-8603ec8224a5" />
+                </propertyInstance>
+                <elementDefinition Id="09389e00-8c56-4b6d-8f4b-118198ee908b" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="82757a54-ccf0-4b2e-b19a-451c5bcee718">
+                <propertyInstance Id="1a4e43b3-5f2d-4cf4-aa73-2a8b8770070a" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="d2281297-b53a-4b26-b6ce-699e3054dfdc" />
+                </propertyInstance>
+                <elementDefinition Id="992f9f36-03fd-4227-bd98-bd3824bc293c" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="e5fdea47-bcc9-4e33-b81e-ad6118050937" />
+        <ownedAttributesInternal>
+          <property Id="a8ad3f98-4a05-4857-a6fe-bdd6fdcdc7be" name="X1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="ca694c42-0433-49a8-b150-0d2db022baea" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding Member%3DX1" tag="ViewCode">
+                <elementDefinition Id="62135e5d-d5ba-4344-ab70-c4bca5dba924" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="fffeeb4f-c675-440b-8961-aac46813b9ca" name="property" profile="CSharpProfile">
+                <elementDefinition Id="21df28ee-c0bc-4dc4-8fde-b81d8017a0b6" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="28c27a7f-5c20-42dd-8fe5-bc310912f530">
+                    <propertyInstance Id="04c0cb2e-7057-4c83-a119-2d3cd9b73941" name="ClrAttributes">
+                      <elementDefinition Id="f9ead04a-6467-4394-a05c-613fa32ccf5d" />
+                    </propertyInstance>
+                    <elementDefinition Id="316b6af3-b246-434d-b7c7-b9022fd85ba2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7ea7fb13-9081-486b-8824-dfbfd52dabf3">
+                    <propertyInstance Id="369b5ea9-1628-4f66-a2bb-478ed9a93bc4" name="Get" value="public">
+                      <elementDefinition Id="e9887279-bb48-45e5-821f-b94bb8b7b88f" />
+                    </propertyInstance>
+                    <elementDefinition Id="4dd8d3cc-f50b-4789-97a8-e4fdfb1c4f8e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="32beb031-1006-4c4a-8c6a-c42c75fe9a52">
+                    <propertyInstance Id="d4042465-a9dd-4c5b-abaa-06b982d02c0c" name="HasBody" value="false">
+                      <elementDefinition Id="4039fb90-ebdf-48f0-a0e3-2499b7a4a8b9" />
+                    </propertyInstance>
+                    <elementDefinition Id="00066277-5f2e-42f5-95a1-c418744e287b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="be142333-28ea-4698-87a3-8444a6601b58">
+                    <propertyInstance Id="16bcf756-0826-42ae-b691-b9da4baf1c04" name="IsUnsafe" value="false">
+                      <elementDefinition Id="5fde744f-9dd8-408b-a5ce-e11f92f02f71" />
+                    </propertyInstance>
+                    <elementDefinition Id="79215ba9-f1b5-4171-8f5c-33707b5b4672" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7ff402a0-4f57-45f8-9975-d2400c717dc2">
+                    <propertyInstance Id="f3597f25-a43e-4283-8f81-7d7232ff3963" name="Inheritance" value="none">
+                      <elementDefinition Id="f02cd347-c416-441d-b997-dcc70ec4adf3" />
+                    </propertyInstance>
+                    <elementDefinition Id="20c2736a-520e-424a-a0f3-ca9fe0f65c6b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="53a63b27-98e9-43d3-9024-2c63bca3b2d6">
+                    <propertyInstance Id="ab428670-39b4-4d61-987c-0f39518467bf" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="4b024c7e-a5e5-4070-a81e-a71ce2a790a8" />
+                    </propertyInstance>
+                    <elementDefinition Id="0a7b7abf-41d4-42fb-8534-055d4b552465" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="157b9222-6bfa-4847-a3fc-dc85d621e3e8">
+                    <propertyInstance Id="c17ac2e3-4868-4e39-8e7a-38c352e2cf08" name="Set" value="public">
+                      <elementDefinition Id="926aa340-2932-45a9-8ea5-dc5766d05363" />
+                    </propertyInstance>
+                    <elementDefinition Id="a437a591-d438-4641-95e7-024bfc954b9f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="bb4104d1-af34-41bb-8f11-89f7b77fcc63" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8e016ccb-0535-48ee-b7ac-46ddf62b5e20" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="903022bf-5239-4ed3-b4a7-c4a6c70faa22" name="X2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="fea417f8-ff56-4db3-a89a-888138fcf301" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding Member%3DX2" tag="ViewCode">
+                <elementDefinition Id="47e4485e-8982-4b8a-ac1e-25026a03ff25" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="92f81619-6028-4325-a8cc-444894d82fe4" name="property" profile="CSharpProfile">
+                <elementDefinition Id="77d45620-00c8-424b-b72f-2de94129603a" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ebccd939-a042-4688-82e8-f5e979cf63c7">
+                    <propertyInstance Id="89bbf283-532d-4fd6-bac5-60c18c0b38b2" name="ClrAttributes">
+                      <elementDefinition Id="bc6ca09a-5b11-4161-8eed-2a758b6971ac" />
+                    </propertyInstance>
+                    <elementDefinition Id="a5b9dc49-8345-4eec-8553-e40b9a501fcb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="00a52b2a-a2a4-46ae-a1d8-6529a69e2bb9">
+                    <propertyInstance Id="9ab9c66f-5f9a-4eb6-b7d9-e700d91c3b5b" name="Get" value="public">
+                      <elementDefinition Id="d92b606c-cf89-4525-8b03-48bfb4ff2b48" />
+                    </propertyInstance>
+                    <elementDefinition Id="0af3c5af-d9ee-4e98-8b71-c37b2bb302b1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="47e2d700-ee64-4e2c-bb89-27c4cebec521">
+                    <propertyInstance Id="b89528c7-3a3c-4208-91ce-acf5ba5b2237" name="HasBody" value="false">
+                      <elementDefinition Id="d20e0141-beae-4453-b414-bc69d67c0d23" />
+                    </propertyInstance>
+                    <elementDefinition Id="40f19ee3-c8c6-49bf-b107-aa87309e5956" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c4e799d5-1f94-4ad1-9c91-fa4eb0ffdc07">
+                    <propertyInstance Id="29d12a8f-39b4-46b1-9b3d-d0ebed119ae9" name="IsUnsafe" value="false">
+                      <elementDefinition Id="89bed796-c124-4c7c-b89a-3623ff0a6bfd" />
+                    </propertyInstance>
+                    <elementDefinition Id="d775c931-c305-4ea3-996a-d958b407939f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2530ef2b-9f7d-4074-ad72-0ad05ebb3673">
+                    <propertyInstance Id="b8bfc75a-c8c5-4818-967f-b5f022ea4247" name="Inheritance" value="none">
+                      <elementDefinition Id="69d38b7f-e77d-43a4-b817-82b229e8e84f" />
+                    </propertyInstance>
+                    <elementDefinition Id="9f94656c-f2d5-48ff-9341-17581c672ca9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="162c77f6-1a47-4bcb-b89c-24f4dfd32edf">
+                    <propertyInstance Id="c5c53c8c-9b0c-4ee9-96d7-bb92b8d5ab95" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="8f6036a3-1974-4f76-82ae-a8aefee48569" />
+                    </propertyInstance>
+                    <elementDefinition Id="206ffde6-f353-48b6-9b95-8ab8e3b451bf" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e7737709-f1b4-4027-bb4f-8349796e1b34">
+                    <propertyInstance Id="f6496bdf-c59f-4715-99a9-9ddc2467c291" name="Set" value="public">
+                      <elementDefinition Id="9e49007e-e4dd-4a80-96d2-33ecc731a137" />
+                    </propertyInstance>
+                    <elementDefinition Id="3b72ddaf-0767-4770-a45d-1672cb620d62" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="8932fe7a-1636-47d6-acdc-f2277a3b1227" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8e016ccb-0535-48ee-b7ac-46ddf62b5e20" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="f1c01c34-a697-4b31-a7a4-a1c785e8eae7" name="H" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="2d502743-a5f9-4e2d-9c20-be7207bd58d4" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding Member%3DH" tag="ViewCode">
+                <elementDefinition Id="53a51421-ff52-49b8-8815-0f0a6f207fe8" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="28fc078b-ce7a-4285-94df-d007210cf293" name="property" profile="CSharpProfile">
+                <elementDefinition Id="3d188436-644f-4f9a-ad9b-0f939d608fd3" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1c1a019a-cb07-465b-a54e-6dbbd482f741">
+                    <propertyInstance Id="bf811a7c-cc0b-4c8f-83bb-7c92a88e93a0" name="ClrAttributes">
+                      <elementDefinition Id="64baf73f-9e86-49ca-9db1-6bffd35e2063" />
+                    </propertyInstance>
+                    <elementDefinition Id="4e8bc6ba-8c9e-4bc0-8755-912fd9e6e99d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d9d45c0e-f8c4-4642-8349-db28677daa43">
+                    <propertyInstance Id="cdd0567b-b4cb-4b78-97f7-6af264ffd55d" name="Get" value="public">
+                      <elementDefinition Id="aba36c4a-28e4-4469-823c-ac033c3d0740" />
+                    </propertyInstance>
+                    <elementDefinition Id="d35f7c9e-7be1-442c-95bf-6e34bf296f7a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5a7e5f73-e06f-4ea2-afbc-b15264998561">
+                    <propertyInstance Id="a2c302d1-7ceb-4ca0-b15c-a661fda34e20" name="HasBody" value="false">
+                      <elementDefinition Id="9872d5a4-1457-4f85-9054-fd3699183c04" />
+                    </propertyInstance>
+                    <elementDefinition Id="c58ed7ff-3109-48fd-a226-5affff7574a1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="39e5920b-91ef-42fc-9cd7-7c4468f39b3b">
+                    <propertyInstance Id="d1327c23-ba18-40ac-b7b7-b8383f3512b5" name="IsUnsafe" value="false">
+                      <elementDefinition Id="89a9f82e-ec73-41c3-84b9-e1116c7fa981" />
+                    </propertyInstance>
+                    <elementDefinition Id="700cd1ce-532f-4a8d-b699-d65dc7019aab" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5c98cd8f-62c0-4c62-92e3-269fa838a820">
+                    <propertyInstance Id="8f9730a5-72a0-4b32-8ea9-60fbbbc30da5" name="Inheritance" value="none">
+                      <elementDefinition Id="b9a84c14-4d77-45b2-bf51-cd516d55d86e" />
+                    </propertyInstance>
+                    <elementDefinition Id="abb1e023-b1e0-493a-b19e-4b2ecfa07572" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fc942860-333d-467a-8331-171633a67d49">
+                    <propertyInstance Id="ccbb08c7-f5d8-4525-bd7c-55a082510703" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="c7dab87c-29f5-442f-b024-5ef1b1a9ef49" />
+                    </propertyInstance>
+                    <elementDefinition Id="12f0d9f3-a439-4e58-aa92-d2d41bafeec4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8d793dd3-45a5-4ff3-962e-c93d2874655b">
+                    <propertyInstance Id="bf2447ff-2859-471b-bb87-0544e8e26acd" name="Set" value="public">
+                      <elementDefinition Id="abbbaeca-f4b3-40b9-91b3-d035028ce527" />
+                    </propertyInstance>
+                    <elementDefinition Id="29a03bc3-cb51-4d1d-9b70-a34fc35031ef" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="3e9be7a4-9923-4fad-bb14-612c7a5b46e9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8e016ccb-0535-48ee-b7ac-46ddf62b5e20" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="8e016ccb-0535-48ee-b7ac-46ddf62b5e20" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="447389fc-2ab4-477d-ac3d-d784f967da58" name="BuildingsFileReader" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="291bc4bf-5fab-4389-b92a-27bcb857aed3" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuildingsFileReader" tag="ViewCode">
+            <elementDefinition Id="120b720d-8263-428c-a642-0d0b80157166" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="dde0db42-2ab9-4eea-aa4b-8f6b8c11ff59" name="class" profile="CSharpProfile">
+            <elementDefinition Id="d475b27f-d5b7-4850-9a04-911168c73bdf" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="b7103bf3-b046-43ff-9b58-4f0ac922bad2">
+                <propertyInstance Id="eeda951a-f5e0-4b3f-bd1f-34a9b6a18869" name="ClrAttributes">
+                  <elementDefinition Id="8e167785-dcfe-444b-9b48-7b8c63c9dc70" />
+                </propertyInstance>
+                <elementDefinition Id="c254446f-23c1-4537-a213-578e4bb4b196" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="7240e5e0-4218-4380-8623-8e957bc1bea8">
+                <propertyInstance Id="d075f595-f816-43e6-8cc0-32888a08d573" name="IsPartial" value="false">
+                  <elementDefinition Id="607ee95d-25a9-4b27-aa52-8d19c636f752" />
+                </propertyInstance>
+                <elementDefinition Id="35113114-6a50-4828-bdce-c4e9071b17e0" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="f6405301-4179-4c41-b911-db2239e5f2cd">
+                <propertyInstance Id="1cde8385-adc9-44c1-bf9e-e5cfa62b21b6" name="IsStatic" value="False">
+                  <elementDefinition Id="fd4e7c1c-d1c5-4d24-bdcc-1e345582972f" />
+                </propertyInstance>
+                <elementDefinition Id="38f15f8a-a974-41e2-b2e8-098cf48458bb" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="68f542b1-2edb-4508-9ce2-3a4cbdcebf31">
+                <propertyInstance Id="28cd4483-f784-4cbf-bda2-14f48372efa9" name="IsUnsafe" value="false">
+                  <elementDefinition Id="943d537a-23b3-4c8e-8cd1-89a0d7f141f5" />
+                </propertyInstance>
+                <elementDefinition Id="5a7e0ba3-a70b-4efa-91f1-709494936f74" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="0c153483-ac5d-441b-87d6-52cf3df0beb4">
+                <propertyInstance Id="bee6d83d-3b0b-44f5-ac1d-24ece2bf07cb" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="52062183-bbde-4c6d-b6dd-e0f3be1466db" />
+                </propertyInstance>
+                <elementDefinition Id="67ee413b-6cde-4a52-a6b1-b4b5fa53edbd" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="46fc58b3-1745-4b27-a4c2-4f6de1245a37" />
+        <targetEnds>
+          <association Id="d60ea2c7-8d58-41c1-af85-d97163e80f0e" isDerived="false" sourceEndRoleName="BuildingsFileReader" targetEndRoleName="Building" isLeaf="false" isAbstract="false">
+            <classMoniker Id="247ae48d-16bc-4857-bbb4-24887b740b6a" LastKnownName="Building" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c8796fd2-2777-4e74-8d93-1e444067c7b5" name="BuildingsFileReader" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9f40498a-e4ee-412e-a1b2-be0ba65398c5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eff2db0e-65c5-4b5c-addb-2692aa36f6c0" name="Building" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9fa2b212-44bf-4006-ad94-21e0074be8af" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bd21aa65-627c-4db7-9615-f32b2db4d566" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="53ac2100-1203-4e22-b0d4-cd706be9569f" name="ReadFileContent" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="6244a9ae-7222-4c39-8808-d407bdefbda0" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuildingsFileReader Member%3D(Name%3DReadFileContent OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.IO Type%3DStreamReader)])" tag="ViewCode">
+                <elementDefinition Id="bdaa9bd0-b85b-4386-80c5-0dcf4952f525" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="603097ad-c52d-424c-9d16-36a08bced24a" name="method" profile="CSharpProfile">
+                <elementDefinition Id="8c3f3526-5bf6-4029-aae7-a2af1e2eaf15" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="737b441d-023a-4e57-b6bb-c69340afe19e">
+                    <propertyInstance Id="076140f0-8e19-4e82-97ac-0cfbec2a8d9c" name="ClrAttributes">
+                      <elementDefinition Id="d7ecd7f2-68db-4723-81e1-d4acdc2cff99" />
+                    </propertyInstance>
+                    <elementDefinition Id="0101ac98-ef8f-4a8c-abfd-e7d060c86785" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="62374324-a64a-4e69-a2f0-81d781093a3c">
+                    <propertyInstance Id="7e2a4a07-eb67-4681-878b-4b2464e3e55c" name="IsPartial" value="false">
+                      <elementDefinition Id="e0cb7f84-fafa-430c-b34f-eef3902eaec3" />
+                    </propertyInstance>
+                    <elementDefinition Id="c3704d23-30f4-404e-9900-e3770922ad62" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="641d3acd-4045-4530-8abc-2a99b2a0ee64">
+                    <propertyInstance Id="574c6702-18bb-4059-8f3d-cd20e5b5d0f7" name="IsUnsafe" value="false">
+                      <elementDefinition Id="d1cd447c-48f0-4150-8a8a-8bfe5181503d" />
+                    </propertyInstance>
+                    <elementDefinition Id="040e2c56-f103-4de5-b98c-0450e25ff58e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c2824e2f-1275-4063-a4ca-56d0625c28bb">
+                    <propertyInstance Id="e40842ef-897b-42a5-bff5-15c90bb82cb7" name="Inheritance" value="none">
+                      <elementDefinition Id="c8409e65-a92e-4274-a5ef-14cb0ab9c3a6" />
+                    </propertyInstance>
+                    <elementDefinition Id="6b0e161c-3450-4d5f-8d3d-ad78820279ba" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4e4bd245-cd44-49e2-a307-79af1abdcf98">
+                    <propertyInstance Id="7697cdca-1c18-4f2f-abaa-6786b0366229" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="4c2814c5-e718-4128-b51e-af102acf5d39" />
+                    </propertyInstance>
+                    <elementDefinition Id="c92856c1-47d3-4289-a5ab-d8d224fca094" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b4808424-6860-4c14-96a2-9adf4b512ff3">
+                    <propertyInstance Id="800353fa-8a6f-4891-9032-d0fc4aacf6d9" name="params" value="false">
+                      <elementDefinition Id="d1370533-7214-4149-b3e2-05fb2703d85e" />
+                    </propertyInstance>
+                    <elementDefinition Id="58c2b399-bda5-49db-9976-bc84e86c2580" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="534fc9ae-0a33-4baf-b36a-9d0d792105e9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4899136f-5598-414a-aa60-50f8823db55e" direction="Return">
+                  <elementDefinition Id="cb603c8c-b1e9-4df2-8b5b-9abb391b5107" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c199ab9f-965f-4027-89b3-c2dbc9925111" LastKnownName="List&lt;Building‎&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f912d3cd-276e-41a7-a03c-7ad54e769665" name="file" direction="In">
+                  <referencesInternal>
+                    <reference Id="fb0ed43a-996f-4f40-ad0e-c4fed510e563" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuildingsFileReader Member%3D(Name%3DReadFileContent OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.IO Type%3DStreamReader)]) ParameterIdentifier%3Dfile" tag="ViewCode">
+                      <elementDefinition Id="6296e585-0871-4fc4-820f-b5d77895fd5e" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="8918a609-320b-48e9-b4a9-4d9866e7eceb" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7093e6f1-2254-44fc-8365-6f2f5462dc71" LastKnownName="StreamReader" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="c199ab9f-965f-4027-89b3-c2dbc9925111" name="List&lt;Building‎&gt;" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::System::Collections::Generic::List&lt;Building‎&gt;">
+        <elementDefinition Id="157f38e4-d8a9-48a2-8172-a30be0a2f2f7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7093e6f1-2254-44fc-8365-6f2f5462dc71" name="StreamReader" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::System::IO::StreamReader">
+        <elementDefinition Id="39209b66-0598-4884-aef2-abae8d0dc3d6" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="20027fd9-4fe6-41af-8b36-b452cd17978e" name="ProfileCityCalculator" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="7f871db4-303f-4a9b-a1b1-80addde825ed" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DProfileCityCalculator" tag="ViewCode">
+            <elementDefinition Id="d43d9c56-5ab1-4e03-85b5-1a70f27feb9f" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="0c3fdf8e-d533-4381-9c56-b36ebe357b18" name="class" profile="CSharpProfile">
+            <elementDefinition Id="5fe8bc90-810d-4a48-ab4f-4ccbd9c96d03" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="8849d26a-8e60-4c7e-b728-db44bc4966e0">
+                <propertyInstance Id="6f78ea85-8608-4281-8b8f-8250cb03a322" name="ClrAttributes">
+                  <elementDefinition Id="4b729ebf-cd63-4caf-9041-5baae9e8f85c" />
+                </propertyInstance>
+                <elementDefinition Id="d9df1031-ed28-4f21-a11d-c09097ffa09f" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="6991f7cf-6e92-4c1f-81ff-2b496515d81c">
+                <propertyInstance Id="fa8fdac1-73bd-4230-9078-202a8283e921" name="IsPartial" value="false">
+                  <elementDefinition Id="8ccdad07-1634-4b9b-affd-48854f5701a2" />
+                </propertyInstance>
+                <elementDefinition Id="1fd38828-56e4-4f77-ad51-0feffc8e4087" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="1e016907-df87-44a9-9bb1-c575a8cdcc6e">
+                <propertyInstance Id="eaa20750-af08-406f-a254-01d31ef85733" name="IsStatic" value="False">
+                  <elementDefinition Id="1d498dd2-b2fc-4aa2-9b52-819d9d9b36f3" />
+                </propertyInstance>
+                <elementDefinition Id="768ecec5-67f2-4fb9-9f11-3dd67cae8d25" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="37334c3a-efdc-4026-b993-4350ecdf2f1f">
+                <propertyInstance Id="830c7380-5b17-4983-8d6d-15f9b81a1315" name="IsUnsafe" value="false">
+                  <elementDefinition Id="2ee11827-d2ee-4fff-a7fa-2ca960a66e87" />
+                </propertyInstance>
+                <elementDefinition Id="e41dfff1-ab90-434c-96b6-cf86a3640e93" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="2d3f5cfc-77e7-4ef2-b9a0-6708bf45e6e5">
+                <propertyInstance Id="c4dde9e2-9852-407f-8bdc-d9e58387d86b" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="156dda87-2b5f-4858-b323-6813f96b99ee" />
+                </propertyInstance>
+                <elementDefinition Id="e62805a8-e8f6-478b-8824-e0060bd3393f" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="fdfcc696-9d97-492d-9a5b-b9c372382045" />
+        <targetEnds>
+          <association Id="840c49e0-9bed-4b3e-8e5c-4c4b14e48e99" isDerived="false" sourceEndRoleName="ProfileCityCalculator" targetEndRoleName="Building" isLeaf="false" isAbstract="false">
+            <classMoniker Id="247ae48d-16bc-4857-bbb4-24887b740b6a" LastKnownName="Building" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cbf9bbc8-032b-47b4-940e-c8cab85da59e" name="ProfileCityCalculator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6cd6be0b-10a2-4788-8c71-dce65e1c3672" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2fa21615-3474-4005-9d43-34de58ded6e5" name="Building" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e95ff049-035c-43aa-bc05-244d3fe8710e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9b1c3988-8a0a-4a63-abe4-c84ee29852be" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="4ac98669-cc12-43a5-949b-416ae66197d6" name="GetProfile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="ebb272ff-a07c-47ee-827c-95e3b8303bf3" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DProfileCityCalculator Member%3D(Name%3DGetProfile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)]))])" tag="ViewCode">
+                <elementDefinition Id="735ab031-b63c-4032-964d-6a069defeb93" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="316da34c-34f2-45e7-9254-febab0478080" name="method" profile="CSharpProfile">
+                <elementDefinition Id="942422a8-2f90-4536-b8f5-620303a460c2" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ba09bf48-b8e0-487a-b5ee-b6ea85cd042d">
+                    <propertyInstance Id="1435d327-8e46-4f38-82c8-17e5ff9f186b" name="ClrAttributes">
+                      <elementDefinition Id="bcb0c988-acfb-433e-a687-a5e3cdb6722d" />
+                    </propertyInstance>
+                    <elementDefinition Id="2129cfcc-23d2-47e9-8923-96f43c8424bb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="202e99d9-3a90-48c0-9bff-b79bc6cd0010">
+                    <propertyInstance Id="d70a1da6-74e6-46a6-8876-71ab1f066992" name="IsPartial" value="false">
+                      <elementDefinition Id="3646a281-c366-4ab0-8189-bc7ae3c17833" />
+                    </propertyInstance>
+                    <elementDefinition Id="c77fc9ba-71af-42f4-858c-8e5b7148abfb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cdc7543e-56b0-48f7-8a41-f213e5f48dbe">
+                    <propertyInstance Id="8e97200e-ac62-4d03-9ef8-36d76973a592" name="IsUnsafe" value="false">
+                      <elementDefinition Id="ec4038bc-410c-403a-a1c0-1f319ef2a992" />
+                    </propertyInstance>
+                    <elementDefinition Id="f2823c5e-9586-4291-a269-cd5e148ab2ed" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="709024ac-5637-4b8b-bd8d-378a1562c898">
+                    <propertyInstance Id="95651bf4-396a-454c-a8f1-141551469ac4" name="Inheritance" value="none">
+                      <elementDefinition Id="6196c34b-7099-4849-acdc-94227f24501d" />
+                    </propertyInstance>
+                    <elementDefinition Id="c0864c61-136c-4aac-8d86-85fb4011dae9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="86f98d2c-c325-43a6-a928-132d7bf0fb3a">
+                    <propertyInstance Id="5937c097-2f5d-4835-8072-4fad2dc2864c" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="fb63bf1b-2637-417c-9a07-f9a3e282d096" />
+                    </propertyInstance>
+                    <elementDefinition Id="0fb318f3-77ec-487f-9566-706efe343599" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1f5d1b16-c182-4a44-8c91-e62c4bbb0aff">
+                    <propertyInstance Id="0b1c7a33-c39f-4b95-b7ee-6905c59f72b8" name="params" value="false">
+                      <elementDefinition Id="7e785cd5-bb96-4a1d-8142-c7566e5a0109" />
+                    </propertyInstance>
+                    <elementDefinition Id="c2084f6a-44e7-4f51-93a5-9163ffbc626a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="17835865-1538-4a25-a926-7c2c005a8ec1" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9f14a2d9-47ae-47d0-b618-ec8a22db6c90" direction="Return">
+                  <elementDefinition Id="78eee87e-376a-489d-afca-82e1db798a61" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="8761b63a-477c-4e21-aa64-3af4ceef0ec4" LastKnownName="List&lt;Int32‎&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c49ce36b-3b01-4174-8133-37e4af9777be" name="buildings" direction="In">
+                  <referencesInternal>
+                    <reference Id="e76a9181-51eb-47e1-b63f-b7f7413a8840" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DProfileCityCalculator Member%3D(Name%3DGetProfile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)]))]) ParameterIdentifier%3Dbuildings" tag="ViewCode">
+                      <elementDefinition Id="b2fd5e16-d1d8-410e-b963-d3421fd1ad4c" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="5a6b574d-379a-4f16-8e3e-6e13a02e0a7a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c199ab9f-965f-4027-89b3-c2dbc9925111" LastKnownName="List&lt;Building‎&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="e77f1792-4a8c-4dfc-9541-6e29f4b1f759" name="MergeSort" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="30fcbd13-2484-41f8-b0f9-df9883eb1182" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DProfileCityCalculator Member%3D(Name%3DMergeSort OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)]))])" tag="ViewCode">
+                <elementDefinition Id="3db5fe89-e566-4fe9-abbc-04059c32b2c7" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="64fe7a90-722d-43c2-ac3a-a31135e2463e" name="method" profile="CSharpProfile">
+                <elementDefinition Id="c5ae079d-982b-4ebd-9f36-14fffb57c37a" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4c8bfe77-d304-4251-8905-592888adad56">
+                    <propertyInstance Id="981b52b8-18b6-4f05-bff3-18266b852b04" name="ClrAttributes">
+                      <elementDefinition Id="5de2f6e0-8f7c-45bb-b39a-ffac70954004" />
+                    </propertyInstance>
+                    <elementDefinition Id="f1ef2336-1d97-4d47-bf17-a660e20f6b64" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="efa08297-996f-4284-9328-9512bab04655">
+                    <propertyInstance Id="3ed39f59-67ab-4ead-8628-d930d808618f" name="IsPartial" value="false">
+                      <elementDefinition Id="49aee192-1c9e-4d40-b3bb-e6acbb4c69ff" />
+                    </propertyInstance>
+                    <elementDefinition Id="ff343309-e074-47e0-91b2-cf64c9b2cdb7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9136661b-4100-4ed9-9b91-965f9cb4bf80">
+                    <propertyInstance Id="eab6a5c7-a850-4bed-9d4f-6b3b4f4b7057" name="IsUnsafe" value="false">
+                      <elementDefinition Id="cac227cd-fcea-45da-b3a1-f2c796ccca47" />
+                    </propertyInstance>
+                    <elementDefinition Id="7fcccb68-a072-4a53-ae30-547185df389b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="01d7dbf1-df3a-4c63-b602-e0c1888915e3">
+                    <propertyInstance Id="78570b4c-7d8e-4ce8-acbe-b6ee08b84f26" name="Inheritance" value="none">
+                      <elementDefinition Id="5118d12e-2ae6-4c0b-9a4a-cd6c32e1a443" />
+                    </propertyInstance>
+                    <elementDefinition Id="0d704146-dcb6-4e08-b920-7f6d7501c2be" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="72aa4afb-f665-494c-b2df-6254cca2ed76">
+                    <propertyInstance Id="8d76e117-6fa1-4df7-b06b-961103ac3308" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="767b3bd5-8166-42b9-975f-50406b600f69" />
+                    </propertyInstance>
+                    <elementDefinition Id="3d181888-8bb2-45e0-99ce-33c95fcab022" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b963337e-f2db-46b4-a594-53e4a34d7fae">
+                    <propertyInstance Id="ba75626d-98e0-494a-bfb0-3fe03261562e" name="params" value="false">
+                      <elementDefinition Id="f714987a-1df7-4e9f-acd0-a7c86f0a4b18" />
+                    </propertyInstance>
+                    <elementDefinition Id="3927d7ea-064e-4075-a673-29f35277e6e2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="6acb1663-f8f1-4d81-ba5e-1d20adfb9b4f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b7f8c738-73a1-4139-8a12-ca653bd4c9dd" direction="Return">
+                  <elementDefinition Id="33faf3a5-dc9a-4d23-99dd-49ee5955570f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c199ab9f-965f-4027-89b3-c2dbc9925111" LastKnownName="List&lt;Building‎&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="dac3ea2f-2b7d-4c68-861b-71b9c798f5df" name="list" direction="In">
+                  <referencesInternal>
+                    <reference Id="3cae279f-563b-439c-987a-e3f68adc2da9" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DProfileCityCalculator Member%3D(Name%3DMergeSort OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)]))]) ParameterIdentifier%3Dlist" tag="ViewCode">
+                      <elementDefinition Id="3baf63e6-dce1-440c-aa61-f692c5941d8b" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="b1dd58e3-4e84-49ab-aa87-c32d4407c680" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c199ab9f-965f-4027-89b3-c2dbc9925111" LastKnownName="List&lt;Building‎&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ce563392-ea20-444c-834a-0fd4feba5711" name="Overlap" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="f8abf37c-b621-4547-a5da-091f6da02cbd" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DProfileCityCalculator Member%3D(Name%3DOverlap OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)])" tag="ViewCode">
+                <elementDefinition Id="65b07364-7d2b-4fd8-a255-0fb32f41a6b6" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="be3adc08-d423-45ed-bf3c-25647520c122" name="method" profile="CSharpProfile">
+                <elementDefinition Id="8018db39-20f7-49b2-ad47-8b6daba447c2" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7c85c56a-d093-4b1f-965d-494a837eaf03">
+                    <propertyInstance Id="55523840-a2c1-4727-a375-07fb2e41c262" name="ClrAttributes">
+                      <elementDefinition Id="71f418ae-831e-45eb-a0a7-8fc8606c1258" />
+                    </propertyInstance>
+                    <elementDefinition Id="bf3c7d9b-fde4-49a3-9439-c22d25cc2105" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="528c66d3-22da-4cb1-9a99-4a034b6b6bfb">
+                    <propertyInstance Id="c80b7295-5c38-41bc-90b5-8348e74ced50" name="IsPartial" value="false">
+                      <elementDefinition Id="793300d0-72e6-469e-8d3f-16e64c6dca79" />
+                    </propertyInstance>
+                    <elementDefinition Id="fd63a6d7-c3ad-47f2-9d0f-5f0ba547fa82" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="15374702-6ce2-4aa0-a4fe-ceb2df82191d">
+                    <propertyInstance Id="59f3bd1a-dcb1-4495-9958-82f85ae59db2" name="IsUnsafe" value="false">
+                      <elementDefinition Id="1110050d-e56d-49df-87ff-a624443e2e47" />
+                    </propertyInstance>
+                    <elementDefinition Id="6bc9928c-9c40-4390-bcc6-21249c7129a2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b94fdd29-e5ff-4bd2-a184-e171f680726f">
+                    <propertyInstance Id="49df4831-5973-46be-9fa9-be203d8018a5" name="Inheritance" value="none">
+                      <elementDefinition Id="8b1311fe-0536-4dbd-a7e8-f8eda7548ed7" />
+                    </propertyInstance>
+                    <elementDefinition Id="873b1318-d3db-48e3-97f0-de54fd2e54a6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a7819097-c59c-41c6-94fe-865d3a1e6a4e">
+                    <propertyInstance Id="5b99ac23-6f80-4915-8f9a-b5531221a5a6" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="161257e8-29f8-498d-89b8-b8a7577115a6" />
+                    </propertyInstance>
+                    <elementDefinition Id="d02e17cf-b81a-4fb3-963d-ff85e701635c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4b14f930-f54f-4438-92c8-bab62b8bf054">
+                    <propertyInstance Id="ddfa387f-121e-462a-8aae-2c5dcc7ae47d" name="params" value="false">
+                      <elementDefinition Id="53aceaed-505e-44de-a337-0019793addc9" />
+                    </propertyInstance>
+                    <elementDefinition Id="4ef1d616-786f-4994-ab80-ba833b54dada" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="f7d4e5b9-7cae-42bb-8555-3325364f347a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1eb7221c-0cae-4796-8957-16d2dafd7f5c" direction="Return">
+                  <elementDefinition Id="20fccd35-c939-4eca-98bd-baa572278581" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="08682880-72da-430a-8151-76fdaed3dda2" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f6114528-547d-42aa-8aba-880ff5c528b0" name="b1" direction="In">
+                  <referencesInternal>
+                    <reference Id="deb4d64f-020e-47b3-892c-9a25356c7d8c" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DProfileCityCalculator Member%3D(Name%3DOverlap OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)]) ParameterIdentifier%3Db1" tag="ViewCode">
+                      <elementDefinition Id="b956243b-a35f-48ee-b45c-462f929021d6" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="263649ae-bb38-41bf-8210-4233f9a12cb4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="37c44656-8579-4bc5-8dd2-afc377fe7224" LastKnownName="Building" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cfb9643d-fe30-4b68-bc71-9c89883a8a6b" name="b2" direction="In">
+                  <referencesInternal>
+                    <reference Id="cb02990d-44fe-4adf-965d-96c809b68f6e" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DProfileCityCalculator Member%3D(Name%3DOverlap OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)]) ParameterIdentifier%3Db2" tag="ViewCode">
+                      <elementDefinition Id="af635db4-979f-42b0-8e51-ced18e93ab7a" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="b5fa7f7f-ba70-4d3d-a2c4-1ffb516c6236" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="37c44656-8579-4bc5-8dd2-afc377fe7224" LastKnownName="Building" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="370374a3-e2a0-447b-a436-20bf1ec5669f" name="CompletelyOverlap" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="7d646298-9b51-4183-8b46-ec189a3a15c0" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DProfileCityCalculator Member%3D(Name%3DCompletelyOverlap OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)])" tag="ViewCode">
+                <elementDefinition Id="af969b7b-04fb-4c73-bce0-e9e0d1c3c5ba" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="6aa2da87-d347-4d42-bf75-30bb62395a4c" name="method" profile="CSharpProfile">
+                <elementDefinition Id="b5c95d63-2322-4fa2-bb82-fd86ccf18512" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b0cd505c-514c-4455-a0af-f95e35a2603c">
+                    <propertyInstance Id="262e8b5b-6546-4f11-a7ac-d5aa1d482244" name="ClrAttributes">
+                      <elementDefinition Id="732d6c79-5fac-42c9-b5d0-ca64491f8791" />
+                    </propertyInstance>
+                    <elementDefinition Id="896dd29a-2a33-40cb-bb9e-cc7edcf67c16" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="394346c1-142a-4be6-9d28-ef2f7fbb2b2a">
+                    <propertyInstance Id="5c46e303-0b82-4ea1-bacc-7d8beb953f33" name="IsPartial" value="false">
+                      <elementDefinition Id="eab233b9-c96b-47a5-811a-03a805366718" />
+                    </propertyInstance>
+                    <elementDefinition Id="dd8f8eb4-0625-4c6f-8efd-85af2ef7fdbd" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6c9d89c8-00b7-4cb3-b189-d751ab32c4ab">
+                    <propertyInstance Id="583e54e5-0587-4984-8c9e-ff4860818fe7" name="IsUnsafe" value="false">
+                      <elementDefinition Id="da457f67-beed-4d53-96a9-b05ad37fd023" />
+                    </propertyInstance>
+                    <elementDefinition Id="a1be49f1-f0cb-4e2e-81fd-ebf583d4b411" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f4c6a9d4-4a91-41bc-b26d-bc0b07899873">
+                    <propertyInstance Id="b198410d-c9d9-4699-9a4f-05935fe8a811" name="Inheritance" value="none">
+                      <elementDefinition Id="cdb98748-cd4a-444a-ae96-ad1c76e7bdc7" />
+                    </propertyInstance>
+                    <elementDefinition Id="8c7cbe11-5a12-4ec3-afa9-bbf4ba823006" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="690bed32-180e-46f2-8b58-afa96284c8a3">
+                    <propertyInstance Id="1ffeb22f-3258-449e-9986-8db9fe032bf6" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="51014d69-c909-4c33-ad1a-061eac89c91e" />
+                    </propertyInstance>
+                    <elementDefinition Id="4e2db319-6807-4c26-81bc-3296df4a4a22" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d0af764f-9d29-4cd8-831d-6beded424e30">
+                    <propertyInstance Id="50ba8d5a-92db-4ab4-823f-bfd503ac9dd3" name="params" value="false">
+                      <elementDefinition Id="0803989b-8f5b-4272-9ba1-ba64ea131086" />
+                    </propertyInstance>
+                    <elementDefinition Id="7298dc39-c6f4-4d42-9666-9aff81395fca" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="3b7df97c-d896-436e-849d-86e113434677" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f088d229-52c3-427d-aa59-d6d0cfb8f697" direction="Return">
+                  <elementDefinition Id="21bbc4b4-4584-4764-93e7-8d5ff7f4b62c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="08682880-72da-430a-8151-76fdaed3dda2" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ca7216f7-0404-4ccd-a349-7cc8ec492e1f" name="b1" direction="In">
+                  <referencesInternal>
+                    <reference Id="d2e548d7-7457-467e-a627-54e320246619" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DProfileCityCalculator Member%3D(Name%3DCompletelyOverlap OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)]) ParameterIdentifier%3Db1" tag="ViewCode">
+                      <elementDefinition Id="5e131565-796b-4035-9ee9-f3ce6da242bd" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="d5f51055-b422-4326-9e26-8fb08757fc4f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="37c44656-8579-4bc5-8dd2-afc377fe7224" LastKnownName="Building" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="adab23fa-815b-44ec-89a8-e6bb5d3b8a7a" name="b2" direction="In">
+                  <referencesInternal>
+                    <reference Id="b3ad63a3-390c-47cf-8bd1-feff2eece1f7" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DProfileCityCalculator Member%3D(Name%3DCompletelyOverlap OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)]) ParameterIdentifier%3Db2" tag="ViewCode">
+                      <elementDefinition Id="aa4a1f63-7fd6-40eb-ad64-4bad32cbd715" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="e7651816-d139-4b80-950f-07c3141c214e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="37c44656-8579-4bc5-8dd2-afc377fe7224" LastKnownName="Building" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="05ff7e94-dad2-4ff4-9e7c-7b0de9db008e" name="RemoveOverlapped" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="4cb532d5-c740-4824-bd32-1650b934f3d7" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DProfileCityCalculator Member%3D(Name%3DRemoveOverlapped OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)])" tag="ViewCode">
+                <elementDefinition Id="84c6c915-6a3c-45f9-ad4d-e3d985934cff" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="c74ee7a5-c65d-4ef6-860c-b2af9b36689a" name="method" profile="CSharpProfile">
+                <elementDefinition Id="b1d8017b-625b-4f21-a7fc-bdc43f58ba50" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cf93b7f8-d64c-48a9-b9ab-bda6d408cc42">
+                    <propertyInstance Id="fdfa6671-88e4-4ff6-a119-792cde5ae857" name="ClrAttributes">
+                      <elementDefinition Id="ca9a2ddf-8016-48c3-8bc3-8de1e799ab7c" />
+                    </propertyInstance>
+                    <elementDefinition Id="590a6380-2f61-4c10-b3ff-e48974e4588b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="79a7c3e8-371a-47f9-8c78-c67b12819d6d">
+                    <propertyInstance Id="1318bcb5-1d26-4256-a045-69fa5be8c4b6" name="IsPartial" value="false">
+                      <elementDefinition Id="339ca3d6-d0a0-450d-bc2c-62084a0f0ecc" />
+                    </propertyInstance>
+                    <elementDefinition Id="1aebe866-9f25-4259-919c-f38e2a112028" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="994e4083-8e83-4909-b3e5-0a66b90ff544">
+                    <propertyInstance Id="e4efcb23-c024-49c8-bafa-93aecd02dde3" name="IsUnsafe" value="false">
+                      <elementDefinition Id="a8d15cf7-ba46-4296-bb34-bdabb8b968ac" />
+                    </propertyInstance>
+                    <elementDefinition Id="8734436f-b5d0-402f-ab40-3430cc07860f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="77c7b90f-8b80-4a9a-be78-e463b6e82aaf">
+                    <propertyInstance Id="57a8216e-50a4-48be-b2c5-a66293f1f38c" name="Inheritance" value="none">
+                      <elementDefinition Id="75c48c54-795d-43aa-a806-ca1098a29a28" />
+                    </propertyInstance>
+                    <elementDefinition Id="76d6b103-7b1f-4fce-87b7-3b673cd214ae" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="34a173cc-cfb4-44ac-98ea-a34353b8d2b0">
+                    <propertyInstance Id="36875195-46c6-43f8-8cff-61bb8889b3e6" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="5be10e7a-752e-4648-b882-76ff1ed0ff64" />
+                    </propertyInstance>
+                    <elementDefinition Id="8fd3d7b5-9f20-446f-9f0c-75843e0ef17d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6995d410-5cf1-4fbc-a2b8-6f0b075afbf8">
+                    <propertyInstance Id="89baff67-1136-441b-815d-e2837c21b5d5" name="params" value="false">
+                      <elementDefinition Id="2b43f1a5-2c54-46b8-939e-75e65c06922c" />
+                    </propertyInstance>
+                    <elementDefinition Id="e593cff9-2f68-4874-a6dd-4f0589956f90" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="ef227ab0-8e8a-4063-904b-262fc5b0bd67" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2b5b804d-ee22-4f58-b676-66396d098bff" direction="Return">
+                  <elementDefinition Id="0702fbc4-4624-4298-9f52-ecefe8f36b89" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="37c44656-8579-4bc5-8dd2-afc377fe7224" LastKnownName="Building" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3b2703f5-6bfa-47d5-967f-bc4bdd280c27" name="b1" direction="In">
+                  <referencesInternal>
+                    <reference Id="913c045e-1f39-4fc4-9646-2a394fae1c0c" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DProfileCityCalculator Member%3D(Name%3DRemoveOverlapped OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)]) ParameterIdentifier%3Db1" tag="ViewCode">
+                      <elementDefinition Id="07dfb16b-c19f-4ae4-9f17-37f54e86baa8" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="61be4b3c-4abd-4082-94fa-13eb0038da99" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="37c44656-8579-4bc5-8dd2-afc377fe7224" LastKnownName="Building" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a11858f1-8805-49b5-bbc8-f33bc916123a" name="b2" direction="In">
+                  <referencesInternal>
+                    <reference Id="d559cbde-3f07-411b-89f1-c34740d1c8f8" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DProfileCityCalculator Member%3D(Name%3DRemoveOverlapped OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)]) ParameterIdentifier%3Db2" tag="ViewCode">
+                      <elementDefinition Id="2d5e5b4b-70a2-4393-a30c-770b95ef0e84" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="63c36a95-d31a-493d-b0eb-2fb39c3809e4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="37c44656-8579-4bc5-8dd2-afc377fe7224" LastKnownName="Building" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="4ac6e427-b84c-4118-9ba4-155ec854e172" name="ProcessOverlapping" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="c44cf320-d034-469b-8fdc-339fc11fed42" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DProfileCityCalculator Member%3D(Name%3DProcessOverlapping OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)]))])" tag="ViewCode">
+                <elementDefinition Id="44d91063-ec6d-4427-aefa-63861468494b" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="d03f8096-1467-4ba2-9fb6-f6955c0a788c" name="method" profile="CSharpProfile">
+                <elementDefinition Id="09d4313a-c7b0-4575-a3ce-02db41e7262c" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="24869d80-c97c-4430-a165-b04ad71124b0">
+                    <propertyInstance Id="813541d8-224f-4d83-8317-0d672fcaa9f5" name="ClrAttributes">
+                      <elementDefinition Id="63ba2338-409a-471d-b473-69ac1f489f3d" />
+                    </propertyInstance>
+                    <elementDefinition Id="23d53aac-63ac-4a74-a318-757dcb266f3f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3f9affc6-0d7c-436a-8c5d-fbd75c6a434f">
+                    <propertyInstance Id="b55a6f5b-b197-49f5-9dc9-14bd6c8c9053" name="IsPartial" value="false">
+                      <elementDefinition Id="1d19798c-3ba5-40d4-b62d-dd4a6e7ac232" />
+                    </propertyInstance>
+                    <elementDefinition Id="0df13348-e1ec-4761-be57-7294e660e8ab" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8104130f-53e9-4697-a3d3-e853c2922f4a">
+                    <propertyInstance Id="9c554454-84db-46dc-bf13-18edf6cc7dcc" name="IsUnsafe" value="false">
+                      <elementDefinition Id="25ed93b1-0a2c-4926-a62e-396eec4c32d9" />
+                    </propertyInstance>
+                    <elementDefinition Id="7ad506f8-de73-4085-96ec-eb7af6a355b1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d50ccc32-3df9-49dc-9f0d-ea1d5c096be6">
+                    <propertyInstance Id="e310d8f9-8f91-46a9-a8f6-2cec2a8531e1" name="Inheritance" value="none">
+                      <elementDefinition Id="729f7792-c1cd-4bb8-a986-487fca9d5ec3" />
+                    </propertyInstance>
+                    <elementDefinition Id="20bf401e-8054-48c5-8d59-9a17f55f162a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5d0b211b-59da-4a2c-95c2-bb04bb910d09">
+                    <propertyInstance Id="173a6785-7e6e-4f37-8151-0c9a42b92d1f" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="6263899f-2875-45de-89f5-2544bf2b5189" />
+                    </propertyInstance>
+                    <elementDefinition Id="ce81aa99-f727-403f-9b5c-8de2e12aca08" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4389db3c-25fd-4aeb-9a55-ea49bde5aad4">
+                    <propertyInstance Id="836dbf46-47ce-4623-86f1-881149069821" name="params" value="false">
+                      <elementDefinition Id="60665bcb-e6d7-4813-861a-84e8996dddde" />
+                    </propertyInstance>
+                    <elementDefinition Id="e5d60485-bdf3-44e9-aac7-5cb761e470f1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="c81f59c9-d836-40c8-8641-aa5734274e9d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4baaa3fd-19d8-4ace-866e-43978556155c" name="b1" direction="In">
+                  <referencesInternal>
+                    <reference Id="e2adbc29-9ac8-47f5-9e0f-4363f87653e4" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DProfileCityCalculator Member%3D(Name%3DProcessOverlapping OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)]))]) ParameterIdentifier%3Db1" tag="ViewCode">
+                      <elementDefinition Id="0630692a-35ca-4b22-b25a-0f7fa698586a" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="4066a08e-02d1-4085-a7f4-ce5f916323e6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="37c44656-8579-4bc5-8dd2-afc377fe7224" LastKnownName="Building" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6ce6be7e-32c1-4d45-8ebb-a16a139cb10e" name="b2" direction="In">
+                  <referencesInternal>
+                    <reference Id="b0198d23-f5c2-407e-8088-7e8a08b6398a" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DProfileCityCalculator Member%3D(Name%3DProcessOverlapping OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)]))]) ParameterIdentifier%3Db2" tag="ViewCode">
+                      <elementDefinition Id="20237421-e2d5-47c4-b7a7-c90c4e3de7bb" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="b0be6389-3af8-47d2-aa05-da5cab0c9e61" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="37c44656-8579-4bc5-8dd2-afc377fe7224" LastKnownName="Building" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3ff6bca2-318a-463f-86f4-17d05500f7ce" name="branch" direction="In">
+                  <referencesInternal>
+                    <reference Id="7f61ed87-c974-4267-8593-468fb6a47ce2" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DProfileCityCalculator Member%3D(Name%3DProcessOverlapping OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)]))]) ParameterIdentifier%3Dbranch" tag="ViewCode">
+                      <elementDefinition Id="b194f3c1-9f54-474d-a991-6bd5780e6feb" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="ffff7c12-3de2-4ee2-8877-90820a7f4f25" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c199ab9f-965f-4027-89b3-c2dbc9925111" LastKnownName="List&lt;Building‎&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="780fc9a7-84ff-4343-a7ce-f3a66324b8cb" name="MergeWithSplit" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="aa080690-8383-4542-a109-5235593ce40c" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DProfileCityCalculator Member%3D(Name%3DMergeWithSplit OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]))])" tag="ViewCode">
+                <elementDefinition Id="ad4c026a-bc20-4527-8ab3-7205308ffd1c" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="8d106d56-2907-455a-81a9-9dbb516ec183" name="method" profile="CSharpProfile">
+                <elementDefinition Id="5ef447dc-396e-4d4d-aed2-e6c646ded273" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5428a199-59db-423e-b5c2-1492e2a109ad">
+                    <propertyInstance Id="0d295b0d-ce63-4ced-9fed-1d40c08d93e0" name="ClrAttributes">
+                      <elementDefinition Id="73e194e1-2e77-4586-90e8-2f47624ad0b1" />
+                    </propertyInstance>
+                    <elementDefinition Id="d755c5a6-2229-4fb6-bd3e-51a569e0e57c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="10edca7f-6d6c-4687-8cf5-eb8cd1232fe8">
+                    <propertyInstance Id="9a030dfe-8aee-46c9-ba78-bfdfa3071593" name="IsPartial" value="false">
+                      <elementDefinition Id="ec478a7d-9e40-4626-9ad0-4ffe13c45cb9" />
+                    </propertyInstance>
+                    <elementDefinition Id="d938b5ef-8c07-47b8-b101-dfb4ef3eba71" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="28c401a2-279c-41d1-aaa9-d3fff4976f8c">
+                    <propertyInstance Id="1ad25b00-e27b-4122-8df5-ee2a47dd89f2" name="IsUnsafe" value="false">
+                      <elementDefinition Id="fc6d018e-87a9-4a8a-885f-c7fc1b53b039" />
+                    </propertyInstance>
+                    <elementDefinition Id="f63ec1ef-a040-49a2-b2db-ee1da0e8eb7a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5d6ba41a-c297-497b-8d88-989c843b8b4d">
+                    <propertyInstance Id="cc47744e-9f8a-45c8-9a88-fbb478632cc5" name="Inheritance" value="none">
+                      <elementDefinition Id="857e74d5-cf2f-4bf5-b90d-f9489049c2e9" />
+                    </propertyInstance>
+                    <elementDefinition Id="753e10b4-002e-41ea-bcc5-7d697d2f6c86" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6f8302dc-612b-43dd-9277-b1bf231b99a0">
+                    <propertyInstance Id="32a93376-5691-464a-8d4e-305d24f5c63b" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="ab244ce7-d2e1-432c-b7a3-3059d036ae97" />
+                    </propertyInstance>
+                    <elementDefinition Id="66b61dde-69e9-4ba8-a25d-ff72d12ffdd4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a9968fff-8fe6-4a59-9279-4540d96caa1b">
+                    <propertyInstance Id="0350995c-5d0b-41f0-961a-24d736b21833" name="params" value="false">
+                      <elementDefinition Id="b2fee52b-3c0d-462d-8e15-2f35c9da4c95" />
+                    </propertyInstance>
+                    <elementDefinition Id="44640997-7c9d-4ee6-ba6c-88e9221778f8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="b95722e8-0cd2-4fc0-b102-c40a0e86666c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="86cd5355-e283-4e0b-a48d-0c0fa61fb3a3" direction="Return">
+                  <elementDefinition Id="d15adf95-2496-4727-a260-32c77adc7c8c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c199ab9f-965f-4027-89b3-c2dbc9925111" LastKnownName="List&lt;Building‎&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b540b512-c4b3-44ab-83d6-9f34af71219c" name="left" direction="In">
+                  <referencesInternal>
+                    <reference Id="da4fc37a-7e81-47bd-bfcb-6b22c4856ac5" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DProfileCityCalculator Member%3D(Name%3DMergeWithSplit OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]))]) ParameterIdentifier%3Dleft" tag="ViewCode">
+                      <elementDefinition Id="d2d4e5fc-01e0-4667-b2fa-bd9d6bf6e4ec" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="270c5482-944a-4631-8f48-8142508cba1a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c199ab9f-965f-4027-89b3-c2dbc9925111" LastKnownName="List&lt;Building‎&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="14e069a7-3458-4c3c-b4d7-7e2941324eb0" name="right" direction="In">
+                  <referencesInternal>
+                    <reference Id="146d1c54-f6e4-4ee7-96dc-aceee60c3085" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DProfileCityCalculator Member%3D(Name%3DMergeWithSplit OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]))]) ParameterIdentifier%3Dright" tag="ViewCode">
+                      <elementDefinition Id="18c6f83c-fb06-4eca-8bd1-0f66de80180f" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="7035a07f-dbe0-4233-8b3b-0054b1394aa2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c199ab9f-965f-4027-89b3-c2dbc9925111" LastKnownName="List&lt;Building‎&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1de9f464-4ddc-45a6-97cd-2303c1bfa627" name="comparer" direction="In">
+                  <referencesInternal>
+                    <reference Id="a00e8822-e152-42c4-a0b9-160e5bf79a4b" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DProfileCityCalculator Member%3D(Name%3DMergeWithSplit OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D3 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.CityProfile Type%3DBuilding)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]))]) ParameterIdentifier%3Dcomparer" tag="ViewCode">
+                      <elementDefinition Id="e9c3524f-8989-47e0-aac6-19a81525f147" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="d3ee2eed-28d9-48d3-8514-2e27dbab172a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ccbfc350-db9b-4121-a760-85e4827101c0" LastKnownName="Func&lt;Building‎, Building‎, Boolean‎&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="8761b63a-477c-4e21-aa64-3af4ceef0ec4" name="List&lt;Int32‎&gt;" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::System::Collections::Generic::List&lt;Int32‎&gt;">
+        <elementDefinition Id="9706ce72-d9f9-4091-b00e-c0687c86681b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="08682880-72da-430a-8151-76fdaed3dda2" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="37c44656-8579-4bc5-8dd2-afc377fe7224" name="Building" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::TP2::CityProfile::Building">
+        <elementDefinition Id="e5fdea47-bcc9-4e33-b81e-ad6118050937" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ccbfc350-db9b-4121-a760-85e4827101c0" name="Func&lt;Building‎, Building‎, Boolean‎&gt;" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::System::Func&lt;Building‎, Building‎, Boolean‎&gt;">
+        <elementDefinition Id="879a243b-1cd7-4ea5-ba43-5f7e6d405d72" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="95e4656f-d94c-4080-9acc-d532be5faae8" name="ModelingProject1">
+    <elementDefinition Id="d123f7ac-af5f-4b32-9711-52bd18ff6c1f" />
+  </package>
+</logicalClassDesignerModel>

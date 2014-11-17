@@ -1,0 +1,1322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="1af68071-75b5-45a6-99cf-f39dee85caee"
+  name="InventoryManager"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="aa8de6ba-3dfe-4ed3-baad-ac251e729fb3"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DTP2.InventoryManager"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="4b4f56b2-1716-42e6-b905-8423613e762b"
+        name="InventoryData"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="ceeb1f07-b08d-47d0-8167-404fa38eb4fb"
+            handle="viewcode://./CodeSchema_Struct?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryData"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="66623272-599a-4fa2-a060-4870d9f6e1be"
+            name="struct"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="176fd623-e8c4-4dc1-9229-1538e578dae5">
+                <propertyInstance
+                  Id="a5d6969b-b2ee-4b53-a2dd-3bf7978c67e3"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a1c1a373-8b46-4b62-95ab-6eab5c7b0715">
+                <propertyInstance
+                  Id="85193fdf-00bb-401f-a5bb-5032fd522c28"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6c711856-a3c6-4645-8112-8866bbb57b77">
+                <propertyInstance
+                  Id="e982aa16-6bc4-42f1-a999-bbee7bcaf2d2"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ad6413c8-c62e-452b-8266-23efd28ceaf2">
+                <propertyInstance
+                  Id="874df3d5-5378-40a0-ba46-7bc391d384a5"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="7e5c0940-fffe-44e4-ad8d-7c6fdceced2c"
+            name="NumberOfPeriods"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="70136ac7-ec8d-4ad8-a201-81cc69c7cc14"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryData Member%3DNumberOfPeriods"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1bfbc4eb-7c1d-43fc-8715-4f3196299b57"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46b7afc0-48cf-4145-aa6e-a3f2947c8e67">
+                    <propertyInstance
+                      Id="156064fb-7a19-4d45-bbf9-c1f7bf49c591"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4010cf02-96e6-4505-b6e3-bbfcb530c770">
+                    <propertyInstance
+                      Id="d9fbe3a4-a9c8-43e8-8a26-d59d56fdee50"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82ced609-787e-488c-953b-6e1ac2b2378b">
+                    <propertyInstance
+                      Id="a49f8d89-3b3c-474d-9c64-6a6fe20401cc"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f6dca13-c067-4769-bc60-268b5e7cc2cd">
+                    <propertyInstance
+                      Id="1a72c068-ec8b-44ab-9552-8381a15136dd"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="275c3941-4ba4-4f34-99b4-089d8f3be75b">
+                    <propertyInstance
+                      Id="6a2d9403-3876-45c1-88f5-43f77be31eb0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="43370c9d-b6dd-40cf-9055-593c34b3edef"
+            name="MaxStock"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ebff5878-7951-477e-bc30-d0926da05c41"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryData Member%3DMaxStock"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a9350c4f-9b3b-44f3-9af9-fa3d3abaa08a"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36030df8-ba4a-41c2-b4a8-6b2013114e71">
+                    <propertyInstance
+                      Id="5972ca0a-cc81-4427-9e48-d3ca4fecd047"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="31d6deee-7b86-49e2-97c3-523e64d61446">
+                    <propertyInstance
+                      Id="ad12ad2d-d827-4da2-86a8-65302b4a2d05"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ea2a0fd-0e75-4c07-a752-732f8216304b">
+                    <propertyInstance
+                      Id="3455d645-9b51-4e6e-95fa-51a431fbc294"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a32d36d-3b43-4bc2-aabe-4b0cc5c9cfcb">
+                    <propertyInstance
+                      Id="42bee7a8-8f17-446f-ac1e-6c19470ce66f"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4dd50c59-091d-470f-9718-d3adf46b3765">
+                    <propertyInstance
+                      Id="f0f4de5d-5522-45ee-9e83-742450b08a86"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="150846c8-e0a5-4d29-9d28-e45826e68248"
+            name="HoldingCost"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="72c899b1-3b8e-4d58-9b28-adc8ec500fde"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryData Member%3DHoldingCost"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="389623f6-3732-46ba-8962-20698cb85160"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4239bd2c-652f-4de9-a560-33a16c3d6e45">
+                    <propertyInstance
+                      Id="f1920c95-98d8-4892-a264-1658d030cc5b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de1e3344-7906-4974-b7f7-8e7c4f62ef56">
+                    <propertyInstance
+                      Id="6698593b-6236-4c3a-bf35-2228d3cf2939"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3b490895-8416-4f6e-acba-fcde2c181475">
+                    <propertyInstance
+                      Id="123df8b4-1dfd-46a4-8b93-56053044c022"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d76b989-a6a3-4e11-bc28-93db24effc35">
+                    <propertyInstance
+                      Id="86b6a5f2-e9a4-4eba-bb8d-2cf0eae609f5"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7cb68e0d-439e-436c-a8e0-c6eb5db441c2">
+                    <propertyInstance
+                      Id="21eb0332-57eb-4433-875f-5361e37f3e56"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="09a442db-e59b-4555-ba74-816257453a0f"
+            name="OrderCost"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="9b5b9de7-b3d3-4cf4-aab6-1fed70491011"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryData Member%3DOrderCost"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="54a13e7a-ad45-4207-b9de-a6622a90c3eb"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1d5ea7e4-a05e-498b-b091-678a8dcb3bde">
+                    <propertyInstance
+                      Id="eebde01c-c552-445f-a22d-ce31f1644c67"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="51ded055-0026-42db-831b-056da8288a5f">
+                    <propertyInstance
+                      Id="aac0287f-b81f-4d58-ab30-da68b13861f8"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07cf0c9b-44dd-4243-b0b7-a7fcb083ceb0">
+                    <propertyInstance
+                      Id="66be1d12-4b55-4e3f-968d-644ed42fed69"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="74c0c1df-2431-4edb-8c9d-e694c2a866a0">
+                    <propertyInstance
+                      Id="e3e5456a-3446-4aba-b67f-11dfa65cdc53"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b26d4f4b-3ac4-4322-a5e2-1578fb2f232b">
+                    <propertyInstance
+                      Id="9cd3309b-db0e-427c-a7b5-d3cad1017c5b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5d8f3aaa-6280-44e7-a668-ca3e47ef5454"
+            name="Demands"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isOrdered="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c4d9608d-b663-4414-b1f2-72b89fae4bcf"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryData Member%3DDemands"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f016e5a0-8fbd-48f8-b5ac-2fd48f2ee09e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="336a8ae1-2630-4796-aa8f-4a28b112a982">
+                    <propertyInstance
+                      Id="022fb00e-2c09-46ad-b95c-f36af56e3af3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="278c0054-ee7c-4f37-a461-83b02fb02161">
+                    <propertyInstance
+                      Id="578d3ddd-b910-4835-b1b5-a748f3458019"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5257b490-277b-46f2-aa9b-cfc14547562b">
+                    <propertyInstance
+                      Id="733141d6-3ecb-4653-b5bb-3c00d65425c6"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6db69138-16df-4bc0-8a65-de57f45290e2">
+                    <propertyInstance
+                      Id="a8934690-5b41-4e9b-bf40-9730ec8b4514"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8024043d-f7e3-4efe-9e2c-98265bd97019">
+                    <propertyInstance
+                      Id="63990574-3951-4479-b51f-a232dca98fd3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="12bbc4d6-9c1d-4be8-8883-9aad318add5e"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="92a455ca-ff4e-40a2-94b2-9da90be1c441"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="31c63215-44b3-4c90-bf47-064148da5ae4"
+        name="InventoryManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="54a5879b-b7cd-4caa-80d2-1c7d57bb5a43"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryManager"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="6b096d15-d056-4c22-99ef-674c14a3e5dc"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="33e31c81-5029-4fa9-9764-e073c36b9915">
+                <propertyInstance
+                  Id="4bcf873c-54aa-4894-98c2-da177a0251be"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2844f027-c5f4-4880-a944-ccd933839fd4">
+                <propertyInstance
+                  Id="207121a6-0d30-4f9a-bc33-0973592f4b98"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0ef826bb-30df-48d1-b36d-475a40bfa380">
+                <propertyInstance
+                  Id="83189e5b-0437-4ff2-81bd-23d14223714c"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e7eb84e5-c872-4b11-8efe-9c486311d8c8">
+                <propertyInstance
+                  Id="61d2f978-3cac-45c0-a451-e505932a4dd7"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b6f3123b-a567-453c-b567-c24dbae3dfc2">
+                <propertyInstance
+                  Id="04a202f0-bd83-4738-a9c4-f22eed20c32f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="d363af67-4ab2-453c-837f-52381cb97d6f"
+            isDerived="false"
+            sourceEndRoleName="InventoryManager"
+            targetEndRoleName="InventoryData"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="4b4f56b2-1716-42e6-b905-8423613e762b"
+              LastKnownName="InventoryData"
+              LastKnownLocation="Package_1840.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="88d9ba3e-03cc-4a81-80dc-02b282c57f6c"
+                  name="InventoryManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9e899481-f1de-4167-9e1c-e42a7b7e5caa"
+                  name="InventoryData"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="99b4eeee-a4da-498c-b789-9ba07e2831c9"
+            name="CalculateCosts"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3436c1a6-66ee-43a5-9ba7-e574802de3c2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryManager Member%3D(Name%3DCalculateCosts OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryData)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a53222f5-407d-417c-981b-7602a6b64051"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c0706e20-47e9-414a-a725-cc0cf71e6041">
+                    <propertyInstance
+                      Id="0e3b74b9-c947-40d3-9475-f339a168c57f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3845147f-38c7-4634-a588-f5cee79f66dc">
+                    <propertyInstance
+                      Id="1537f186-ae8d-40d3-a1bb-33d4149abeaf"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88dcaab1-ae48-4d66-9d03-e41382e8cbe4">
+                    <propertyInstance
+                      Id="f898b713-710a-40ff-85ae-da440fd951dd"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8c147aa-48a2-456d-a67b-00d1f8e22430">
+                    <propertyInstance
+                      Id="2d325682-bec9-4f34-9393-e2eb9ba948e8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c82361d2-1c2c-438f-a419-c04f0f4f34fa">
+                    <propertyInstance
+                      Id="414df6be-5818-4be4-9900-77e523d961ab"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab704fdb-4388-4013-b502-6158730a5737">
+                    <propertyInstance
+                      Id="d91542a4-45b8-4ccd-b71c-4bd033e5ce1a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="344af51c-adae-472b-9751-75c026ba0f4b"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f56b55a5-9922-4102-8f0d-f45beef17699"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="078ffb38-7803-4ef8-bd93-9679ee85a505"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="580d9ed0-3bf6-4a3d-a9db-60dd99ad952b"
+                  name="inventoryData"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="00de4512-c74a-478c-bc87-421587d23061"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryManager Member%3D(Name%3DCalculateCosts OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryData)]) ParameterIdentifier%3DinventoryData"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4b4f56b2-1716-42e6-b905-8423613e762b"
+                      LastKnownName="InventoryData"
+                      LastKnownLocation="Package_1840.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="eb20bc94-7f54-4348-8f53-9f188872622c"
+            name="FindMinimum"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="bd268aa6-5fde-437f-b239-4c97a62e5e35"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryManager Member%3D(Name%3DFindMinimum OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ffd1ce16-1f7f-4f52-a09a-d89f048e6c2a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d81c0f55-9594-4060-af1d-88633b5b1b09">
+                    <propertyInstance
+                      Id="990919e9-2f2a-4343-9f50-a3f245d6e545"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d752fe05-e3db-4784-91e5-a81923e4b7cb">
+                    <propertyInstance
+                      Id="bba683dc-195e-4a10-807b-a6e694f767ca"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f42c12cf-f4b4-4d7c-9b61-86652f538252">
+                    <propertyInstance
+                      Id="f4788ae0-9ef9-4400-804d-bd3b181d48a1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3627573f-dc2a-4a44-9f7c-0fcfa758eba7">
+                    <propertyInstance
+                      Id="a1ce25b0-7483-4f26-afd0-79daa5363e9b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49fb530c-d906-47ab-96e9-cf41651faf4a">
+                    <propertyInstance
+                      Id="7261e05b-d523-452c-954b-e230d45bca5e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca511438-d0d1-449b-8724-574ac3cdb07d">
+                    <propertyInstance
+                      Id="d3b9e4fc-2b06-4484-9c52-d579d02c7d92"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0303af8c-f2e1-47f6-a0be-dc1d5761d53a"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4f509399-3ed0-496d-911e-de2b257e3df5"
+                  name="matrix"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="d573f806-8d20-4a79-83b3-0c8daee8b54a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryManager Member%3D(Name%3DFindMinimum OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dmatrix"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a92aa65f-03cb-451d-8578-a48c42444ed7"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a23a48e7-7bf5-4b0b-a8c7-3fe3bb06d51e"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8c556e12-3c47-4223-b4ce-9cbbd6c21a46"
+                  name="size"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d3568e95-8ea2-4d3d-a5e5-7424109195d6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryManager Member%3D(Name%3DFindMinimum OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dsize"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5f5d536c-5949-45d5-82f3-9a22e8c47f18"
+                  name="column"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4dc50e0f-ce32-43a8-af91-6a563cb055f4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryManager Member%3D(Name%3DFindMinimum OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dcolumn"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2e58fbac-f0b9-4d50-a4d2-94713a807b29"
+            name="CalculateCosts"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="81d35516-8114-4543-8c22-c17c6312ea23"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryManager Member%3D(Name%3DCalculateCosts OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cbe3a8be-378c-4a47-8b80-735b880e1041"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36e3173d-2e9e-4263-a80b-71ac04d2257c">
+                    <propertyInstance
+                      Id="98d36b0b-1b10-41f5-b380-7150fecd1621"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8799d6da-7d49-4c61-ba78-81bdea2fdfe4">
+                    <propertyInstance
+                      Id="c7697094-66b2-4e00-91b2-cd3e43aa346c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00866008-472c-4d7f-825d-4d6469349776">
+                    <propertyInstance
+                      Id="9a08a15d-dba3-4cb3-88b1-846e47b91b69"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f66199a-1f5c-49d2-9b74-e32026a8ed5d">
+                    <propertyInstance
+                      Id="e0f0dcd1-844e-45d2-ac7a-ca69e6af154f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0dd80a2e-0661-44e6-ba7c-c26db71daa6c">
+                    <propertyInstance
+                      Id="a993de61-68d3-4629-9a96-19070bf77937"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="68d93434-b3e9-4647-8fb3-e9b09c984001">
+                    <propertyInstance
+                      Id="55714d33-7389-4860-ab67-b91feb5b7211"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c491c22b-5e31-4a12-a4f8-1f1972e55f75"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f5a7e3aa-dd72-40e3-a09d-a6d12d2385aa"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="735e93ac-17e4-4eef-b846-1f6cc35a0ea4"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3e12e628-00b0-474a-b310-02c3edf7195f"
+                  name="numberOfPeriods"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9b420c20-c52d-4001-89a5-27f1f9db69e2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryManager Member%3D(Name%3DCalculateCosts OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]))]) ParameterIdentifier%3DnumberOfPeriods"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="20fc3305-548e-45da-854f-5e84619a0781"
+                  name="maxStock"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="df95dd53-dc05-4ed2-8a4f-6dbbe130f2df"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryManager Member%3D(Name%3DCalculateCosts OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]))]) ParameterIdentifier%3DmaxStock"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2bd7fbd1-7cd8-41b0-a3df-ae6cd3d4960f"
+                  name="holdingCost"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="029555fd-e616-438c-8695-4063a51fbeae"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryManager Member%3D(Name%3DCalculateCosts OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]))]) ParameterIdentifier%3DholdingCost"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8dd46905-400f-4d2f-933b-60ef99279848"
+                  name="orderCost"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e1d6db0c-162d-4b46-bfd5-3f98f38b71a0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryManager Member%3D(Name%3DCalculateCosts OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]))]) ParameterIdentifier%3DorderCost"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6a518c47-cb3a-4624-a0f1-4add9fc03e24"
+                  name="demands"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="90b1959d-37d0-4cad-bf87-57f2aa4ab9c7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryManager Member%3D(Name%3DCalculateCosts OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]))]) ParameterIdentifier%3Ddemands"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="05058b07-3cda-4e4d-816e-47ab72cb4f82"
+                      LastKnownName="IList&lt;Int32‎&gt;"
+                      LastKnownLocation="Package4_1831.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="283b73fc-920d-41d9-9906-7b4ba981a928"
+            name="CalculateOrderQuantities"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="914c0e71-cf4f-41ed-ba44-32294703c24e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryManager Member%3D(Name%3DCalculateOrderQuantities OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="80c06aa2-234b-43f7-ba65-8e5c2aaa1b31"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16e4d0b6-64f4-4ba6-9cdc-7928b7f8a379">
+                    <propertyInstance
+                      Id="d78e91e0-1921-41da-a014-59067310ce58"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c29d16f-ef00-4c48-8bac-a5d77b07a724">
+                    <propertyInstance
+                      Id="9a4a69cf-7541-43cb-a52a-9c7a2fcc2510"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f579db08-f9d9-4747-9e60-db70a73296a8">
+                    <propertyInstance
+                      Id="1e328021-a23f-407f-86fe-4c23deefc29e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d66d1b4-d610-4681-8141-38c3ed2f169e">
+                    <propertyInstance
+                      Id="7fad2c48-7ce0-4ebd-92e0-f861af5a8471"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29d60867-1a28-4a20-a67c-71d1a94d637b">
+                    <propertyInstance
+                      Id="bbf6d8fe-1ff8-4193-9421-129cdfd5e232"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="653f5325-147e-4b7e-87ab-6b47b10d8777">
+                    <propertyInstance
+                      Id="f39dc0bc-2106-49d0-9ee3-95c3a55cb6f4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="318064a1-65d0-414a-be84-6f0b5d69f8d8"
+                  name="costs"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="0b74c9f6-9506-4783-82b2-a5610b3282de"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryManager Member%3D(Name%3DCalculateOrderQuantities OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))]) ParameterIdentifier%3Dcosts"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="72487a86-57fd-4613-87e4-d01fc0e4a291"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9b953bd6-01f4-4574-9033-26ef26d13e61"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="eae8830a-5621-4c03-876f-6c082d3ba5d7"
+        name="InventoryManagerReader"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="006ed18f-d0ee-48c9-9be6-41148db75d19"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryManagerReader"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="7928e144-d2e1-49c7-8174-ea82fdba891f"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7cb91976-869e-4077-b1fa-2348e7a6dba0">
+                <propertyInstance
+                  Id="9e6f5472-ac86-4ffb-bfd2-41d50e086708"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9f9cec1c-c18e-4ab6-ab62-e31f612dafb0">
+                <propertyInstance
+                  Id="23935603-d821-4add-8a1b-0345d2ca0f9f"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b1eecee8-891c-4216-a79e-20a9b1efcff7">
+                <propertyInstance
+                  Id="1f355754-f135-468b-aa23-d564b764d274"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="76e372b0-ffb8-4e66-836e-7a2f77487906">
+                <propertyInstance
+                  Id="9add0fe6-032a-4e7d-a285-ad1c70398c89"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="436c53da-173f-4472-9eb6-f8664e68d02a">
+                <propertyInstance
+                  Id="e53c58c7-929c-44f3-9d1d-967e7638a78a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="f35f039b-8210-40b6-93cc-b5f1b817c464"
+            isDerived="false"
+            sourceEndRoleName="InventoryManagerReader"
+            targetEndRoleName="InventoryData"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="4b4f56b2-1716-42e6-b905-8423613e762b"
+              LastKnownName="InventoryData"
+              LastKnownLocation="Package_1840.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="884edccd-1da0-4e18-8d96-c964085e8bb2"
+                  name="InventoryManagerReader"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e2b842ae-cc7a-4bc1-821b-efac814256f9"
+                  name="InventoryData"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="b103c176-42dd-4885-b9c8-7b1196d325f4"
+            name="VARIABLES"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="7d1a85c8-777f-45a3-b0a7-105df3dbc4cb"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryManagerReader Member%3DVARIABLES"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="599d03a5-20a3-4566-9e8f-375477662dfb"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f0cabd29-9bf8-4734-b69c-ea73e5871b3f">
+                    <propertyInstance
+                      Id="da4de7fd-cfc0-4bd1-966f-ce8a4ea726d8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37b63583-7f62-41af-92d9-024884a6af6f">
+                    <propertyInstance
+                      Id="4d20cdb6-7d5b-4d38-b73a-4ea3be5568ce"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ffc0a70-0803-4f3d-b77a-adc2db9a90f5">
+                    <propertyInstance
+                      Id="f3c21e75-a479-4f02-a1ad-c2e17f6ab595"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3cca20e6-1487-41cc-8334-852f962efb33">
+                    <propertyInstance
+                      Id="a6f8acf9-82c6-4de3-a87e-daa43eb8f537"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2acf2fbe-fff6-4f10-8420-a78dad0d213a">
+                    <propertyInstance
+                      Id="0979e96b-6904-453e-97f0-3bbdc5719c70"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="1c00ea85-17af-4dd8-b634-2a7380dc8c6e"
+            name="GetDataFromFile"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="920b249d-1235-496b-af50-4d38d7faaed7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryManagerReader Member%3D(Name%3DGetDataFromFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="62d52612-d9bd-4c80-9848-8f071bbc4744"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8f26478-14d1-4b64-a027-da85f560d1e1">
+                    <propertyInstance
+                      Id="65af4011-6756-42e7-a4b4-8ca21b527055"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3b8e10ef-4695-4ef4-86bc-e009ab09b62c">
+                    <propertyInstance
+                      Id="b0b86ed8-65f1-4755-8501-cc63ebb5bc7a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1258c458-f299-479b-ba17-9df96c77f9f5">
+                    <propertyInstance
+                      Id="bf8d1391-91db-4d57-a9e0-430d6b329cb7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c58726ef-2515-4180-9349-1598c1d3f139">
+                    <propertyInstance
+                      Id="672cc2b2-09df-48ef-adf8-21e8a380b488"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7bce5b9-3b7a-4741-b488-29585ca17891">
+                    <propertyInstance
+                      Id="ad035c57-5c30-44b1-930d-a35950e6b130"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="51d8d81b-92e5-4073-971a-55958a8c94ed">
+                    <propertyInstance
+                      Id="e7f5fac4-bf17-4e81-b4f9-d47dd003317d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bc6165be-2761-4a84-b2dc-cf9b2d20c86d"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4b4f56b2-1716-42e6-b905-8423613e762b"
+                      LastKnownName="InventoryData"
+                      LastKnownLocation="Package_1840.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="31f5d4d8-c4ef-4d57-a556-e05d53e5de9b"
+                  name="path"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ee531161-8ba8-46f7-b0c0-34941ecefe29"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fmiparnisari%2FDocuments%2FGitHub%2Fteoriadealgoritmos%2Ftp2%2Fsrc%2FTP2%2Fbin%2FDebug%2FTP2.dll Namespace%3DTP2.InventoryManager Type%3DInventoryManagerReader Member%3D(Name%3DGetDataFromFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dpath"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

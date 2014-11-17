@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="cb283da9-30da-48ee-a67d-4b4c292ca89d"
+  name="TP2"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="2e6ac1b4-ab13-48b1-b5c4-245056af4c21"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DTP2"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ad559513-b303-428a-9fbe-854288aa3476"
+        LastKnownName="CityProfile"
+        LastKnownLocation="Package1_1831.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="1af68071-75b5-45a6-99cf-f39dee85caee"
+        LastKnownName="InventoryManager"
+        LastKnownLocation="Package_1840.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
