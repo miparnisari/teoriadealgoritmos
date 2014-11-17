@@ -1,7 +1,9 @@
 using System;
 using System.Configuration;
 using System.Diagnostics;
+using System.IO;
 using TP2;
+using TP2.CityProfile;
 
 namespace ConsoleApplication
 {
@@ -15,27 +17,28 @@ namespace ConsoleApplication
             try
             {
                 // Punto 1
-		System.Console.Write("Ingrese el nombre del archivo para el punto 1:");
-		var fileName = System.Console.ReadLine();
-		using(var stream = File.OpenRead (fileName)) 
-		{
-			var buildings = BuildingsFileReader.ReadFileContent(new StreamReader(stream));
-			var profileCityCalculator = new ProfileCityCalculator();
-			var profile = profileCityCalculator.GetProfile(buildings);
-			System.Console.WriteLine("City Profile...");
-			for(var i = 0; i < profile.Count-1; i++)
-			{
-				System.Console.Write(profile[i]);
-				System.Console.Write(",");
-			}
-			System.Console.Write(profile[profile.Count-1]);
-			System.Console.WriteLine("");
-		}
+				System.Console.Write("Ingrese el nombre del archivo para el punto 1:");
+				var fileName = System.Console.ReadLine();
+				using(var stream = File.OpenRead (fileName)) 
+				{
+					var buildings = BuildingsFileReader.ReadFileContent(new StreamReader(stream));
+					var profileCityCalculator = new ProfileCityCalculator();
+					var profile = profileCityCalculator.GetProfile(buildings);
+					System.Console.WriteLine("City Profile...");
+					for(var i = 0; i < profile.Count-1; i++)
+					{
+						System.Console.Write(profile[i]);
+						System.Console.Write(",");
+					}
+					System.Console.Write(profile[profile.Count-1]);
+					System.Console.WriteLine("");
+				}
+
                 // Punto 2
-                System.Console.Write("Ingrese el nombre del archivo para el punto 2:");
+                System.Console.Write("Ingrese el nombre del archivo:");
                 var path = System.Console.ReadLine();
                 var reader = new InventoryManagerReader();
-                var inputData = reader.GetDataFromFile(path);
+                var inputData = reader.GetDataFromFile(Path.Combine(Environment.CurrentDirectory, path));
 
                 var inventoryManager = new InventoryManager();
                 inventoryManager.CalculateResults(inputData);

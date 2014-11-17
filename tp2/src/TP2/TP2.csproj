@@ -42,6 +42,7 @@
     <Reference Include="nunit.util">
       <HintPath>..\packages\NUnitTestAdapter.1.2\lib\nunit.util.dll</HintPath>
       <Private>False</Private>
+      <Package>nunit</Package>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -54,6 +55,7 @@
     <Compile Include="CityProfile\ProfileCityCalculator.cs" />
     <Compile Include="CityProfile\BuildingsFileReader.cs" />
     <Compile Include="InventoryManagerReader.cs" />
+    <Compile Include="InventoryData.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
