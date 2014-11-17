@@ -43,10 +43,7 @@
     <Reference Include="nunit.util">
       <HintPath>..\packages\NUnitTestAdapter.1.2\lib\nunit.util.dll</HintPath>
       <Private>False</Private>
-    </Reference>
-    <Reference Include="NUnit.VisualStudio.TestAdapter">
-      <HintPath>..\packages\NUnitTestAdapter.1.2\lib\NUnit.VisualStudio.TestAdapter.dll</HintPath>
-      <Private>False</Private>
+      <Package>nunit</Package>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data.Linq" />
@@ -67,5 +64,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Input\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CityProfileTest.cs" />
   </ItemGroup>
 </Project>
