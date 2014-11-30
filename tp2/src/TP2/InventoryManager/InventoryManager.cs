@@ -1,94 +1,53 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
 namespace TP2.InventoryManager
 {
-    public class InventoryManager
-    {
+    using System;
+    using System.Collections.Generic;
 
-        public int[,] CalculateCosts(InventoryData inventoryData)
+    public static class InventoryManager
+    {
+        public static int[,] BuildCostsMatrix(InventoryData inventoryData)
         {
-            return this.CalculateCosts(inventoryData.NumberOfPeriods,
+            return CalculateCosts(
                 inventoryData.MaxStock,
                 inventoryData.HoldingCost,
                 inventoryData.OrderCost,
                 inventoryData.Demands);
         }
 
-        private int FindMinimum(int[,] matrix, int size, int column)
+        private static int[,] CalculateCosts(int maxStock, int holdingCost, int orderCost, IList<int> demands)
         {
-            int min = matrix[0, column];
-            for (int i = 0; i < size; i++)
+            int[,] matrix = new int[maxStock + 1, demands.Count];
+
+            // initalize first column (month 1)
+            for (int remainingStock = 0; remainingStock <= maxStock; remainingStock++)
             {
-                if (matrix[i, column] < min)
+                matrix[remainingStock, 0] = orderCost + remainingStock * holdingCost;
+            }
+
+            // complete rest of the months
+            for (int month = 1; month < demands.Count; month++)
+            {
+                // the row is the amount we want to keep in stock for next month
+                for (int row = 0; row <= maxStock; row++)
                 {
-                    min = matrix[i, column];
-                }
-            }
-            return min;
-        }
+                    var buyNow = matrix[0, month - 1] + orderCost + holdingCost * row;
 
-        private int[,] CalculateCosts(int numberOfPeriods, int maxStock, int holdingCost, int orderCost, IList<int> demands)
-        {
-            if (demands.Count() != numberOfPeriods)
-            {
-                throw new Exception("Values for demands should be # of periods");
-            }
-            if (maxStock < demands[0])
-            {
-                throw new Exception("Can't meet demand for period 1");
-            }
-
-            int[,] costs = new int[numberOfPeriods + 1, numberOfPeriods]; //last row contains the minimum
-            int[,] lots = new int[numberOfPeriods, numberOfPeriods]; //last row contains the minimum
-            int INDEX_MINIMUM_OF_PERIOD = numberOfPeriods;
-
-            //iterate over the matrix
-            for (int col = 0; col < numberOfPeriods; col++)
-            {
-                for (int row = 0; row < numberOfPeriods; row++)
-                {
-                    if (row > col)
+                    // if last month's stock isn't enough, there is no choice but to buy now
+                    if (row + demands[month] > maxStock)
                     {
-                        //infeasible solution
-                        costs[row, col] = int.MaxValue;
+                        matrix[row, month] = buyNow;
                     }
                     else
                     {
-                        if (row == 0 && col == 0) //first period
-                        {
-                            costs[row, col] = orderCost;
-                            lots[row, col] = demands[col];
-                            //store the minimum cost
-                            costs[INDEX_MINIMUM_OF_PERIOD, col] = costs[row, col];
-                        }
-                        else
-                        {
-                            if (row == col) // diagonal
-                            {
-                                costs[row, col] = costs[INDEX_MINIMUM_OF_PERIOD, col - 1] + orderCost;
-                                
-                            }
-                            else //upper triangle
-                            {
-                                var costPrevious = costs[row, col - 1];
-                                var lotFromLastPeriod = lots[row, col - 1];
-                                var lotForThisPeriod = (lotFromLastPeriod > demands[col]) ? 0 : orderCost;
-                                costs[row, col] = costPrevious + lotFromLastPeriod * holdingCost + lotForThisPeriod;
-                                lots[row, col] = lotForThisPeriod;
-                            }
-
-                        }
+                        var dontBuyNow = matrix[row + 1, month - 1] + holdingCost * row;
+                        matrix[row, month] = Math.Min(buyNow, dontBuyNow);
                     }
                 }
-                costs[INDEX_MINIMUM_OF_PERIOD, col] = FindMinimum(costs, numberOfPeriods, col);
             }
-
-            return costs;
+            return matrix;
         }
 
-        public void CalculateOrderQuantities(int[,] costs)
+        public static int[] CalculateOrderQuantities(int[,] costs)
         {
             throw new NotImplementedException();
         }

@@ -1,12 +1,13 @@
-﻿using System;
-using System.IO;
-using System.Linq;
-
-namespace TP2.InventoryManager
+﻿namespace TP2.InventoryManager
 {
+    using System;
+    using System.IO;
+    using System.Linq;
+
     public class InventoryManagerReader
     {
         private const int VARIABLES = 5;
+
         public InventoryData GetDataFromFile(string path)
         {
             var inventoryData = new InventoryData();
@@ -25,9 +26,9 @@ namespace TP2.InventoryManager
 
             inventoryData.Demands = new int[inventoryData.NumberOfPeriods];
 
-            for (int i = VARIABLES; i < inventoryData.NumberOfPeriods; i++)
+            for (int i = VARIABLES; i < inventoryData.NumberOfPeriods + VARIABLES; i++)
             {
-                inventoryData.Demands[i] = Convert.ToInt32(lines[VARIABLES + i]);
+                inventoryData.Demands[i - VARIABLES] = Convert.ToInt32(lines[i]);
             }
 
             return inventoryData;

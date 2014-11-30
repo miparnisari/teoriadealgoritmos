@@ -171,7 +171,7 @@ namespace TP2.CityProfile
                 {
                     // add the remaining of the list.
                     result.Add(left.First());
-                    left = left.GetRange(1, left.Count - 1);// O(N)
+                    left = left.GetRange(1, left.Count - 1); // O(N)
                 }
                 else if (right.Any())
                 {

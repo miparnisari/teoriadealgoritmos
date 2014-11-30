@@ -8,7 +8,7 @@ using TP2.InventoryManager;
 
 namespace ConsoleApplication
 {
-    class MainClass
+    public class MainClass
     {
         public static void Main()
         {
@@ -41,11 +41,10 @@ namespace ConsoleApplication
                 var reader = new InventoryManagerReader();
                 var inputData = reader.GetDataFromFile(Path.Combine(Environment.CurrentDirectory, path));
 
-                var inventoryManager = new InventoryManager();
-                var costs = inventoryManager.CalculateCosts(inputData);
+                var costs = InventoryManager.BuildCostsMatrix(inputData);
 
                 //TODO 
-                inventoryManager.CalculateOrderQuantities(costs);
+                InventoryManager.CalculateOrderQuantities(costs);
 
             }
             catch (System.Exception)

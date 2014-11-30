@@ -1,37 +1,33 @@
-﻿using System;
-using NUnit.Framework;
-using TP2.InventoryManager;
-
-namespace TP2.Test
+﻿namespace TP2.Test
 {
+    using NUnit.Framework;
+    using TP2.InventoryManager;
+
     [TestFixture]
     public class InventoryManagerTest
     {
         [Test]
         public void ShouldBuildCorrectCostsMatrix()
         {
-            // setup
+            // arrange
             var data = new InventoryData
             {
-                Demands = new[] {10, 12, 9},
-                HoldingCost = 4,
-                MaxStock = 20,
-                NumberOfPeriods = 3,
-                OrderCost = 2
+                Demands = new[] { 2, 1, 1, 4 },
+                HoldingCost = 10,
+                MaxStock = 2,
+                NumberOfPeriods = 4,
+                OrderCost = 30
             };
-            var manager = new InventoryManager.InventoryManager();
 
             // act
-            var actualCosts = manager.CalculateCosts(data);
+            var actualCosts = InventoryManager.BuildCostsMatrix(data);
 
             // assert
-            const int infinity = int.MaxValue;
             var expectedCosts = new[,]
             {
-                {2, 44, 46},
-                {infinity, 4, 38},
-                {infinity, infinity, 6},
-                {2, 4, 6}
+                {30, 40, 60, 90},
+                {40, 60, 80, 100},
+                {50, 80, 90, 110}
             };
 
             Assert.AreEqual(expectedCosts, actualCosts);
