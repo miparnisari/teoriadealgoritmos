@@ -5,23 +5,50 @@ namespace TP2.InventoryManager
 
     public static class InventoryManager
     {
-        public static int[,] BuildCostsMatrix(InventoryData inventoryData)
+        public static int[] CalculateOrderQuantities(InventoryData inventoryData)
         {
-            return CalculateCosts(
+            Purchase[,] matrix = GetPurchaseData(
                 inventoryData.MaxStock,
                 inventoryData.HoldingCost,
                 inventoryData.OrderCost,
-                inventoryData.Demands);
+                inventoryData.MonthlyDemand);
+
+            int[] orderQuantities = new int[inventoryData.Months];
+
+            // Start from the last month and work backwards.
+            // Take the first row because we're not allowed to keep stock
+            // after the last month
+            Purchase currentMonthPurchase = matrix[0, inventoryData.Months - 1];
+
+            int currentMonth = inventoryData.Months - 1;
+
+            while (currentMonth >= 0)
+            {
+                orderQuantities[currentMonth] = currentMonthPurchase.Size;
+                if (currentMonth == 0)
+                {
+                    break;
+                }
+                currentMonthPurchase = matrix[currentMonthPurchase.StockFromLastMonth, currentMonth - 1];
+                currentMonth--;
+            }
+
+            return orderQuantities;
         }
 
-        private static int[,] CalculateCosts(int maxStock, int holdingCost, int orderCost, IList<int> demands)
+        public static Purchase[,] GetPurchaseData(int maxStock, int holdingCost, int orderCost, IList<int> demands)
         {
-            int[,] matrix = new int[maxStock + 1, demands.Count];
+            Purchase[,] matrix = new Purchase[maxStock + 1, demands.Count];
 
             // initalize first column (month 1)
-            for (int remainingStock = 0; remainingStock <= maxStock; remainingStock++)
+            for (int row = 0; row <= maxStock; row++)
             {
-                matrix[remainingStock, 0] = orderCost + remainingStock * holdingCost;
+                matrix[row, 0] = new Purchase
+                {
+                    Cost = orderCost + row * holdingCost,
+                    StockFromLastMonth = -1,
+                    Size = demands[0] + row
+                };
             }
 
             // complete rest of the months
@@ -30,26 +57,35 @@ namespace TP2.InventoryManager
                 // the row is the amount we want to keep in stock for next month
                 for (int row = 0; row <= maxStock; row++)
                 {
-                    var buyNow = matrix[0, month - 1] + orderCost + holdingCost * row;
+                    int parentRow;
+                    int amountToBuyNow = demands[month] + row;
+                    int costBuyNow = matrix[0, month - 1].Cost + orderCost + holdingCost * row;
+
+                    int costDontBuyNow = int.MaxValue;
 
                     // if last month's stock isn't enough, there is no choice but to buy now
                     if (row + demands[month] > maxStock)
                     {
-                        matrix[row, month] = buyNow;
+                        parentRow = 0;
                     }
                     else
                     {
-                        var dontBuyNow = matrix[row + 1, month - 1] + holdingCost * row;
-                        matrix[row, month] = Math.Min(buyNow, dontBuyNow);
+                        costDontBuyNow = matrix[row + 1, month - 1].Cost + holdingCost * row;
+                        parentRow = row + 1;
                     }
+
+                    var cost = Math.Min(costBuyNow, costDontBuyNow);
+
+                    matrix[row, month] = new Purchase
+                    {
+                        Cost = cost,
+                        StockFromLastMonth = parentRow,
+                        Size = (cost != costBuyNow) ? 0 : amountToBuyNow
+                    };
+
                 }
             }
             return matrix;
-        }
-
-        public static int[] CalculateOrderQuantities(int[,] costs)
-        {
-            throw new NotImplementedException();
         }
     }
 }

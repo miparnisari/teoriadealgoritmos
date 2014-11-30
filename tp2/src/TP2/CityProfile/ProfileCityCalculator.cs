@@ -1,13 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
 namespace TP2.CityProfile
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
     public class ProfileCityCalculator
     {
         /// <summary>
-        /// Éste método devuelve el profile de la ciudad.
+        /// Devuelve el profile de la ciudad.
         /// </summary>
         /// <param name="buildings"></param>
         /// <returns></returns>
@@ -104,7 +104,7 @@ namespace TP2.CityProfile
         }
 
         /// <summary>
-        /// Este método verifica si hay solapamiento entre los dos edificios y
+        /// Verifica si hay solapamiento entre los dos edificios y
         /// lo elimina si es el caso.
         /// </summary>
         /// <param name="b1">Edificio 1</param>

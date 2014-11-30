@@ -18,10 +18,10 @@
             // assert
             var expected = new InventoryData
             {
-                NumberOfPeriods = 4,
+                Months = 4,
                 OrderCost = 30,
                 HoldingCost = 10,
-                Demands = new[] { 2, 1, 1, 4 },
+                MonthlyDemand = new[] { 2, 1, 1, 4 },
                 MaxStock = 2
             };
 

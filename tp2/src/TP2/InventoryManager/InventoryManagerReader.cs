@@ -13,9 +13,9 @@
             var inventoryData = new InventoryData();
 
             string[] lines = File.ReadAllLines(path);
-            inventoryData.NumberOfPeriods = Convert.ToInt32(lines[0]);
+            inventoryData.Months = Convert.ToInt32(lines[0]);
 
-            if (lines.Count() != VARIABLES + inventoryData.NumberOfPeriods)
+            if (lines.Count() != VARIABLES + inventoryData.Months)
             {
                 throw new Exception("Invalid file format");
             }
@@ -24,11 +24,11 @@
             inventoryData.HoldingCost = Convert.ToInt32(lines[2]);
             inventoryData.OrderCost = Convert.ToInt32(lines[3]);
 
-            inventoryData.Demands = new int[inventoryData.NumberOfPeriods];
+            inventoryData.MonthlyDemand = new int[inventoryData.Months];
 
-            for (int i = VARIABLES; i < inventoryData.NumberOfPeriods + VARIABLES; i++)
+            for (int i = VARIABLES; i < inventoryData.Months + VARIABLES; i++)
             {
-                inventoryData.Demands[i - VARIABLES] = Convert.ToInt32(lines[i]);
+                inventoryData.MonthlyDemand[i - VARIABLES] = Convert.ToInt32(lines[i]);
             }
 
             return inventoryData;
