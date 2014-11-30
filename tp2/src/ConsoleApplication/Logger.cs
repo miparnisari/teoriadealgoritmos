@@ -1,8 +1,7 @@
-﻿using System;
-using System.IO;
-
-namespace ConsoleApplication
+﻿namespace ConsoleApplication
 {
+    using System;
+    using System.IO;
     public class Logger : IDisposable
     {
         private static StreamWriter streamWriter;

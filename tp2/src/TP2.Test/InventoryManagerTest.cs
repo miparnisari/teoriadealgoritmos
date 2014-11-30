@@ -74,6 +74,31 @@ namespace TP2.Test
 
             CollectionAssert.AreEqual(expectedOptimalSolution, optimalSolution);
         }
+
+        [Test]
+        public void ShouldGetOptimalSolutionWhenOrderCostIsLowerThanHoldingCost()
+        {
+            // arrange
+            var data = new InventoryData
+            {
+                MonthlyDemand = new[] { 10, 12, 9 },
+                HoldingCost = 4,
+                MaxStock = 20,
+                Months = 3,
+                OrderCost = 2
+            };
+
+            // act
+            int[] optimalSolution = InventoryManager.CalculateOrderQuantities(data);
+
+            // assert
+            var expectedOptimalSolution = new[]
+            {
+                10, 12, 9
+            };
+
+            CollectionAssert.AreEqual(expectedOptimalSolution, optimalSolution);
+        }
     }
 }
 

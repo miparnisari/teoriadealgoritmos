@@ -57,30 +57,26 @@ namespace TP2.InventoryManager
                 // the row is the amount we want to keep in stock for next month
                 for (int row = 0; row <= maxStock; row++)
                 {
-                    int parentRow;
                     int amountToBuyNow = demands[month] + row;
                     int costBuyNow = matrix[0, month - 1].Cost + orderCost + holdingCost * row;
-
                     int costDontBuyNow = int.MaxValue;
 
-                    // if last month's stock isn't enough, there is no choice but to buy now
-                    if (row + demands[month] > maxStock)
-                    {
-                        parentRow = 0;
-                    }
-                    else
+                    // if we have stock from the past month
+                    // we can skip buying now
+                    if (amountToBuyNow <= maxStock)
                     {
                         costDontBuyNow = matrix[row + 1, month - 1].Cost + holdingCost * row;
-                        parentRow = row + 1;
                     }
 
                     var cost = Math.Min(costBuyNow, costDontBuyNow);
+                    var size = (cost != costBuyNow) ? 0 : amountToBuyNow;
+                    var stockFromLastMonth = (size != 0) ? 0 : row + 1;
 
                     matrix[row, month] = new Purchase
                     {
                         Cost = cost,
-                        StockFromLastMonth = parentRow,
-                        Size = (cost != costBuyNow) ? 0 : amountToBuyNow
+                        Size = size,
+                        StockFromLastMonth = stockFromLastMonth
                     };
 
                 }
