@@ -37,7 +37,7 @@ namespace ConsoleApplication
                 logger.Log("Ingrese el nombre del archivo para el punto 2: ");
                 fileName = System.Console.ReadLine();
                 stopwatch.Start();
-                var reader = new InventoryManagerReader();
+                var reader = new InventoryManagerFileReader();
                 var inputData = reader.GetDataFromFile(Path.Combine(Environment.CurrentDirectory, fileName));
 
                 int[] orderQuantities = InventoryManager.CalculateOrderQuantities(inputData);

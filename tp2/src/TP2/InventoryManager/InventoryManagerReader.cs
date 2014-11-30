@@ -4,7 +4,7 @@
     using System.IO;
     using System.Linq;
 
-    public class InventoryManagerReader
+    public class InventoryManagerFileReader
     {
         private const int VARIABLES = 5;
 

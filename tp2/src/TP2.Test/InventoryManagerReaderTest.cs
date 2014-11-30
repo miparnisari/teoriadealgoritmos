@@ -10,7 +10,7 @@
         public void ShouldReadInventoryInput()
         {
             // arrange
-            var reader = new InventoryManagerReader();
+            var reader = new InventoryManagerFileReader();
 
             // act
             InventoryData data = reader.GetDataFromFile("Input/inventory.txt");
