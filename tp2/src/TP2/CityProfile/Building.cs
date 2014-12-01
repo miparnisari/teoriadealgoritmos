@@ -11,20 +11,17 @@ namespace TP2.CityProfile
 
         public int X1
         {
-            get;
-            set;
+            get; set;
         }
 
         public int X2
         {
-            get;
-            set;
+            get; set;
         }
 
         public int H
         {
-            get;
-            set;
+            get; set;
         }
     }
 }

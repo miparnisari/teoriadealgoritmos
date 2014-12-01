@@ -1,6 +1,4 @@
-﻿using System.Linq;
-
-namespace TP2.Test
+﻿namespace TP2.Test
 {
     using NUnit.Framework;
     using TP2.InventoryManager;
@@ -22,8 +20,7 @@ namespace TP2.Test
             };
 
             // act
-            var matrix = InventoryManager.GetPurchaseData(data.MaxStock, data.HoldingCost, data.OrderCost,
-                data.MonthlyDemand);
+            var matrix = InventoryManager.GetPurchaseData(data.MaxStock, data.HoldingCost, data.OrderCost, data.MonthlyDemand);
 
             // assert
             var expectedSizes = new[,]
@@ -45,7 +42,7 @@ namespace TP2.Test
                 for (int col = 0; col < data.Months; col++)
                 {
                     Assert.AreEqual(expectedSizes[row, col], matrix[row, col].Size, "Size is wrong for [" + row + "][" + col + "]");
-                    Assert.AreEqual(expectedCosts[row,col], matrix[row, col].Cost, "Cost is wrong for [" + row + "][" + col + "]");
+                    Assert.AreEqual(expectedCosts[row, col], matrix[row, col].Cost, "Cost is wrong for [" + row + "][" + col + "]");
                 }
             }
         }
@@ -101,4 +98,3 @@ namespace TP2.Test
         }
     }
 }
-

@@ -20,6 +20,7 @@ namespace TP2.Test
 				new Building(9, 11, 11),
 				new Building(7, 12, 8)
 			};
+
             var profileCityCalculator = new ProfileCityCalculator();
 
             // act

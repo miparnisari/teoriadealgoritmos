@@ -1,11 +1,10 @@
-using System.Text;
-
 namespace ConsoleApplication
 {
     using System;
     using System.Configuration;
     using System.Diagnostics;
     using System.IO;
+    using System.Text;
     using TP2.CityProfile;
     using TP2.InventoryManager;
 
@@ -14,7 +13,7 @@ namespace ConsoleApplication
         public static void Main()
         {
             var stopwatch = new Stopwatch();
-            
+
             var logger = new Logger(ConfigurationManager.AppSettings["logFileName"]);
             try
             {
@@ -41,10 +40,11 @@ namespace ConsoleApplication
                 var inputData = reader.GetDataFromFile(Path.Combine(Environment.CurrentDirectory, fileName));
 
                 int[] orderQuantities = InventoryManager.GetOrderQuantities(inputData);
-                for (int month = 0; month < inputData.Months; month ++)
+                for (int month = 0; month < inputData.Months; month++)
                 {
                     logger.Log(string.Format("Mes {0}: comprar {1}", month, orderQuantities[month]));
                 }
+
                 stopwatch.Stop();
 
             }
