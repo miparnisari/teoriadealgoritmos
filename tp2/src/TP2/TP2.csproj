@@ -54,7 +54,7 @@
     <Compile Include="CityProfile\Building.cs" />
     <Compile Include="CityProfile\ProfileCityCalculator.cs" />
     <Compile Include="CityProfile\BuildingsFileReader.cs" />
-    <Compile Include="InventoryManager\InventoryManagerReader.cs" />
+    <Compile Include="InventoryManager\InventoryManagerFileReader.cs" />
     <Compile Include="InventoryManager\InventoryData.cs" />
     <Compile Include="InventoryManager\Purchase.cs" />
   </ItemGroup>
