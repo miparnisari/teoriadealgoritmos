@@ -64,7 +64,7 @@ namespace TP2.Test
             };
 
             // act
-            int[] optimalSolution = InventoryManager.CalculateOrderQuantities(data);
+            int[] optimalSolution = InventoryManager.GetOrderQuantities(data);
 
             // assert
             var expectedOptimalSolution = new[]
@@ -89,7 +89,7 @@ namespace TP2.Test
             };
 
             // act
-            int[] optimalSolution = InventoryManager.CalculateOrderQuantities(data);
+            int[] optimalSolution = InventoryManager.GetOrderQuantities(data);
 
             // assert
             var expectedOptimalSolution = new[]

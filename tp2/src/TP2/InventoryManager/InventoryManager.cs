@@ -5,7 +5,7 @@ namespace TP2.InventoryManager
 
     public static class InventoryManager
     {
-        public static int[] CalculateOrderQuantities(InventoryData inventoryData)
+        public static int[] GetOrderQuantities(InventoryData inventoryData)
         {
             Purchase[,] matrix = GetPurchaseData(
                 inventoryData.MaxStock,

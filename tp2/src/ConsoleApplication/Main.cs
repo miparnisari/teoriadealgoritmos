@@ -40,7 +40,7 @@ namespace ConsoleApplication
                 var reader = new InventoryManagerFileReader();
                 var inputData = reader.GetDataFromFile(Path.Combine(Environment.CurrentDirectory, fileName));
 
-                int[] orderQuantities = InventoryManager.CalculateOrderQuantities(inputData);
+                int[] orderQuantities = InventoryManager.GetOrderQuantities(inputData);
                 for (int month = 0; month < inputData.Months; month ++)
                 {
                     logger.Log(string.Format("Mes {0}: comprar {1}", month, orderQuantities[month]));

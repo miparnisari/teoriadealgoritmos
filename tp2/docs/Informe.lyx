@@ -265,12 +265,5 @@ Los valores de
 
 \end_layout
 
-\begin_layout Itemize
-\begin_inset Formula $C_{n-1}=\min\left(C_{n}+K+C\times\left[d_{N}+\right]\right)$
-\end_inset
-
-
-\end_layout
-
 \end_body
 \end_document
