@@ -22,16 +22,14 @@ namespace TP2.InventoryManager
 
             int currentMonth = inventoryData.Months - 1;
 
-            while (currentMonth >= 0)
+            while (currentMonth > 0)
             {
                 orderQuantities[currentMonth] = currentMonthPurchase.Size;
-                if (currentMonth == 0)
-                {
-                    break;
-                }
                 currentMonthPurchase = matrix[currentMonthPurchase.StockFromLastMonth, currentMonth - 1];
                 currentMonth--;
             }
+
+            orderQuantities[0] = currentMonthPurchase.Size;
 
             return orderQuantities;
         }
