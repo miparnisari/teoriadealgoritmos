@@ -62,13 +62,17 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Input\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Compile Include="CityProfileTest.cs" />
+    <Compile Include="InventoryManagerReaderTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InventoryManagerTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Input\inventory.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 </Project>

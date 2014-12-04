@@ -6,17 +6,15 @@
   <MessageClass Name="Error" Label="Error" Option="Show errors" />
   <MessageClass Name="Property" Label="Property" Option="Show metadata" />
   <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
-  <Message Timestamp="2014-11-17T18:41:03" Importance="High" Text="Reverse Engineering Started." />
-  <Message Timestamp="2014-11-17T18:41:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::TP2' -  (Package)" />
-  <Message Timestamp="2014-11-17T18:41:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::TP2::InventoryManager' -  (Package)" />
-  <Message Timestamp="2014-11-17T18:41:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::TP2::InventoryManager::InventoryData' -  (Class)   (partially reverse engineered - definition not updated) " />
-  <Message Timestamp="2014-11-17T18:41:04" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::TP2::InventoryManager::InventoryManagerReader' -  (Class)" />
-  <Message Timestamp="2014-11-17T18:41:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::TP2::InventoryManager::InventoryManagerReader::GetDataFromFile' -  (Operation)" />
-  <Message Timestamp="2014-11-17T18:41:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::TP2::InventoryManager::InventoryManagerReader::GetDataFromFile::path' -  (Parameter)" />
-  <Message Timestamp="2014-11-17T18:41:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::TP2::InventoryManager::InventoryManagerReader::InventoryManagerReader' -  (Operation)" />
-  <Message Timestamp="2014-11-17T18:41:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::TP2::InventoryManager::InventoryManagerReader::VARIABLES' -  (Property)" />
-  <Message Timestamp="2014-11-17T18:41:04" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'String' -  (PrimitiveType)" />
-  <Message Timestamp="2014-11-17T18:41:04" Importance="High" Text="(1) type(s) fully reverse engineered." />
-  <Message Timestamp="2014-11-17T18:41:04" Importance="High" Text="(1) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
-  <Message Timestamp="2014-11-17T18:41:04" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+  <Message Timestamp="2014-11-30T21:57:38" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2014-11-30T21:57:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Integer' -  (PrimitiveType)" />
+  <Message Timestamp="2014-11-30T21:57:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::TP2' -  (Package)" />
+  <Message Timestamp="2014-11-30T21:57:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::TP2::InventoryManager' -  (Package)" />
+  <Message Timestamp="2014-11-30T21:57:38" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::TP2::InventoryManager::Purchase' -  (Class)" />
+  <Message Timestamp="2014-11-30T21:57:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::TP2::InventoryManager::Purchase::Cost' -  (Property)" />
+  <Message Timestamp="2014-11-30T21:57:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::TP2::InventoryManager::Purchase::Purchase' -  (Operation)" />
+  <Message Timestamp="2014-11-30T21:57:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::TP2::InventoryManager::Purchase::Size' -  (Property)" />
+  <Message Timestamp="2014-11-30T21:57:38" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::TP2::InventoryManager::Purchase::StockFromLastMonth' -  (Property)" />
+  <Message Timestamp="2014-11-30T21:57:38" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2014-11-30T21:57:38" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
 </Log>
