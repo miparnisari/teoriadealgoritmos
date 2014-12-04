@@ -11,120 +11,105 @@ include $(top_srcdir)/config.make
 ifeq ($(CONFIG),DEBUG)
 ASSEMBLY_COMPILER_COMMAND = dmcs
 ASSEMBLY_COMPILER_FLAGS =  -noconfig -codepage:utf8 -warn:4 -optimize- -debug "-define:DEBUG;"
-ASSEMBLY = bin/Debug/ConsoleApplication.exe
+ASSEMBLY = bin/Debug/TP2.Test.dll
 ASSEMBLY_MDB = $(ASSEMBLY).mdb
-COMPILE_TARGET = exe
+COMPILE_TARGET = library
 PROJECT_REFERENCES =  \
 	../TP2/bin/Debug/TP2.dll
 BUILD_DIR = bin/Debug
 
-CONSOLEAPPLICATION_EXE_MDB_SOURCE=bin/Debug/ConsoleApplication.exe.mdb
-CONSOLEAPPLICATION_EXE_MDB=$(BUILD_DIR)/ConsoleApplication.exe.mdb
-PUNTO1_TXT_SOURCE=Input/punto1.txt
-PUNTO2_TXT_SOURCE=Input/punto2.txt
-CONSOLEAPPLICATION_EXE_CONFIG_SOURCE=App.config
+TP2_TEST_DLL_MDB_SOURCE=bin/Debug/TP2.Test.dll.mdb
+TP2_TEST_DLL_MDB=$(BUILD_DIR)/TP2.Test.dll.mdb
+INVENTORY_TXT_SOURCE=Input/inventory.txt
 TP2_DLL_SOURCE=../TP2/bin/Debug/TP2.dll
 TP2_DLL_MDB_SOURCE=../TP2/bin/Debug/TP2.dll.mdb
-TP2_DLL_MDB=$(BUILD_DIR)/TP2.dll.mdb
 
 endif
 
 ifeq ($(CONFIG),DEBUG_MIXED_PLATFORMS)
 ASSEMBLY_COMPILER_COMMAND = dmcs
 ASSEMBLY_COMPILER_FLAGS =  -noconfig -codepage:utf8 -warn:4 -optimize- -debug "-define:DEBUG;"
-ASSEMBLY = bin/Debug/ConsoleApplication.exe
+ASSEMBLY = bin/Debug/TP2.Test.dll
 ASSEMBLY_MDB = $(ASSEMBLY).mdb
-COMPILE_TARGET = exe
+COMPILE_TARGET = library
 PROJECT_REFERENCES =  \
 	../TP2/bin/Debug/TP2.dll
 BUILD_DIR = bin/Debug
 
-CONSOLEAPPLICATION_EXE_MDB_SOURCE=bin/Debug/ConsoleApplication.exe.mdb
-CONSOLEAPPLICATION_EXE_MDB=$(BUILD_DIR)/ConsoleApplication.exe.mdb
-PUNTO1_TXT_SOURCE=Input/punto1.txt
-PUNTO2_TXT_SOURCE=Input/punto2.txt
-CONSOLEAPPLICATION_EXE_CONFIG_SOURCE=App.config
+TP2_TEST_DLL_MDB_SOURCE=bin/Debug/TP2.Test.dll.mdb
+TP2_TEST_DLL_MDB=$(BUILD_DIR)/TP2.Test.dll.mdb
+INVENTORY_TXT_SOURCE=Input/inventory.txt
 TP2_DLL_SOURCE=../TP2/bin/Debug/TP2.dll
 TP2_DLL_MDB_SOURCE=../TP2/bin/Debug/TP2.dll.mdb
-TP2_DLL_MDB=$(BUILD_DIR)/TP2.dll.mdb
 
 endif
 
 ifeq ($(CONFIG),DEBUG_X86)
 ASSEMBLY_COMPILER_COMMAND = dmcs
 ASSEMBLY_COMPILER_FLAGS =  -noconfig -codepage:utf8 -warn:4 -optimize- -debug "-define:DEBUG;"
-ASSEMBLY = bin/Debug/ConsoleApplication.exe
+ASSEMBLY = bin/Debug/TP2.Test.dll
 ASSEMBLY_MDB = $(ASSEMBLY).mdb
-COMPILE_TARGET = exe
+COMPILE_TARGET = library
 PROJECT_REFERENCES =  \
 	../TP2/bin/Debug/TP2.dll
 BUILD_DIR = bin/Debug
 
-CONSOLEAPPLICATION_EXE_MDB_SOURCE=bin/Debug/ConsoleApplication.exe.mdb
-CONSOLEAPPLICATION_EXE_MDB=$(BUILD_DIR)/ConsoleApplication.exe.mdb
-PUNTO1_TXT_SOURCE=Input/punto1.txt
-PUNTO2_TXT_SOURCE=Input/punto2.txt
-CONSOLEAPPLICATION_EXE_CONFIG_SOURCE=App.config
+TP2_TEST_DLL_MDB_SOURCE=bin/Debug/TP2.Test.dll.mdb
+TP2_TEST_DLL_MDB=$(BUILD_DIR)/TP2.Test.dll.mdb
+INVENTORY_TXT_SOURCE=Input/inventory.txt
 TP2_DLL_SOURCE=../TP2/bin/Debug/TP2.dll
 TP2_DLL_MDB_SOURCE=../TP2/bin/Debug/TP2.dll.mdb
-TP2_DLL_MDB=$(BUILD_DIR)/TP2.dll.mdb
 
 endif
 
 ifeq ($(CONFIG),RELEASE)
 ASSEMBLY_COMPILER_COMMAND = dmcs
-ASSEMBLY_COMPILER_FLAGS =  -noconfig -codepage:utf8 -warn:4 -optimize-
-ASSEMBLY = bin/Release/ConsoleApplication.exe
+ASSEMBLY_COMPILER_FLAGS =  -noconfig -codepage:utf8 -warn:4 -optimize+
+ASSEMBLY = bin/Release/TP2.Test.dll
 ASSEMBLY_MDB = 
-COMPILE_TARGET = exe
+COMPILE_TARGET = library
 PROJECT_REFERENCES =  \
 	../TP2/bin/Release/TP2.dll
 BUILD_DIR = bin/Release
 
-CONSOLEAPPLICATION_EXE_MDB=
-PUNTO1_TXT_SOURCE=Input/punto1.txt
-PUNTO2_TXT_SOURCE=Input/punto2.txt
-CONSOLEAPPLICATION_EXE_CONFIG_SOURCE=App.config
-TP2_DLL_SOURCE=../TP2/bin/Release/TP2.dll
-TP2_DLL_MDB=
+TP2_TEST_DLL_MDB=
+INVENTORY_TXT_SOURCE=Input/inventory.txt
+TP2_DLL_SOURCE=../TP2/bin/Debug/TP2.dll
+TP2_DLL_MDB_SOURCE=../TP2/bin/Debug/TP2.dll.mdb
 
 endif
 
 ifeq ($(CONFIG),RELEASE_MIXED_PLATFORMS)
 ASSEMBLY_COMPILER_COMMAND = dmcs
-ASSEMBLY_COMPILER_FLAGS =  -noconfig -codepage:utf8 -warn:4 -optimize-
-ASSEMBLY = bin/Release/ConsoleApplication.exe
+ASSEMBLY_COMPILER_FLAGS =  -noconfig -codepage:utf8 -warn:4 -optimize+
+ASSEMBLY = bin/Release/TP2.Test.dll
 ASSEMBLY_MDB = 
-COMPILE_TARGET = exe
+COMPILE_TARGET = library
 PROJECT_REFERENCES =  \
 	../TP2/bin/Release/TP2.dll
 BUILD_DIR = bin/Release
 
-CONSOLEAPPLICATION_EXE_MDB=
-PUNTO1_TXT_SOURCE=Input/punto1.txt
-PUNTO2_TXT_SOURCE=Input/punto2.txt
-CONSOLEAPPLICATION_EXE_CONFIG_SOURCE=App.config
-TP2_DLL_SOURCE=../TP2/bin/Release/TP2.dll
-TP2_DLL_MDB=
+TP2_TEST_DLL_MDB=
+INVENTORY_TXT_SOURCE=Input/inventory.txt
+TP2_DLL_SOURCE=../TP2/bin/Debug/TP2.dll
+TP2_DLL_MDB_SOURCE=../TP2/bin/Debug/TP2.dll.mdb
 
 endif
 
 ifeq ($(CONFIG),RELEASE_X86)
 ASSEMBLY_COMPILER_COMMAND = dmcs
-ASSEMBLY_COMPILER_FLAGS =  -noconfig -codepage:utf8 -warn:4 -optimize-
-ASSEMBLY = bin/Release/ConsoleApplication.exe
+ASSEMBLY_COMPILER_FLAGS =  -noconfig -codepage:utf8 -warn:4 -optimize+
+ASSEMBLY = bin/Release/TP2.Test.dll
 ASSEMBLY_MDB = 
-COMPILE_TARGET = exe
+COMPILE_TARGET = library
 PROJECT_REFERENCES =  \
 	../TP2/bin/Release/TP2.dll
 BUILD_DIR = bin/Release
 
-CONSOLEAPPLICATION_EXE_MDB=
-PUNTO1_TXT_SOURCE=Input/punto1.txt
-PUNTO2_TXT_SOURCE=Input/punto2.txt
-CONSOLEAPPLICATION_EXE_CONFIG_SOURCE=App.config
-TP2_DLL_SOURCE=../TP2/bin/Release/TP2.dll
-TP2_DLL_MDB=
+TP2_TEST_DLL_MDB=
+INVENTORY_TXT_SOURCE=Input/inventory.txt
+TP2_DLL_SOURCE=../TP2/bin/Debug/TP2.dll
+TP2_DLL_MDB_SOURCE=../TP2/bin/Debug/TP2.dll.mdb
 
 endif
 
@@ -132,64 +117,60 @@ AL=al
 SATELLITE_ASSEMBLY_NAME=$(notdir $(basename $(ASSEMBLY))).resources.dll
 
 PROGRAMFILES = \
-	$(CONSOLEAPPLICATION_EXE_MDB) \
-	$(CONSOLEAPPLICATION_EXE_CONFIG) \
+	$(TP2_TEST_DLL_MDB) \
 	$(TP2_DLL) \
 	$(TP2_DLL_MDB)  
 
 PROGRAMFILES_INPUT = \
-	$(PUNTO1_TXT) \
-	$(PUNTO2_TXT)  
+	$(INVENTORY_TXT)  
 
-BINARIES = \
-	$(CONSOLEAPPLICATION)  
+LINUX_PKGCONFIG = \
+	$(TP2_TEST_PC)  
 
 
 RESGEN=resgen2
 
-PUNTO1_TXT = $(BUILD_DIR)/Input/punto1.txt
-PUNTO2_TXT = $(BUILD_DIR)/Input/punto2.txt
-CONSOLEAPPLICATION_EXE_CONFIG = $(BUILD_DIR)/ConsoleApplication.exe.config
+INVENTORY_TXT = $(BUILD_DIR)/Input/inventory.txt
 TP2_DLL = $(BUILD_DIR)/TP2.dll
-CONSOLEAPPLICATION = $(BUILD_DIR)/consoleapplication
+TP2_DLL_MDB = $(BUILD_DIR)/TP2.dll.mdb
+TP2_TEST_PC = $(BUILD_DIR)/tp2.test.pc
 
 FILES = \
-	Logger.cs \
-	Main.cs \
-	AssemblyInfo.cs 
+	CityProfileTest.cs \
+	InventoryManagerReaderTest.cs \
+	InventoryManagerTest.cs 
 
 DATA_FILES = 
 
 RESOURCES = 
 
 EXTRAS = \
-	App.config \
-	Input/punto1.txt \
-	Input/punto2.txt \
-	consoleapplication.in 
+	packages.config \
+	Input/inventory.txt \
+	tp2.test.pc.in 
 
 REFERENCES =  \
+	-pkg:nunit \
 	System \
-	System.Configuration
+	System.Data.Linq \
+	System.Core
 
 DLL_REFERENCES = 
 
-CLEANFILES = $(PROGRAMFILES) $(PROGRAMFILES_INPUT) $(BINARIES) 
+CLEANFILES = $(PROGRAMFILES) $(PROGRAMFILES_INPUT) $(LINUX_PKGCONFIG) 
 
 #Targets
-all: $(ASSEMBLY) $(PROGRAMFILES) $(PROGRAMFILES_INPUT) $(BINARIES)  $(top_srcdir)/config.make
+all: $(ASSEMBLY) $(PROGRAMFILES) $(PROGRAMFILES_INPUT) $(LINUX_PKGCONFIG)  $(top_srcdir)/config.make
 
 include $(top_srcdir)/Makefile.include
 #include $(srcdir)/custom-hooks.make
 
 
 
-$(eval $(call emit-deploy-target,PUNTO1_TXT))
-$(eval $(call emit-deploy-target,PUNTO2_TXT))
-$(eval $(call emit-deploy-target,CONSOLEAPPLICATION_EXE_CONFIG))
+$(eval $(call emit-deploy-target,INVENTORY_TXT))
 $(eval $(call emit-deploy-target,TP2_DLL))
 $(eval $(call emit-deploy-target,TP2_DLL_MDB))
-$(eval $(call emit-deploy-wrapper,CONSOLEAPPLICATION,consoleapplication,x))
+$(eval $(call emit-deploy-wrapper,TP2_TEST_PC,tp2.test.pc))
 
 
 $(eval $(call emit_resgen_targets))
@@ -212,15 +193,13 @@ install-local: $(ASSEMBLY) $(ASSEMBLY_MDB)
 	mkdir -p '$(DESTDIR)$(libdir)/$(PACKAGE)'
 	$(call cp,$(ASSEMBLY),$(DESTDIR)$(libdir)/$(PACKAGE))
 	$(call cp,$(ASSEMBLY_MDB),$(DESTDIR)$(libdir)/$(PACKAGE))
-	$(call cp,$(CONSOLEAPPLICATION_EXE_MDB),$(DESTDIR)$(libdir)/$(PACKAGE))
+	$(call cp,$(TP2_TEST_DLL_MDB),$(DESTDIR)$(libdir)/$(PACKAGE))
 	mkdir -p '$(DESTDIR)$(libdir)/$(PACKAGE)/Input'
-	$(call cp,$(PUNTO1_TXT),$(DESTDIR)$(libdir)/$(PACKAGE)/Input)
-	$(call cp,$(PUNTO2_TXT),$(DESTDIR)$(libdir)/$(PACKAGE)/Input)
-	$(call cp,$(CONSOLEAPPLICATION_EXE_CONFIG),$(DESTDIR)$(libdir)/$(PACKAGE))
+	$(call cp,$(INVENTORY_TXT),$(DESTDIR)$(libdir)/$(PACKAGE)/Input)
 	$(call cp,$(TP2_DLL),$(DESTDIR)$(libdir)/$(PACKAGE))
 	$(call cp,$(TP2_DLL_MDB),$(DESTDIR)$(libdir)/$(PACKAGE))
-	mkdir -p '$(DESTDIR)$(bindir)'
-	$(call cp,$(CONSOLEAPPLICATION),$(DESTDIR)$(bindir))
+	mkdir -p '$(DESTDIR)$(libdir)/pkgconfig'
+	$(call cp,$(TP2_TEST_PC),$(DESTDIR)$(libdir)/pkgconfig)
 	make post-install-local-hook prefix=$(prefix)
 
 uninstall-local: $(ASSEMBLY) $(ASSEMBLY_MDB)
@@ -228,13 +207,11 @@ uninstall-local: $(ASSEMBLY) $(ASSEMBLY_MDB)
 	make uninstall-satellite-assemblies prefix=$(prefix)
 	$(call rm,$(ASSEMBLY),$(DESTDIR)$(libdir)/$(PACKAGE))
 	$(call rm,$(ASSEMBLY_MDB),$(DESTDIR)$(libdir)/$(PACKAGE))
-	$(call rm,$(CONSOLEAPPLICATION_EXE_MDB),$(DESTDIR)$(libdir)/$(PACKAGE))
-	$(call rm,$(PUNTO1_TXT),$(DESTDIR)$(libdir)/$(PACKAGE)/Input)
-	$(call rm,$(PUNTO2_TXT),$(DESTDIR)$(libdir)/$(PACKAGE)/Input)
-	$(call rm,$(CONSOLEAPPLICATION_EXE_CONFIG),$(DESTDIR)$(libdir)/$(PACKAGE))
+	$(call rm,$(TP2_TEST_DLL_MDB),$(DESTDIR)$(libdir)/$(PACKAGE))
+	$(call rm,$(INVENTORY_TXT),$(DESTDIR)$(libdir)/$(PACKAGE)/Input)
 	$(call rm,$(TP2_DLL),$(DESTDIR)$(libdir)/$(PACKAGE))
 	$(call rm,$(TP2_DLL_MDB),$(DESTDIR)$(libdir)/$(PACKAGE))
-	$(call rm,$(CONSOLEAPPLICATION),$(DESTDIR)$(bindir))
+	$(call rm,$(TP2_TEST_PC),$(DESTDIR)$(libdir)/pkgconfig)
 	make post-uninstall-local-hook prefix=$(prefix)
 
 install: install-local
