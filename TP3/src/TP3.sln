@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP3.ConsoleApplication", "TP3.ConsoleApplication\TP3.ConsoleApplication.csproj", "{DEB8E438-55A4-4129-907C-812F577443AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP3.Model", "TP3.Model\TP3.Model.csproj", "{743B39DC-CAA3-4799-9D52-D85E6B0FCEFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP3.Test", "TP3.Test\TP3.Test.csproj", "{CFCD6DCD-67D1-4077-BC83-C6D628703D52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{743B39DC-CAA3-4799-9D52-D85E6B0FCEFC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{743B39DC-CAA3-4799-9D52-D85E6B0FCEFC}.Debug|x86.Build.0 = Debug|Any CPU
+		{743B39DC-CAA3-4799-9D52-D85E6B0FCEFC}.Release|x86.ActiveCfg = Release|Any CPU
+		{743B39DC-CAA3-4799-9D52-D85E6B0FCEFC}.Release|x86.Build.0 = Release|Any CPU
+		{CFCD6DCD-67D1-4077-BC83-C6D628703D52}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CFCD6DCD-67D1-4077-BC83-C6D628703D52}.Debug|x86.Build.0 = Debug|Any CPU
+		{CFCD6DCD-67D1-4077-BC83-C6D628703D52}.Release|x86.ActiveCfg = Release|Any CPU
+		{CFCD6DCD-67D1-4077-BC83-C6D628703D52}.Release|x86.Build.0 = Release|Any CPU
+		{DEB8E438-55A4-4129-907C-812F577443AD}.Debug|x86.ActiveCfg = Debug|x86
+		{DEB8E438-55A4-4129-907C-812F577443AD}.Debug|x86.Build.0 = Debug|x86
+		{DEB8E438-55A4-4129-907C-812F577443AD}.Release|x86.ActiveCfg = Release|x86
+		{DEB8E438-55A4-4129-907C-812F577443AD}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = TP3.ConsoleApplication\TP3.ConsoleApplication.csproj
+	EndGlobalSection
+EndGlobal

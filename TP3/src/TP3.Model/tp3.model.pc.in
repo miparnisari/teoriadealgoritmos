@@ -1,0 +1,6 @@
+Name: TP3.Model
+Description: TP3.Model
+Version: 0.1
+
+Requires: 
+Libs: -r:@expanded_libdir@/@PACKAGE@/TP3.Model.dll

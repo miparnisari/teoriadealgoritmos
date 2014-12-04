@@ -1,0 +1,6 @@
+Name: TP3.Test
+Description: TP3.Test
+Version: 0.1
+
+Requires: 
+Libs: -r:@expanded_libdir@/@PACKAGE@/TP3.Test.dll
