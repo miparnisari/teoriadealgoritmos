@@ -1,11 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace TP3.Model
 {
+    using System;
+    using System.Collections.Generic;
+    using System.IO;
+
 	public class PlannerReader
 	{
 		public List<Task> Read(StreamReader file)
