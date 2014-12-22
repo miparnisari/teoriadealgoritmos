@@ -1,5 +1,8 @@
+using System.Diagnostics;
+
 namespace TP3.Model
 {
+    [DebuggerDisplay("----{Duration}-----{Deadline} - ${Profit}")]
     public class Task
     {
         public Task(int id, int duration, int deadline, int profit)

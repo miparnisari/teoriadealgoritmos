@@ -18,8 +18,7 @@ namespace TP3.Model
         {
             // O(n log n)
             var orderedTasks = tasks.OrderBy(t => t.Deadline).ToList();
-            // lista para devolver el plan.
-            var plan = new List<Task>(orderedTasks.Count);
+
             var maxDeadline = orderedTasks.Last().Deadline; // O(1)           
             //matriz para mantener los resultados
             var matrix = new int[orderedTasks.Count + 1, maxDeadline + 1];
@@ -46,8 +45,12 @@ namespace TP3.Model
                     }
                 }
             }
+
+            // lista para devolver el plan.
+            var plan = new List<Task>(orderedTasks.Count);
+
             // genero el plan a partir de la matriz de resultados - O(N)
-            TraceBackPlan(orderedTasks.Count, maxDeadline, plan, matrix, orderedTasks);
+            TraceBackPlan(orderedTasks.Count, maxDeadline, matrix, orderedTasks, plan);
 
             return plan;
         }
@@ -58,24 +61,27 @@ namespace TP3.Model
         /// <remarks>
         /// El orden es O(N). Se puede ver que la recursión siempre le resta 1 al indice de la tarea hasta llegar a 0.
         /// </remarks>
-        /// <param name="i">Indice de la tarea.</param>
-        /// <param name="t">Vencimiento.</param>
-        /// <param name="plan">Lista con el plan.</param>
+        /// <param name="taskIndex">Indice de la tarea.</param>
+        /// <param name="deadline">Vencimiento.</param>
         /// <param name="M">Matriz de resultados.</param>
         /// <param name="tasks">lista de tareas.</param>
-        private static void TraceBackPlan(int i, int t, List<Task> plan, int[,] M, List<Task> tasks)
+        /// <param name="plan">Lista con el plan.</param>
+        private static void TraceBackPlan(int taskIndex, int deadline, int[,] M, List<Task> tasks, List<Task> plan)
         {
-            if (i == 0) return;
-            if (M[i, t] == M[i - 1, t])
+            if (taskIndex == 0)
             {
-                TraceBackPlan(i - 1, t, plan, M, tasks);
+                return;
+            }
+            if (M[taskIndex, deadline] == M[taskIndex - 1, deadline])
+            {
+                TraceBackPlan(taskIndex - 1, deadline, M, tasks, plan);
             }
             else
             {
-                var task = tasks[i - 1];
-                var tt = Math.Min(t, task.Deadline) - task.Duration;
-                TraceBackPlan(i - 1, tt, plan, M, tasks);
-                // agrego la tarea al plan.
+                var task = tasks[taskIndex - 1];
+                var newDeadline = Math.Min(deadline, task.Deadline) - task.Duration;
+                TraceBackPlan(taskIndex - 1, newDeadline, M, tasks, plan);
+
                 plan.Add(task);
             }
         }
